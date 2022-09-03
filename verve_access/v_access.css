@@ -1,0 +1,278 @@
+@font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-Bold.woff2") format("woff2"),
+      url("Averta-web-font/Averta-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-BlackItalic.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-Thin.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-SemiboldItalic.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-SemiboldItalic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-ThinItalic.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-ThinItalic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-Light.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-Regular.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-BlackItalic.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-BlackItalic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-Black.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-Semibold.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-Semibold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-ExtraBoldItalic.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-ExtraBoldItalic.woff") format("woff");
+    font-weight: 800;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-LightItalic.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-RegularItalic.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-RegularItalic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-ExtraBold.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-ExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  :root {
+    --primary-color: #00425F; 
+    --primary-color-dark: #012534;
+    --darker-color: #00151f;
+    --light-color: rgba(238, 237, 237, 0.856);
+    --primary-red: #DC4437;
+  
+  }
+  
+  body h1, html,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  div,
+  /* .btn, */
+  li,
+  a,
+  form,
+  label {
+  font-family: "Averta" !important;
+  
+  
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Averta" !important;
+    padding: 0;
+    
+  } 
+
+
+ /* ===============================
+ BANNER SECTION START 
+================================== */
+
+
+/* Banner image */
+.Verve_Access-home {
+  position: relative;
+height: 100vh;
+width: 100vw;
+color: white;
+background: 
+linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+url('../image/Verve-Access.png');
+background-repeat: no-repeat;
+background-size:cover;
+background-position: center;
+}
+
+/* Banner text */
+.hero-text {
+position: absolute;
+flex-direction: column;
+align-items:center;
+width: auto;
+
+left: 95px;
+top: 120px;
+height: 40%;
+
+font-family: "Averta" !important;
+/* padding-right: 50px; */
+
+}
+
+.header-text {
+  max-width: 775px;
+}
+
+.hero-text h1 {
+
+font-style: normal;
+font-weight: 700;
+font-size: 86px;
+line-height: 69px;
+margin: 0 0 1rem 0;
+font-family: "Averta" !important;
+text-align: left;
+
+margin-top: 100px;
+color: #00425F;
+  
+}
+
+.hero-text p {
+font-family: "Averta" !important;
+text-align: left;
+max-width: 574px;
+
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+color: #00425F;
+  /* padding-left: 60px; */
+}
+
+.hero-text button {
+  background-color: #00425F;
+  color: white;
+ margin-top: 50px;
+ padding: 15px 20px;
+
+}
+
+.hero-text button:hover {
+  color: white;
+}
+
+/* NAVBAR AREA */
+nav {
+  padding: 2em 1em;
+  transition: all .3s;
+}
+
+/* nav:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+} */
+
+.nav_parent {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  color: #00425F;
+ 
+}
+
+.logo {
+  flex: 1 0 auto; 
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-left: 30px;
+}
+
+.bi-chevron-down {
+  padding-left: 10px;
+}
+
+.logo:hover {
+  text-decoration: none;
+  cursor: default;
+}
+
+li {
+  margin-right: 5px;
+}
+
+li:hover {
+  cursor: pointer;
+}
+.nav-link {
+font-size: 20px;
+padding-right: 100px;
+justify-content: space-between;
+}
+
+.nav-link img {
+  vertical-align: middle;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+  color: #DC4437;
+  
+}
+
+.nav-link:active {
+  transform: scale(1);
+}
+
+/* BANNER SECTION END */
