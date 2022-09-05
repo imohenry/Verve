@@ -342,9 +342,9 @@ font-size: 20px;
   
 }
 
-.cards {
-  padding: 0 150px;
-  max-width: 1200px;
+.Cards {
+  padding: 0 0px;
+  max-width: 100%;
 }
 
 
@@ -679,7 +679,8 @@ font-size: 24px;
 }
 
 #shift {
-  padding-left: 30px;
+  padding-left: 300px;
+  padding-right: 180px;
 }
 
 /* .insights_updates .card {
