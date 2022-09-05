@@ -155,22 +155,24 @@ url('image/Personal_bg.png');
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
+
+/* grid styles for the hero section */
+display: grid;
+
+grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 /* Banner text */
 .hero-text {
 position: absolute;
-display: flex;
+text-align: center;
 flex-direction: column;
-align-items:center;
 width: auto;
 
+left: 950px;
+top: 300px;
 
-left: 850px;
-top: 250px;
-
-
-height: 40%;
+justify-content: center;
 
 font-family: "Averta" !important;
 /* padding-right: 50px; */
@@ -178,7 +180,7 @@ font-family: "Averta" !important;
 }
 
 .hero-text h1 {
-
+  max-width: 472px;
   font-style: normal;
   font-weight: 700;
   font-size: 54px;
@@ -193,15 +195,15 @@ font-family: "Averta" !important;
 
 .hero-text p {
   font-family: "Averta" !important;
-  width: 700px;
+  max-width: 378px;
   text-align: center;
-  padding-right: 35px;
 
-  font-style: normal;
+
+font-style: normal;
 font-weight: 400;
 font-size: 18px;
 line-height: 24px;
-  color: white;
+color: white;
   /* padding-left: 60px; */
 }
 
@@ -209,6 +211,7 @@ line-height: 24px;
 nav {
   padding: 2em 1em;
   transition: all .3s;
+  
 }
 
 /* nav:hover {
@@ -242,28 +245,28 @@ li {
 li:hover {
   cursor: pointer;
 }
-.nav-link {
+.nav-item {
 font-size: 20px;
 padding-right: 40px;
 justify-content: space-between;
 }
 
-.nav-link img {
+.nav-item img {
   vertical-align: middle;
 }
 .bi-chevron-down {
   padding-left: 10px;
 }
 
-.nav-link:hover {
+.nav-item:hover {
   transform: scale(1.1);
   color: #DC4437;
   
 }
 
-.nav-link:active {
+/* .nav-link:active {
   transform: scale(1);
-}
+} */
 
 /* BANNER SECTION END */
 
@@ -275,11 +278,17 @@ CONNECTING AFRICA SECTION
 
  text-align: center;
  align-self:center;
+ padding-bottom: 50px;
 
 }
 
+.stats .card:hover{
+  transform: translateY(-20px);
+  box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.137);
+}
+
 .stats-main-heading {
-  top: 48px;
+
   padding-top: 30px;
 
   font-family: 'Averta';
@@ -333,8 +342,9 @@ font-size: 20px;
   
 }
 
-.card_sizing {
-  padding: 0 250px;
+.cards {
+  padding: 0 150px;
+  max-width: 1200px;
 }
 
 
@@ -426,7 +436,7 @@ line-height: 28px;
   text-align: center;
   /* padding-left: 70px; */
   /* width: auto; */
-  padding-left: 130px;
+  padding-left: 363px;
 }
 
 .footprint_text h2 {
@@ -517,7 +527,7 @@ text-align: center;
 }
 
 .here-for-things {
-  padding: 75px 75px;
+  padding: 75px 0px;
   background-repeat: no-repeat;
 
   
@@ -668,6 +678,10 @@ font-size: 24px;
   color: #fff;
 }
 
+#shift {
+  padding-left: 30px;
+}
+
 /* .insights_updates .card {
   text-align: center;
   margin: 18px 10px 40px;
@@ -680,12 +694,12 @@ font-size: 24px;
 
 .insights_updates .card h4 {
   font-size: 20px;
-}
+} */
 
-.insights_updates .card:hover{
+.swiper-slide:hover{
   transform: translateY(-20px);
 }
-
+/*
 .card-img-top {
   width: 100%;
   border-top-left-radius: calc(.25rem - 1px);
@@ -697,7 +711,7 @@ font-size: 24px;
   FOOTER STYLING
 =====================================*/
 .footer_area {
-  padding: 0 200px;
+  padding: 0 50px;
 }
 
 
@@ -706,20 +720,147 @@ RESPONSIVE STYLING
 =================================== */
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width: 768px) and (max-width: 1024px) { 
+@media only screen and (min-width: 700px) and (max-width: 1024px) { 
   /* Styles */
-  .grid
-   {
-    grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-  } 
+  
 
-  .card_res .grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-  }
+  .hero-text {
+    width: auto;
+    
+    left: 250px;
+    top: 300px;
+    font-family: "Averta" !important;
+    /* padding-right: 50px; */
+    }
+
+    .nav-item {
+    font-size: 9px;
+    padding-right: 11px;
+    }
+
+    .footprint_text h2 {
+ 
+      width: 500px;
+      height: 55px;
+      
+      /* top: 212px; */
+      
+      font-size: 40px;
+      font-weight: 700;
+      font-style: normal;
+      text-transform: capitalize;
+      text-align:left;
+      }
+      
+      .footprint_text p {
+      width: 296px;
+      height: 55px;
+      margin-right: 450px;
+      
+      font-family: 'Averta';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 72px;
+      /* or 225% */
+      
+      /* text-align: center; */
+      
+      color: #00425F;
+      }
+
+      iframe {
+        width: 400px;
+        height: 100px
+      }
+
+
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-  
+/* iPhone 6, 7, 8 ----------- */
+@media only screen and (min-width: 481px) and (max-width: 699px) {
+  /* Styles */
+  .hero-text {
+    left: 250px;
+    top: 300px;
+    font-family: "Averta" !important;
+    /* padding-right: 50px; */
+
+    }
+
+    .hero-text h1 {
+      font-size: 29px;
+      line-height: 47px;
+    }
+
+    .hero-text p {
+      font-size: 11px;
+    line-height: 19px;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 480px) {
+  .hero-text {
+    left: 250px;
+    top: 300px;
+    font-family: "Averta" !important;
+    /* padding-right: 50px; */
+
+    }
+
+    .hero-text h1 {
+      font-size: 24px;
+    line-height: 36px;
+    text-align: right;
+    }
+
+    .hero-text p {
+      font-size: 11px;
+    line-height: 19px;
+    text-align: right;
+    }
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+  .hero-text {
+    left: 72px;
+    top: 250px;
+    font-family: "Averta" !important;
+    /* padding-right: 50px; */
+    }
+
+    .hero-text h1 {
+      font-size: 21px;
+      line-height: 35px;
+      text-align: right;
+    }
+
+    .hero-text p {
+      font-size: 11px;
+    line-height: 19px;
+    text-align: right;
+    max-width: 240px;
+    }
+
+    .stats-main-heading {
+      font-size: 30px;
+      line-height: 35px;
+    }
+
+    .stats-heading {
+      font-size: 12px;
+      line-height: 22px;
+    }
+
+    .pan-story-main-heading {
+      font-size: 30px;
+      line-height: 35px;
+    }
+
+    .pan-heading {
+      font-size: 12px;
+      line-height: 23px;
+    }
 }
