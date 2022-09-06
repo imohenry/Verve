@@ -214,10 +214,6 @@ nav {
   
 }
 
-/* nav:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-} */
-
 .nav_parent {
   display: flex;
   list-style-type: none;
@@ -388,6 +384,7 @@ PAN AFRICA STORY SECTION
 .pan {
   text-align: center;
   align-self:center;
+  padding-bottom: 30px;
 }
 
 .pan-story-main-heading {
@@ -423,7 +420,7 @@ line-height: 28px;
 
 .footprint {
 
- max-width: 1280px;
+ max-width: 1000px;
   height: auto;
   margin-top: 70px;
 }
@@ -436,7 +433,7 @@ line-height: 28px;
   text-align: center;
   /* padding-left: 70px; */
   /* width: auto; */
-  padding-left: 363px;
+  padding-left: 250px;
 }
 
 .footprint_text h2 {
@@ -451,22 +448,19 @@ font-size: 64px;
 font-weight: 700;
 font-style: normal;
 text-transform: capitalize;
-line-height: 48px;
+/* line-height: 48px; */
 text-align:left;
 }
 
 .footprint_text p {
 width: 296px;
 height: 55px;
-margin-right: 450px;
-
-
 
 font-family: 'Averta';
 font-style: normal;
 font-weight: 400;
 font-size: 32px;
-line-height: 72px;
+/* line-height: 72px; */
 /* or 225% */
 
 /* text-align: center; */
@@ -474,11 +468,10 @@ line-height: 72px;
 color: #00425F;
 }
 
-.mid-img {
+iframe {
 
 text-align: center;
-height: 669px;
-margin-bottom: 60px;
+
 
 }
 
@@ -721,7 +714,7 @@ RESPONSIVE STYLING
 =================================== */
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width: 700px) and (max-width: 1024px) { 
+@media (max-width: 768px){ 
   /* Styles */
   
 
@@ -739,6 +732,17 @@ RESPONSIVE STYLING
     padding-right: 11px;
     }
 
+    .footprint_text {
+  
+      /* position: absolute; */
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      /* padding-left: 70px; */
+      /* width: auto; */
+      padding-left: 0px;
+    }
+
     .footprint_text h2 {
  
       width: 500px;
@@ -746,7 +750,7 @@ RESPONSIVE STYLING
       
       /* top: 212px; */
       
-      font-size: 40px;
+      font-size: 55px;
       font-weight: 700;
       font-style: normal;
       text-transform: capitalize;
@@ -761,8 +765,8 @@ RESPONSIVE STYLING
       font-family: 'Averta';
       font-style: normal;
       font-weight: 400;
-      font-size: 20px;
-      line-height: 72px;
+      font-size: 32px;
+    line-height: 40px;
       /* or 225% */
       
       /* text-align: center; */
@@ -771,41 +775,26 @@ RESPONSIVE STYLING
       }
 
       iframe {
-        width: 400px;
-        height: 100px
+        width: 434px;
+        height: 433px;
+    }
+
+    .features-sub-head img {
+      justify-self: center;
+    }
+
       }
 
 
-}
 
-/* iPhone 6, 7, 8 ----------- */
-@media only screen and (min-width: 481px) and (max-width: 699px) {
-  /* Styles */
+
+
+@media (max-width: 480px) {
   .hero-text {
-    left: 250px;
+    left: 93px;
     top: 300px;
     font-family: "Averta" !important;
-    /* padding-right: 50px; */
-
-    }
-
-    .hero-text h1 {
-      font-size: 29px;
-      line-height: 47px;
-    }
-
-    .hero-text p {
-      font-size: 11px;
-    line-height: 19px;
-    }
-}
-
-@media only screen and (min-width: 376px) and (max-width: 480px) {
-  .hero-text {
-    left: 250px;
-    top: 300px;
-    font-family: "Averta" !important;
-    /* padding-right: 50px; */
+    padding-right: 20px;
 
     }
 
@@ -820,48 +809,52 @@ RESPONSIVE STYLING
     line-height: 19px;
     text-align: right;
     }
-}
 
-
-
-@media only screen and (min-width: 320px) and (max-width: 375px) {
-  .hero-text {
-    left: 72px;
-    top: 250px;
-    font-family: "Averta" !important;
-    /* padding-right: 50px; */
+    .footprint_text {
+  
+      /* position: absolute; */
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      /* padding-left: 70px; */
+      /* width: auto; */
+      padding-left: 10px;
     }
 
-    .hero-text h1 {
-      font-size: 21px;
-      line-height: 35px;
-      text-align: right;
-    }
-
-    .hero-text p {
-      font-size: 11px;
-    line-height: 19px;
-    text-align: right;
-    max-width: 240px;
-    }
-
-    .stats-main-heading {
-      font-size: 30px;
-      line-height: 35px;
-    }
-
-    .stats-heading {
-      font-size: 12px;
-      line-height: 22px;
-    }
-
-    .pan-story-main-heading {
-      font-size: 30px;
-      line-height: 35px;
+    iframe {
+      width: 350px;
+      height: 500px;
+      margin-right: 80px;
     }
 
     .pan-heading {
-      font-size: 12px;
+      font-size: 15px;
+    line-height: 20px;
+    }
+
+    .pan-story-main-heading {
+      font-size: 34px;
+    line-height: 41px;
+    }
+
+    .hfa_text-heading {
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    .hfa_text-paragraph {
+      font-size: 10px;
       line-height: 23px;
     }
+
+    .features-sub-head img {
+      width: 300px; 
+      justify-self: center;
+    }
+
+    iframe {
+      width: 310px;
+      height: 360px;
+      margin-right: 437px;
+  }
 }
