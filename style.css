@@ -693,12 +693,6 @@ font-size: 24px;
 .swiper-slide:hover{
   transform: translateY(-20px);
 }
-/*
-.card-img-top {
-  width: 100%;
-  border-top-left-radius: calc(.25rem - 1px);
-  border-top-right-radius: calc(.25rem - 1px);
-} */
 
 
 /* ====================================
@@ -786,6 +780,34 @@ RESPONSIVE STYLING
       }
 
 
+      @media only screen and (min-width: 486px) and (max-width: 705px) {
+        /* Styles */
+        .hero-text {
+          left: 207px;
+          top: 300px;
+          font-family: "Averta" !important;
+          padding-right: 7px;
+      }
+      
+      
+      
+          .hero-text h1 {
+            font-size: 24px;
+          line-height: 36px;
+          text-align: right;
+          }
+      
+          .hero-text p {
+          font-size: 16px;
+          line-height: 19px;
+          text-align: right;
+          }
+
+          iframe {
+            width: 310px;
+            height: 360px;
+            margin-right: 437px;
+      }
 
 
 
@@ -858,3 +880,5 @@ RESPONSIVE STYLING
       margin-right: 437px;
   }
 }
+
+
