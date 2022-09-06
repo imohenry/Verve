@@ -267,7 +267,11 @@ justify-content: space-between;
   vertical-align: middle;
 }
 
-.nav-link:hover {
+.nav-item {
+  color: #00425F;
+}
+
+.nav-item:hover {
   transform: scale(1.1);
   color: #DC4437;
   
