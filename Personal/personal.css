@@ -233,7 +233,7 @@
   }
   
   li {
-    margin-right: 25px;
+    margin-right: 22px;
     font-family: "Averta" !important;
   }
   
@@ -243,7 +243,7 @@
   .nav-item {
     font-family: "Averta" !important;
   font-size: 20px;
-  padding-right: 40px;
+  padding-right: 25px;
   justify-content: space-between;
   }
   
@@ -493,7 +493,7 @@ Rewarding SECTION
 For You SECTION
 ================================== */
 .for-you {
-padding-top: 75px;
+/* padding-top: 75px; */
 padding-bottom: 50px;
 height: 100vh;
    
@@ -586,7 +586,6 @@ Wallet SECTION
 .wallet {
 padding-top: 75px;
 padding-bottom: 50px;
-height: 100vh;
 
 
 background: #E5E7EB;;
@@ -626,7 +625,7 @@ Grow Africa SECTION
 
 .grow_africa {
     padding-top: 75px;
-padding-bottom: 50px;
+padding-bottom: 80px;
 height: 70vh;
    
   
@@ -734,3 +733,197 @@ color: white;
 }
 
 
+/* FOOTER */
+
+.footer_area{
+    max-width: 100%;
+}
+
+
+/* ===============================
+Responsive styling SECTION
+================================== */
+
+
+@media(max-width: 991px){
+    .hero-text {
+        left: 250px;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media (max-width: 768px){ 
+    /* Styles */
+    .hero-text {
+        left: 200px;
+    }
+
+    .hero-text h2 {
+        font-size: 35px;
+      line-height: 36px;
+      text-align: right;
+      }
+  
+      .hero-text p {
+        font-size: 58px;
+      line-height: 19px;
+      text-align: right;
+      }
+}
+
+@media only screen and (min-width: 486px) and (max-width: 705px) {
+    /* Styles */
+    .hero-text {
+      left: 207px;
+      top: 300px;
+      font-family: "Averta" !important;
+      padding-right: 7px;
+  }
+  
+  
+  
+      .hero-text h1 {
+        font-size: 24px;
+      line-height: 36px;
+      text-align: right;
+      }
+  
+      .hero-text p {
+      font-size: 48px;
+      line-height: 19px;
+      text-align: right;
+      }
+
+      .wallet img {
+        max-width: 320px;
+      }
+
+      .get_in_touch {
+        padding-top: 0px;
+    margin: 20px;
+    height: 42vh;
+      }
+
+}
+
+@media (max-width: 485px) {
+    .hero-text {
+      left: 93px;
+      top: 300px;
+      font-family: "Averta" !important;
+      padding-right: 20px;
+  
+      }
+  
+      .hero-text h2 {
+        font-size: 35px;
+      line-height: 36px;
+      text-align: right;
+      }
+  
+      .hero-text p {
+        font-size: 54px;
+      line-height: 19px;
+      text-align: right;
+      }
+
+      .hfa-heading {
+        font-size: 15px;
+      }
+
+      .main_content img{
+        width: 320px;
+      }
+      .background--text {
+        font-size: 130px;
+      }
+      .wallet img {
+        max-width: 320px;
+      }
+
+      .for_you-heading {
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 64px;
+      }
+
+      .get_in_touch {
+        margin: 20px;
+      }
+
+      .get-in-main-heading {
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 43px;
+        padding-top: 0px;
+    }
+
+    .get-in-heading {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 24px;
+        color: white;
+    }
+
+    .services img{
+        width: 320px;
+    }
+    .lg {
+        font-size: 2rem;
+    }
+
+    #cardless {
+        font-size: 24px;
+    }
+
+    .services_paragraph {
+        max-width: 414px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+    }
+}
+
+    @media (max-width: 375px) {
+        .hero-text {
+            left: 93px;
+    } 
+
+    .hero-text h2 {
+        font-size: 35px;
+      line-height: 36px;
+      text-align: right;
+      }
+  
+      .hero-text p {
+        font-size: 36px;
+      line-height: 19px;
+      text-align: right;
+      }
+
+      .wallet_head {
+        line-height: 45px;
+      }
+
+      .wallet_paragraph {
+        font-size: 12px;
+        margin: 10px 20px;
+      }
+
+      .grow_africa-heading {
+        font-size: 25px;
+      }
+
+      .grow_africa-paragraph {
+        font-size: 13px;
+      }
+
+      .grow_africa {
+        padding-bottom: 140px;
+      }
+
+      .services_head {
+        font-size: 22px;
+      }
+}
