@@ -1,0 +1,736 @@
+/* head area */
+@font-face {
+    font-family: "Averta";
+    src: url("Averta-web-font/Averta-Bold.woff2") format("woff2"),
+      url("Averta-web-font/Averta-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("Averta-web-font/Averta-BoldItalic.woff2") format("woff2"),
+      url("Averta-web-font/Averta-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("Averta-web-font/Averta-Thin.woff2") format("woff2"),
+      url("Averta-web-font/Averta-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("Averta-web-font/Averta-SemiboldItalic.woff2") format("woff2"),
+      url("Averta-web-font/Averta-SemiboldItalic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("Averta-web-font/Averta-ThinItalic.woff2") format("woff2"),
+      url("Averta-web-font/Averta-ThinItalic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("Averta-web-font/Averta-Light.woff2") format("woff2"),
+      url("Averta-web-font/Averta-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("Averta-web-font/Averta-Regular.woff2") format("woff2"),
+      url("Averta-web-font/Averta-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Averta";
+    src: url("Averta-web-font/Averta-BlackItalic.woff2") format("woff2"),
+      url("Averta-web-font/Averta-BlackItalic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("Averta-web-font/Averta-Black.woff2") format("woff2"),
+      url("Averta-web-font/Averta-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Averta";
+    src: url("Averta-web-font/Averta-Semibold.woff2") format("woff2"),
+      url("Averta-web-font/Averta-Semibold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("Averta-web-font/Averta-ExtraBoldItalic.woff2") format("woff2"),
+      url("Averta-web-font/Averta-ExtraBoldItalic.woff") format("woff");
+    font-weight: 800;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("Averta-web-font/Averta-LightItalic.woff2") format("woff2"),
+      url("Averta-web-font/Averta-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("Averta-web-font/Averta-RegularItalic.woff2") format("woff2"),
+      url("Averta-web-font/Averta-RegularItalic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("Averta-web-font/Averta-ExtraBold.woff2") format("woff2"),
+      url("Averta-web-font/Averta-ExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  :root {
+    --primary-color: #00425F; 
+    --primary-color-dark: #012534;
+    --darker-color: #00151f;
+    --light-color: rgba(238, 237, 237, 0.856);
+    --primary-red: #DC4437;
+  
+  }
+  
+  body h1, html,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  div,
+  /* .btn, */
+  li,
+  a,
+  form,
+  label {
+  font-family: "Averta" !important;
+  
+  
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Averta" !important;
+    padding: 0;
+    
+  } 
+  
+  a {
+    text-decoration: none;
+  }
+    
+  /* ===============================
+   BANNER SECTION START 
+  ================================== */
+  
+  
+  /* Banner image */
+  .hero-section {
+  height: 100vh;
+  color: white;
+  
+  background-image: 
+  linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+  url('../image/Personal_header.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  /* grid styles for the hero section */
+  display: grid;
+  
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+  
+  /* Banner text */
+  .hero-text {
+  position: absolute;
+  text-align: center;
+  flex-direction: column;
+  max-width: 758px;
+  
+  left: 750px;
+  top: 300px;
+  
+  justify-content: center;
+  
+  font-family: "Averta" !important;
+  /* padding-right: 50px; */
+   
+  }
+  
+  .hero-text h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0 0 1rem 0;
+    line-height: 65px;
+    font-family: "Averta" !important;
+    text-align: left;
+  
+    margin-top: 100px;
+    
+  }
+  
+  .hero-text p {
+    font-family: "Averta" !important;
+  
+    text-align: left;
+  
+    font-style: normal;
+    font-weight: 900;
+    font-size: 102px;
+    line-height: 122px;
+    color: white;
+    /* padding-left: 60px; */
+  }
+  
+  /* NAVBAR AREA */
+  nav {
+    padding: 2em 1em;
+    transition: all .3s;
+    
+  }
+  
+  .nav_parent {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+  }
+  
+  .logo {
+    flex: 1 0 auto; 
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-left: 30px;
+  }
+  
+  
+  
+  .logo:hover {
+    text-decoration: none;
+    cursor: default;
+  }
+  
+  li {
+    margin-right: 25px;
+    font-family: "Averta" !important;
+  }
+  
+  li:hover {
+    cursor: pointer;
+  }
+  .nav-item {
+    font-family: "Averta" !important;
+  font-size: 20px;
+  padding-right: 40px;
+  justify-content: space-between;
+  }
+  
+  .nav-item img {
+    vertical-align: middle;
+  }
+  .bi-chevron-down {
+    padding-left: 10px;
+  }
+  
+  .nav-item:hover {
+    transform: scale(1.1);
+    color: #DC4437;
+    
+  }
+
+  .good_text {
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+}
+  
+  /* .nav-link:active {
+    transform: scale(1);
+  } */
+  
+  /* BANNER SECTION END */
+  
+
+  /* ===============================
+HERE FOR AFRICA SECTION
+================================== */
+
+.hfa {
+    width: 100%;
+    text-align: center;
+    background: url(image/hfa-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+  
+  }
+  
+  .hfa-story-main-heading {
+  top: 48px;
+  padding-bottom: 30px;
+  
+  font-family: 'Averta';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  /* or 180% */
+  
+  text-align: center;
+  
+  color: #ffffff;
+  }
+  
+  .hfa-heading {
+  color: #ffffff;
+  
+  font-family: 'Averta';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  /* or 156% */
+  
+  text-align: center;
+  }
+  
+  .here-for-things {
+    padding: 75px 0px;
+    background-repeat: no-repeat;
+  }
+
+  .here-heading {
+    max-width: 911px;
+   text-align: center;
+  }
+
+  /* Stats */
+.stats {
+    padding-top: 75px;
+    padding-bottom: 50px;
+   
+  
+  background-image: 
+  linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+  url('../image/Red_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.stats .grid h3 {
+    font-size: 20px;
+    color: #fff;
+    padding-top: 20px;
+   
+    font-weight: 700;
+    
+}
+
+.stats .grid p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.stats .grid img {
+    padding-top: 10px;
+}
+
+#text-style {
+    font-size: larger;
+}
+
+.text-mid {
+    max-width: 224px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.learn-more {
+    color: #fff;
+   
+    padding-top: 20px;
+  }
+
+  .learn-more:hover {
+    cursor: pointer;
+  }
+
+
+/* Here for Africa section end */
+
+ /* ===============================
+Rewarding SECTION
+================================== */
+.reward {
+    padding-top: 75px;
+    padding-bottom: 20px;
+   
+  
+  background: #F9FAFB;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.reward-story-main-heading {
+    top: 48px;
+    padding-bottom: 30px;
+    
+    font-family: 'Averta';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    /* or 180% */
+    
+    text-align: center;
+    
+    color: #18425D;
+    }
+    
+    .reward-heading {
+    color: #5F738C;;
+    
+    font-family: 'Averta';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    
+    text-align: center;
+    }
+
+    .deals-card {
+        width: 491px;
+        height: 468px;
+
+        padding: 20px;
+        margin: 10px;
+    
+        background: #F1FEF1;
+        box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+    }
+
+    .big-deal {
+        color: #DC4437;
+        float: right;
+        padding-top: 20px;
+        font-weight: 400;
+        font-size: 22px;
+    }
+  
+    .deal-offers {
+        width: 150px;
+        height: 135px;
+
+        padding: 20px;
+        margin: 10px;
+        border: none;
+        background: #EE312A;
+        border-radius: 11px;
+        box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.05);
+        color: #fff;
+    }
+
+    .deal-offers:hover {
+        transform: translateY(-20px);
+  box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.137);
+    }
+
+    .main_content {
+        position: relative;
+        z-index: 10;
+        padding-top: 100px;
+      }
+   
+    .bg-text{
+        top: 10px;
+        position: absolute;
+        z-index: 1;
+       
+      }
+      .background--text{
+        font-weight: 900;
+        font-size: 212px;
+        line-height: 125px;
+        
+        letter-spacing: -7.5px;
+        text-align: center;
+        
+        color: #EBF8FE;
+       
+      }
+
+
+/* ===============================
+For You SECTION
+================================== */
+.for-you {
+padding-top: 75px;
+padding-bottom: 50px;
+height: 100vh;
+   
+  
+  background-image: 
+  linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+  url('../image/Card_board.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.for_you-heading {
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 84px;
+color: #fff;
+
+max-width: 750px;
+}
+
+.for_you-paragraph {
+ max-width: 451px;
+ font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: #fff;
+}
+
+.for_you-btn {
+    background-color: #DC4437;
+    color: #fff;
+}
+
+.for_you-btn:hover{
+    color: #fff;
+}
+
+.for_you-text {
+    padding-left: 40px;
+}
+
+/* ===============================
+Services SECTION
+================================== */
+
+.services_head {
+ width: 462px;
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+
+color: #00425F;
+
+}
+
+.services_paragraph {
+max-width: 484px;
+max-width: 484px;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+
+color: #00425F;
+}
+
+.services {
+    background: #F9FAFB;
+    margin-top: 50px;
+}
+
+#cardless {
+    max-width: 484px;
+    font-style: normal;
+font-weight: 700;
+font-size: 40px;
+color: #00425F;
+    
+}
+
+/* ===============================
+Wallet SECTION
+================================== */
+
+.wallet {
+padding-top: 75px;
+padding-bottom: 50px;
+height: 100vh;
+
+
+background: #E5E7EB;;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+.wallet_head {
+max-width: 550px;
+color: #00425F;
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+}
+
+.wallet_paragraph {
+    max-width: 532px;
+    color: #00425F;
+    font-size: 16px;
+}
+
+.wallet-btn {
+    background-color: #00425F;
+    color: #fff;
+}
+
+.wallet-btn:hover{
+    color: #fff;
+}
+
+/* ===============================
+Grow Africa SECTION
+================================== */
+
+
+.grow_africa {
+    padding-top: 75px;
+padding-bottom: 50px;
+height: 70vh;
+   
+  
+  background-image: 
+  linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+  url('../image/Grow_together.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.grow_africa-text {
+    float: right;
+}
+
+.grow_africa-heading {
+    color: #fff;
+    max-width: 515px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.grow_africa-paragraph {
+    max-width: 500px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+}
+
+/* ===============================
+Pay with Verve SECTION
+================================== */
+
+.pay {
+    padding: 80px 0px;
+}
+
+.pay-story-main-heading {
+ font-style: normal;
+font-weight: 800;
+font-size: 40px;
+line-height: 72px;
+color: #00425F;
+
+}
+
+.pay-heading {
+   
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #353F50;
+}
+
+.brand_logos {
+    padding-top: 55px;
+}
+
+/* ===============================
+Get in touch SECTION
+================================== */
+.get_in_touch {
+    height: 30vh;
+    background-image: 
+    linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+    url('../image/dark_blue_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 20px;
+    margin: 160px;
+    border-radius: 10px;
+}
+
+.get-in-main-heading {
+font-weight: 700;
+font-size: 36px;
+line-height: 43px;
+color: #fff;
+padding-top: 50px;
+}
+
+.get-in-heading {
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+color: white;
+}
+
+.get-in-btn {
+    background-color: #DC4437;
+    color: #fff;
+   
+}
+.get-in-btn:hover {
+    color: #fff;
+}
+
+.button-fix {
+    padding-top: 20px;
+}
+
+
