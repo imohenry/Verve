@@ -28,6 +28,10 @@
     grid-template-rows: 1fr 1fr 1fr;
 }
 
+.grid-1 {
+    grid-template-columns: 1fr;
+}
+
 .grid-2 {
     grid-template-columns: 1fr 1fr;
 }
@@ -43,6 +47,17 @@
     grid-template-columns: repeat(5, 1fr) ;
 }
 
+.grid-6{
+    grid-template-columns: repeat(6, 1fr) ;
+}
+
+.grid-7{
+    grid-template-columns: repeat(7, 1fr) ;
+}
+
+.grid-8{
+    grid-template-columns: repeat(8, 1fr) ;
+}
 
 
 .btn {
@@ -66,9 +81,7 @@
     transform: scale(0.98 );
 }
 
-.text-center {
-    text-align: center;
-}
+
 
  /* I placed some backgrounds and colored buttons here for usage*/
  .bg-primary, .btn-primary {
@@ -119,7 +132,14 @@
 }
 .text-center{
     text-align: center;
-   
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
 }
 
 

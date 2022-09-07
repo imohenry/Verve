@@ -22,6 +22,11 @@
   .menu > li {
     margin: 0 1rem;
     overflow: hidden;
+    font-family: "Averta" !important;
+  }
+
+  .menu a {
+    color: white;
   }
   
   .menu-button-container {
