@@ -1,7 +1,7 @@
 /* Utility styles: This area has all the styles I resuse in my code. Including the card styling down below */
 
 .container{
-    max-width: 98%;
+    /* max-width: 98%; */
     margin: 0 auto;
     overflow: auto;
     padding: 0;
@@ -247,6 +247,13 @@ border-radius: 20px;
 
 
     /* iPads (portrait and landscape) ----------- */
+
+    @media(max-width: 991px){
+        .grid {
+            grid-template-columns: 1fr;
+        }
+      }
+      
 @media (max-width: 768px) {
     .grid {
         grid-template-columns: 1fr;
@@ -254,9 +261,13 @@ border-radius: 20px;
   
 }
 
-  @media(max-width: 425px){
+  @media(max-width: 485px){
     .grid {
         grid-template-columns: 1fr;
     }
+    .lg {
+        font-size: 2rem;
+    }
   }
-  
+
+ 
