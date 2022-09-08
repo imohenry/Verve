@@ -352,11 +352,12 @@ RESPONSIVE STYLING
     left: 2px;
     top: 250px;
     font-family: "Averta" !important;
+    padding: 51px;
     /* padding-right: 50px; */
     }
 
     .hero-text h1 {
-      font-size: 21px;
+      font-size: 18px;
       line-height: 35px;
       text-align: left;
     }
