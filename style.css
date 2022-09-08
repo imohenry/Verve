@@ -681,11 +681,9 @@ font-size: 24px;
   margin: 18px 10px 40px;
   transition: transform 0.2 s ease-in;
 }
-
 .insights_updates .flex {
   flex-wrap: wrap;
 }
-
 .insights_updates .card h4 {
   font-size: 20px;
 } */
@@ -710,8 +708,15 @@ RESPONSIVE STYLING
 
 @media (max-width: 1024px){
 .hero-section {
-height: 125vh;
+height: 130vh;
 }
+.hero-text {
+  left: 350px;
+  top: 300px;
+  font-family: "Averta" !important;
+  /* padding-right: 50px; */
+  }
+
  }
 /* iPads (portrait and landscape) ----------- */
 @media (max-width: 768px){ 
@@ -888,5 +893,3 @@ height: 125vh;
       margin-right: 437px;
   }
 }
-
-
