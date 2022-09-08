@@ -157,9 +157,6 @@ background-size: cover;
 background-position: center;
 
 /* grid styles for the hero section */
-display: grid;
-
-grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
 /* Banner text */
