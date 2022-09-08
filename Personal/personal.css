@@ -155,11 +155,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
-  /* grid styles for the hero section */
-  display: grid;
-  
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+
   }
   
   /* Banner text */
@@ -167,13 +163,12 @@
   position: absolute;
   text-align: center;
   flex-direction: column;
-  max-width: 758px;
+  max-width: 412px;
   
-  left: 750px;
-  top: 300px;
+  right: 15%;
+  top: 60%;
   
   justify-content: center;
-  
   font-family: "Averta" !important;
   /* padding-right: 50px; */
    
@@ -185,15 +180,11 @@
     font-size: 48px;
     margin: 0 0 1rem 0;
     line-height: 65px;
-    font-family: "Averta" !important;
-    text-align: left;
   
-    margin-top: 100px;
-    
+    text-align: left;
   }
   
   .hero-text p {
-    font-family: "Averta" !important;
   
     text-align: left;
   
@@ -445,6 +436,10 @@ Rewarding SECTION
         font-weight: 400;
         font-size: 22px;
     }
+
+    .img_width img {
+        max-width: 100%;
+    }
   
     .deal-offers {
         width: 150px;
@@ -570,6 +565,9 @@ color: #00425F;
     margin-top: 50px;
 }
 
+.services img {
+    max-width: 100%;
+}
 #cardless {
     max-width: 484px;
     font-style: normal;
@@ -579,6 +577,11 @@ color: #00425F;
     
 }
 
+.paycode {
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
 /* ===============================
 Wallet SECTION
 ================================== */
@@ -586,6 +589,9 @@ Wallet SECTION
 .wallet {
 padding-top: 75px;
 padding-bottom: 50px;
+
+padding-left: 20px;
+padding-right: 20px;
 
 
 background: #E5E7EB;;
@@ -603,6 +609,9 @@ font-size: 40px;
 line-height: 60px;
 }
 
+.wallet img {
+    max-width: 100%;
+}
 .wallet_paragraph {
     max-width: 532px;
     color: #00425F;
@@ -744,6 +753,16 @@ color: white;
 Responsive styling SECTION
 ================================== */
 
+@media (max-width: 1280px){
+    .hero-section {
+    height: 120vh;
+    }
+    .hero-text {
+      top: 50%;
+      right: 20%;
+    }
+    
+     }
 
 @media(max-width: 991px){
     .hero-text {
@@ -877,11 +896,16 @@ Responsive styling SECTION
     }
 
     .services_paragraph {
-        max-width: 414px;
+        max-width: 289px;
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
         line-height: 24px;
+    }
+
+    .grow_africa {
+        padding-top: 0px;
+        height: 72vh;
     }
 }
 
@@ -907,8 +931,8 @@ Responsive styling SECTION
       }
 
       .wallet_paragraph {
-        font-size: 12px;
-        margin: 10px 20px;
+        font-size: 11px;
+        margin: 18px 13px;
       }
 
       .grow_africa-heading {
@@ -924,6 +948,15 @@ Responsive styling SECTION
       }
 
       .services_head {
-        font-size: 22px;
+  
+        width: 288px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
       }
+
+    .wallet_head {
+        font-size: 34px;
+    }
 }
