@@ -254,6 +254,8 @@ border-radius: 20px;
             flex-direction: column;
         }
       }
+
+      
       
 @media (max-width: 768px) {
     .grid {
