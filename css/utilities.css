@@ -246,8 +246,6 @@ border-radius: 20px;
 
     /* iPads (portrait and landscape) ----------- */
 
-
-    
     @media(max-width: 991px){
         .grid {
             grid-template-columns: 1fr;
@@ -256,8 +254,6 @@ border-radius: 20px;
             flex-direction: column;
         }
       }
-
-
       
 @media (max-width: 768px) {
     .grid {
