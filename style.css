@@ -708,7 +708,7 @@ RESPONSIVE STYLING
 =================================== */
 
 
-media (max-width: 1024px){
+@media (max-width: 1024px){
 .hero-section {
 height: 125vh;
 }
