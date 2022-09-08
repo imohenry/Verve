@@ -146,7 +146,7 @@ a {
 
 /* Banner image */
 .hero-section {
-height: 100vh;
+  height: 100vh;
 color: white;
 
 background-image: 
@@ -163,12 +163,9 @@ background-position: center;
 .hero-text {
 position: absolute;
 text-align: center;
-flex-direction: column;
-width: auto;
-
-left: 950px;
-top: 300px;
-
+max-width: 412px;
+right: 12%;
+top: 60%;
 justify-content: center;
 
 font-family: "Averta" !important;
@@ -177,23 +174,19 @@ font-family: "Averta" !important;
 }
 
 .hero-text h1 {
-  max-width: 472px;
   font-style: normal;
   font-weight: 700;
-  font-size: 54px;
+  font-size: 48px;
   margin: 0 0 1rem 0;
   line-height: 65px;
   font-family: "Averta" !important;
   text-align: left;
-
-  margin-top: 100px;
   
 }
 
 .hero-text p {
   font-family: "Averta" !important;
-  max-width: 378px;
-  text-align: center;
+  text-align: left;
 
 
 font-style: normal;
@@ -430,7 +423,7 @@ line-height: 28px;
   text-align: center;
   /* padding-left: 70px; */
   /* width: auto; */
-  padding-left: 250px;
+  /* padding-left: 250px; */
 }
 
 .footprint_text h2 {
