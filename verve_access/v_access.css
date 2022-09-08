@@ -142,12 +142,10 @@
 
 /* Banner image */
 .Verve_Access-home {
-    height: 100vh;
   color: white;
-  
   background-image: 
-  linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
-  url('../image/Verve-Access.png');
+        linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+        url('../image/Verve-Access.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -157,12 +155,10 @@
 
 /* Banner text */
 .hero-text {
-  position: absolute;
-  text-align: center;
-  max-width: 675px;
-  left: 7%;
-  top: 40%;
-  justify-content: center;
+  text-align: left;
+  max-width: 850px;
+  padding: 98px;
+
   /* padding-right: 50px; */
   }
 
@@ -172,9 +168,7 @@ font-style: normal;
 font-weight: 700;
 font-size: 56px;
 line-height: 69px;
-margin: 0 0 1rem 0;
 text-align: left;
-
 color: #00425F;
   
 }
@@ -196,7 +190,6 @@ color: #00425F;
   color: white;
  margin-top: 50px;
  padding: 15px 20px;
- float: left;
 
 }
 
