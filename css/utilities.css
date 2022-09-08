@@ -12,8 +12,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: auto;
 }
 
 .grid {
@@ -33,7 +31,7 @@
 }
 
 .grid-2 {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .grid-3{
@@ -252,11 +250,20 @@ border-radius: 20px;
         .grid {
             grid-template-columns: 1fr;
         }
+        .flex {
+            flex-direction: column;
+        }
       }
+
+      
       
 @media (max-width: 768px) {
     .grid {
         grid-template-columns: 1fr;
+    }
+
+    .flex {
+        flex-direction: column;
     }
   
 }
