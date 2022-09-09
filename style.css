@@ -239,8 +239,13 @@ justify-content: space-between;
   padding-left: 10px;
 }
 
- 
 .nav-item a:hover {
+  transform: scale(1.1);
+  color: #DC4437;
+  
+}
+
+.nav-item:hover {
   transform: scale(1.1);
   color: #DC4437;
   
