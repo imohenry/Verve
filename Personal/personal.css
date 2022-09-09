@@ -912,6 +912,7 @@ Responsive styling SECTION
     @media (max-width: 375px) {
         .hero-text {
             left: 93px;
+            top: 385px;
     } 
 
     .hero-text h2 {
