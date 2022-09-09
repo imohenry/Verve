@@ -259,6 +259,12 @@ justify-content: space-between;
   
 }
 
+.nav-item:hover {
+  transform: scale(1.1);
+  color: #DC4437;
+  
+}
+
 .nav-link:active {
   transform: scale(1);
 }
