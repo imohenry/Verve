@@ -808,6 +808,18 @@ Responsive styling SECTION
     height: 42vh;
       }
 
+
+      .services_paragraph {
+        padding: 0 30px;
+      }
+      #cardless {
+        padding: 0 30px;
+      }
+
+      .paycode a {
+        padding: 30px 28px;
+      }
+
 }
 
 @media (max-width: 485px) {
