@@ -252,7 +252,8 @@ justify-content: space-between;
   color: #00425F;
 }
 
-.nav-item:hover {
+ 
+.nav-item a:hover {
   transform: scale(1.1);
   color: #DC4437;
   
