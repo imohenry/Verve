@@ -245,7 +245,7 @@
     padding-left: 10px;
   }
   
-  .nav-item:hover {
+  .nav-item a:hover {
     transform: scale(1.1);
     color: #DC4437;
     
