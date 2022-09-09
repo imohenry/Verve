@@ -759,7 +759,10 @@ Responsive styling SECTION
       top: 50%;
       right: 20%;
     }
-    
+
+    .get_in_touch {
+        height: 50vh;
+    }
      }
 
 @media(max-width: 991px){
