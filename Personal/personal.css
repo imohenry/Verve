@@ -702,6 +702,11 @@ color: #00425F;
     padding-top: 55px;
 }
 
+.brand_logos img:hover{
+    transform: translateY(-20px);
+    transition: ease-out;
+  }
+
 /* ===============================
 Get in touch SECTION
 ================================== */
@@ -772,6 +777,10 @@ Responsive styling SECTION
 
     .grow_africa {
         height: 80vh;
+    }
+
+    .nav-item {
+        font-size: 15px;
     }
      }
 
