@@ -813,7 +813,7 @@ Responsive styling SECTION
 @media only screen and (min-width: 486px) and (max-width: 705px) {
     /* Styles */
     .hero-text {
-      left: 207px;
+     right: 15%;
       top: 300px;
       font-family: "Averta" !important;
       padding-right: 7px;
