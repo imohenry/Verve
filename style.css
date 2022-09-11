@@ -707,7 +707,9 @@ height: 120vh;
 .hero-text {
   top: 50%;
 }
-
+.nav-item {
+  font-size: 15px;
+}
  }
 /* iPads (portrait and landscape) ----------- */
 @media (max-width: 768px){ 
