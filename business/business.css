@@ -705,6 +705,10 @@ Responsive styling SECTION
     .grow_africa {
       height: 54vh;
     }
+
+    .get_in_touch {
+      height: 55vh;
+    }
     }
 
 @media(max-width: 991px){
