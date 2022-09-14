@@ -291,6 +291,12 @@ The various deals
 .fliter_container span {
   padding-right: 10px;
 }
+
+.fliter_container p {
+  font-size: 15px;
+  margin: 0
+}
+
 /* ===============================
 Get in touch SECTION
 ================================== */
@@ -484,7 +490,7 @@ RESPONSIVE STYLING
      }
 
      .get_in_touch {
-      height: 40vh;
+      height: 50vh;
   }
 
 }
