@@ -594,7 +594,9 @@ font-weight: 700;
 font-size: 36px;
 line-height: 43px;
 color: #fff;
-padding-top: 50px;
+padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .get-in-heading {
@@ -603,6 +605,7 @@ font-weight: 400;
 font-size: 18px;
 line-height: 28px;
 color: white;
+ padding: 20px
 }
 
 .get-in-btn {
