@@ -34,9 +34,10 @@
   height: 100%;
   width: 30px;
   cursor: pointer;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 10px;
+
 }
 
 #menu-toggle {
@@ -79,32 +80,6 @@
   transform: rotate(-405deg);
 }
 
-.menu li ul {
-  background: white;
-  visibility: hidden;
-  opacity: 0;
-  min-width: 5rem;
-  position: absolute;
-  transition: all 0.5s ease;
-  margin-top: 1rem;
-  left: 0;
-  display: none;
-}
-
-.menu li:hover > ul,
-ul li:focus-within > ul,
-ul li ul:hover,
-ul li ul:focus {
- visibility: visible;
- opacity: 1;
- display: block;
-}
-
-ul li ul li {
-width: 100%;
-color: #00151f;
-}
-
 @media (max-width: 1280px) {
   .menu > li {
     margin: 0 0rem;
@@ -125,6 +100,7 @@ color: #00151f;
     justify-content: center;
     align-items: center;
     background-color: #fff;
+   
     
   }
 
@@ -133,15 +109,16 @@ color: #00151f;
   }
   #menu-toggle ~ .menu li {
     height: 0;
-
+    margin: 0;
     padding: 0;
     border: 0;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
   #menu-toggle:checked ~ .menu li {
     border: none;
-    height: 2.5em;
-    padding: 0.5em;
+    padding-top: 15px !important;
+    height: 3em;
+    /* padding: 0.5em; */
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
   .menu > li {
