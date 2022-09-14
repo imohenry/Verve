@@ -867,14 +867,16 @@ Responsive styling SECTION
     .wallet_head {
         font-size: 34px;
     }
-
+   .verve_access {
+      height: 60vh;
+    }
     .verve_access-text {
       justify-content: center;
       padding: -1px 20px;
     }
 
     .get_in_touch {
-        height: 35vh;
+        height: 51vh;
     }
 
     .pay-story-main-heading {
