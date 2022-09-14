@@ -231,6 +231,57 @@
   li:hover {
     cursor: pointer;
   }
+
+ /* Style for dropdown button */
+.dropbtn {
+  background-color: #5d5fd600;
+  color: white;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style for dropdown content */
+.dropdown-content {
+  display: none;  /*Hidden by default */
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 282px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 13px;
+}
+
+/* Style for each content div */
+.dropdown-content div {
+  padding: 10px 5px;
+}
+
+/* Highlight dropdown options on hover */
+.dropdown-content div:hover {
+  background-color: #eaeaea;
+}
+
+/* Show the dropdown menu on hover */
+.droping:hover .dropdown-content {
+  display: none;
+}
+
+/* Highlight dropdown button when dropdown menu is open */
+.dropdown:hover .dropbtn {
+  background-color: #47488500;
+}
+
+.dropdown-item {
+  font-size: 10px;
+  font-weight: 700;
+  color: #00425F;
+  margin: 12px;
+}
+
+
+
+
   .nav-item {
     font-family: "Averta" !important;
   font-size: 20px;
@@ -594,9 +645,7 @@ font-weight: 700;
 font-size: 36px;
 line-height: 43px;
 color: #fff;
-padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+padding-top: 50px;
 }
 
 .get-in-heading {
@@ -605,7 +654,6 @@ font-weight: 400;
 font-size: 18px;
 line-height: 28px;
 color: white;
- padding: 20px
 }
 
 .get-in-btn {
@@ -646,7 +694,18 @@ Responsive styling SECTION
       padding-left: 20px;
     }
     
+    .verve_access {
+      height: 75vh;
      }
+
+    .cardless_secure-main-heading{
+      padding-top: 10px;
+    
+    }
+    .grow_africa {
+      height: 54vh;
+    }
+    }
 
 @media(max-width: 991px){
     .hero-text {
@@ -870,7 +929,8 @@ Responsive styling SECTION
     .wallet_head {
         font-size: 34px;
     }
-   .verve_access {
+
+    .verve_access {
       height: 60vh;
     }
     .verve_access-text {
@@ -879,7 +939,7 @@ Responsive styling SECTION
     }
 
     .get_in_touch {
-        height: 48vh;
+        height: 52vh;
     }
 
     .pay-story-main-heading {
