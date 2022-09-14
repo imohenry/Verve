@@ -284,6 +284,13 @@ The various deals
  padding: 50px 30px;
 }
 
+.deal-btn {
+
+}
+
+.fliter_container span {
+  padding-right: 10px;
+}
 /* ===============================
 Get in touch SECTION
 ================================== */
@@ -302,9 +309,10 @@ Get in touch SECTION
 .get-in-main-heading {
 font-weight: 700;
 font-size: 36px;
-line-height: 43px;
+line-height: 33px;
 color: #fff;
-padding-top: 50px;
+padding: 20px;
+
 }
 
 .get-in-heading {
@@ -313,6 +321,7 @@ font-weight: 400;
 font-size: 18px;
 line-height: 28px;
 color: white;
+padding: 20px;
 }
 
 .get-in-btn {
@@ -346,6 +355,10 @@ RESPONSIVE STYLING
   .hero-text {
     /* top: 50%; */
   }
+
+  .get_in_touch {
+    height: 50vh;
+}
   
    }
 /* iPads (portrait and landscape) ----------- */
@@ -372,7 +385,7 @@ RESPONSIVE STYLING
 }
 
 /* iPhone 6, 7, 8 ----------- */
-@media only screen and (min-width: 481px) and (max-width: 699px) {
+@media (max-width: 700px) {
   /* Styles */
   .hero-text {
  
@@ -390,6 +403,16 @@ RESPONSIVE STYLING
     .hero-text p {
       font-size: 11px;
     line-height: 19px;
+    }
+
+    .deal-btn {
+      padding-top: 20px;
+    }
+
+    .fliter_container {
+      display: grid;
+      grid-template-columns: 1fr;
+     
     }
 }
 
@@ -419,7 +442,7 @@ RESPONSIVE STYLING
   .get-in-main-heading {
     font-weight: 700;
     font-size: 21px;
-    line-height: 43px;
+    line-height: 33px;
     padding-top: 0px;
 }
 
@@ -461,7 +484,7 @@ RESPONSIVE STYLING
      }
 
      .get_in_touch {
-      height: 35vh;
+      height: 40vh;
   }
 
 }
