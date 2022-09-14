@@ -98,6 +98,12 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
+    
+  }
+
+  .menu a {
+    color: black;
   }
   #menu-toggle ~ .menu li {
     height: 0;
@@ -120,6 +126,8 @@
     width: 74%;
     color: white;
     background-color: rgba(34, 34, 34, 0);
+    color: black;
+    font-size: 16px;
   }
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
