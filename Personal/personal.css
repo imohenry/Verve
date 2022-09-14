@@ -727,6 +727,9 @@ font-size: 36px;
 line-height: 43px;
 color: #fff;
 padding-top: 50px;
+padding-left: 10px;
+padding-right: 10px;
+
 }
 
 .get-in-heading {
@@ -735,6 +738,7 @@ font-weight: 400;
 font-size: 18px;
 line-height: 28px;
 color: white;
+padding: 20px;
 }
 
 .get-in-btn {
@@ -984,6 +988,6 @@ Responsive styling SECTION
     }
 
     .get_in_touch {
-        height: 35vh;
+        height: 50vh;
     }
 }
