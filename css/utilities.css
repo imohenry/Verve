@@ -10,7 +10,7 @@
 
 .flex {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -246,16 +246,20 @@ border-radius: 20px;
 
     /* iPads (portrait and landscape) ----------- */
 
-    @media(max-width: 991px){
-        .grid {
-            grid-template-columns: 1fr;
+
+
+    @media (min-width: 767px) and (max-width: 991px){
+
+        .card_container .grid-4 {
+            grid-template-columns: 1fr 1fr;
         }
         .flex {
             flex-direction: column;
+           
         }
       }
 
-      
+
       
 @media (max-width: 768px) {
     .grid {
