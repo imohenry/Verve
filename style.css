@@ -418,6 +418,7 @@ line-height: 28px;
  max-width: 1000px;
   height: auto;
   margin-top: 70px;
+
 }
 
 .footprint_text {
@@ -433,7 +434,7 @@ line-height: 28px;
 
 
 .map_section {
-    flex: 1;
+    flex: 0;
 }
 
 .footprint_text h2 {
@@ -517,11 +518,25 @@ line-height: 28px;
 text-align: center;
 }
 
+.good-flex {
+  display: flex;
+  justify-content: space-around;
+ 
+}
+
+.mid-flex {
+  display: flex;
+  justify-content: space-around;
+ 
+}
+
 .here-for-things {
   padding: 75px 0px;
   background-repeat: no-repeat;
 
-  
+}
+.btn {
+  text-transform: none !important;
 }
 
 /* Here for Africa content */
@@ -534,8 +549,15 @@ text-align: center;
 }
 
 .features-sub-head img {
-  width: 400px; 
-  justify-self: flex-end;
+  width: 436px;
+  /* justify-self: flex-end; */
+}
+
+.features-sub-head {
+  padding: 40px 0 !important;
+}
+.v-img {
+  width: 430px; 
 }
 
 .features-main .card i {
@@ -715,6 +737,21 @@ height: 120vh;
   font-size: 15px;
 }
  }
+
+ @media (max-width: 991px) {
+
+  .good-flex {
+    flex-direction: column;
+  }
+
+  .mid-flex {
+    flex-direction: column-reverse;
+  }
+  .hfa_text {
+    padding-top: 20px;
+}
+ }
+
 /* iPads (portrait and landscape) ----------- */
 @media (max-width: 768px){ 
   /* Styles */
@@ -791,6 +828,14 @@ height: 120vh;
       justify-self: center;
     }
 
+    .good-flex {
+      flex-direction: column;
+    }
+
+    .mid-flex {
+      flex-direction: column-reverse;
+    }
+
       }
 
 
@@ -859,13 +904,9 @@ height: 120vh;
       padding-left: 10px;
     }
 
-    iframe {
-      width: 350px;
-      height: 500px;
-    
-    }
+  
     .map_section {
-    
+      margin: 0 20px;
     }
 
     .pan-heading {
@@ -894,8 +935,8 @@ height: 120vh;
     }
 
     iframe {
-      width: 310px;
-      height: 360px;
+      width: 280px;
+      height: 347px;
    
   }
 }
@@ -904,6 +945,14 @@ height: 120vh;
     .stats-main-heading{
       font-size: 35px;
       line-height: 45px;
+    }
+
+    .features-sub-head img {
+      width: 290px; 
+    }
+
+    .v-img {
+      width: 260px !important;
     }
    
   }
