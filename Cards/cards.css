@@ -664,7 +664,9 @@ RESPONSIVE STYLING
       height: 50vh;
   }
 
-  ç
+  .cardless_secure {
+      height: 40vh;
+  }
 
   .transparent-cards img {
     right: 1%;
