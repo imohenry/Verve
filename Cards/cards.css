@@ -468,11 +468,16 @@ padding: 20px;
 RESPONSIVE STYLING
 =================================== */
 /* Small laptops */
-/* @media (max-width: 1300px) {
+@media (max-width: 1350px) {
   .cards-home {
     height: 120vh;
     }
-} */
+
+    .get_in_touch {
+      height: 55vh;
+  }
+
+}
 @media (max-width: 1280px){
   .cards-home {
   height: 125vh;
