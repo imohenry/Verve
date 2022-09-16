@@ -556,16 +556,14 @@ RESPONSIVE STYLING
       padding-top: 20px;
     }
 
-    .fliter_container {
-      display: grid;
-      grid-template-columns: 1fr;
-     
-    }
-
     .transparent-cards img {
       width: 572px;
       right: 0%;
       top: 41.4%;
+    }
+
+    .flex-imgs {
+      padding-bottom: 30px;
     }
 
     .cardless_secure-main-heading {
