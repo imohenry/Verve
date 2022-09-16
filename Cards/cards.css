@@ -474,7 +474,11 @@ RESPONSIVE STYLING
     }
 
     .get_in_touch {
-      height: 50vh;
+      height: 40vh;
+  }
+
+  .cardless_secure-main-heading{
+    padding-top: 70px;
   }
 }
 @media (max-width: 1280px){
@@ -496,7 +500,7 @@ RESPONSIVE STYLING
 }
 
 .cardless_secure-main-heading{
-  padding-top: 50px;
+  padding-top: 95px;
 }
 
 .pay-story-main-heading {
