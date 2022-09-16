@@ -469,12 +469,12 @@ RESPONSIVE STYLING
 =================================== */
 /* Small laptops */
 @media (max-width: 1300px) {
-  .hero-section {
+  .cards-home {
     height: 120vh;
     }
 }
 @media (max-width: 1280px){
-  .hero-section {
+  .cards-home {
   height: 120vh;
   }
   .hero-text {
