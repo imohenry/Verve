@@ -470,13 +470,12 @@ RESPONSIVE STYLING
 /* Small laptops */
 @media (max-width: 1350px) {
   .cards-home {
-    height: 120vh;
+    height: 100vh;
     }
 
     .get_in_touch {
-      height: 55vh;
+      height: 50vh;
   }
-
 }
 @media (max-width: 1280px){
   .cards-home {
@@ -497,7 +496,7 @@ RESPONSIVE STYLING
 }
 
 .cardless_secure-main-heading{
-  padding-top: 95px;
+  padding-top: 50px;
 }
 
 .pay-story-main-heading {
