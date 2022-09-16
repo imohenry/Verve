@@ -638,7 +638,7 @@ RESPONSIVE STYLING
 @media (max-width: 375px) {
   .hero-text {
 
-    top: 250px;
+    top: 210px;
     font-family: "Averta" !important;
     /* padding-right: 50px; */
     }
