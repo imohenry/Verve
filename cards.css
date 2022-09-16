@@ -1,0 +1,694 @@
+@font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-Bold.woff2") format("woff2"),
+      url("Averta-web-font/Averta-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-BlackItalic.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-Thin.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-SemiboldItalic.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-SemiboldItalic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-ThinItalic.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-ThinItalic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-Light.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-Regular.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-BlackItalic.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-BlackItalic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-Black.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-Semibold.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-Semibold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-ExtraBoldItalic.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-ExtraBoldItalic.woff") format("woff");
+    font-weight: 800;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-LightItalic.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-RegularItalic.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-RegularItalic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Averta";
+    src: url("../Averta-web-font/Averta-ExtraBold.woff2") format("woff2"),
+      url("../Averta-web-font/Averta-ExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  :root {
+    --primary-color: #00425F; 
+    --primary-color-dark: #012534;
+    --darker-color: #00151f;
+    --light-color: rgba(238, 237, 237, 0.856);
+    --primary-red: #DC4437;
+  
+  }
+  
+  body h1, html,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  div,
+  /* .btn, */
+  li,
+  a,
+  form,
+  label {
+  font-family: "Averta" !important;
+  
+  
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Averta" !important;
+    padding: 0;
+    
+  } 
+
+
+ /* ===============================
+ BANNER SECTION START 
+================================== */
+
+.p-main {
+  padding: 0 20px;
+}
+
+/* Banner image */
+.cards-home {
+  height: 90vh;
+  color: white;
+  background-image: 
+        linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+        url('../image/cards-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  }
+
+/* Banner text */
+.hero-text {
+  position: absolute;
+  top: 30%;
+  left: 7%;
+  text-align: left;
+  max-width: 550px;
+ 
+  }
+
+.hero-text h1 {
+
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 69px;
+text-align: left;
+color: #f4f4f4;
+  
+}
+
+.transparent-cards img {
+  position: absolute;
+  width: 896px;
+  right: 0%;
+  top: 31%;
+}
+
+/* NAVBAR AREA */
+nav {
+  padding: 2em 1em;
+  transition: all .3s;
+}
+
+/* nav:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+} */
+
+.nav_parent {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  color: #00425F;
+ 
+}
+
+.logo {
+  flex: 1 0 auto; 
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-left: 30px;
+}
+
+.bi-chevron-down {
+  padding-left: 10px;
+}
+
+.logo:hover {
+  text-decoration: none;
+  cursor: default;
+}
+
+li {
+  margin-right: 5px;
+}
+
+li:hover {
+  cursor: pointer;
+}
+.nav-link {
+font-size: 20px;
+padding-right: 100px;
+justify-content: space-between;
+}
+
+.nav-link img {
+  vertical-align: middle;
+}
+
+.nav-item {
+font-family: "Averta" !important;
+font-size: 20px;
+padding-right: 25px;
+justify-content: space-between;
+}
+
+ 
+.nav-item a:hover {
+  transform: scale(1.1);
+  color: #DC4437;
+  
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
+  color: #DC4437;
+  
+}
+
+.nav-link:active {
+  transform: scale(1);
+}
+
+
+
+/* BANNER SECTION END */
+
+/* ==================================
+Different cards
+===================================  */
+ .opening-text {
+  max-width: 1079px;
+  padding-top: 78px;
+ }
+
+ .opening-main-text {
+  color: #00425F;
+ }
+
+ .verve-card {
+  padding-top: 84px;
+ }
+ .verve-card-text {
+  max-width: 484px;
+ color: #00425F;
+
+ }
+
+ .verve-card-heading {
+font-size: 40px;
+font-weight: 700;
+line-height: 60px;
+
+color: #00425F;
+ }
+
+ .verve-card-paragraph {
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #00425F;
+padding-bottom: 10px;
+
+ }
+
+ .verve-card-heading-2 {
+  font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+}
+
+.verve-card-text hr {
+  color: #DC4437;
+  border: 0;
+    border-top: 1px solid #DC4437;
+}
+
+.verve-card-heading-2 i {
+  float: right;
+  width: 10px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.verve-card-text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+
+}
+
+/* .verve-card img {
+  width: auto;
+} */
+
+.global-partners {
+  padding-bottom: 55px;
+  max-width: 280px;
+}
+
+.flex-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* ===============================
+Cardless, Connected and secure Section
+================================== */
+.cardless_secure {
+  height: 50vh;
+  background:  #590C07;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+ 
+}
+
+.cardless_secure-text {
+  justify-content: center;
+  padding: 0px 20px;
+  
+}
+.cardless_secure-main-heading {
+font-weight: 700;
+font-size: 56px;
+line-height: 60px;
+color: #fff;
+padding-top: 167px;
+padding-bottom: 64px;
+}
+
+.cardless_secure-heading {
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+color: white;
+}
+
+.cardless_secure-btn {
+  background-color: #DC4437 !important;
+  color: #fff !important;
+ border: none !important;
+ text-transform: none !important;
+}
+
+.cardless_secure-btn:hover {
+  color: #fff;
+}
+
+.va-fix {
+  padding-top: 70px;
+}
+
+/* ===============================
+Pay with Verve SECTION
+================================== */
+
+.pay {
+    padding: 50px 0px;
+}
+
+.pay-story-main-heading {
+ font-style: normal;
+font-weight: 800;
+font-size: 40px;
+line-height: 72px;
+color: #00425F;
+
+}
+
+.bank_logos {
+    padding-top: 55px;
+    padding-bottom: 30px;
+}
+
+
+/* ===============================
+Get in touch SECTION
+================================== */
+
+.get_in_touch {
+  height: 34vh;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(../image/dark_blue_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 20px;
+  margin: 80px;
+  border-radius: 10px;
+}
+
+.get-in-main-heading {
+font-weight: 700;
+font-size: 36px;
+line-height: 33px;
+color: #fff;
+padding: 20px;
+
+}
+
+.get-in-heading {
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+color: white;
+padding: 20px;
+}
+
+.get-in-btn {
+  background-color: #DC4437;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+ 
+  border: none;
+  border-radius: 5px;
+ 
+}
+.get-in-btn:hover {
+  color: #fff;
+}
+
+.button-fix {
+  padding-top: 20px;
+}
+
+
+/*==================================
+RESPONSIVE STYLING
+=================================== */
+/* Small laptops */
+@media (max-width: 1350px) {
+  .cards-home {
+    height: 120vh;
+    }
+
+    .get_in_touch {
+      height: 55vh;
+  }
+
+}
+@media (max-width: 1280px){
+  .cards-home {
+  height: 125vh;
+  }
+  .hero-text {
+    top: 17%;
+  }
+
+  .get_in_touch {
+    height: 55vh;
+}
+
+.transparent-cards img {
+  width: 817px;
+  right: 0%;
+  top: 30.4%;
+}
+
+.cardless_secure-main-heading{
+  padding-top: 95px;
+}
+
+.pay-story-main-heading {
+  padding-left: 20px;
+}
+  
+   }
+
+   @media (max-width: 991px) {
+    .flex-cards {
+      flex-direction: column;
+    }
+    .flex-imgs {
+      width: 400px;
+    }
+
+    .transparent-cards img {
+      width: 675px;
+      right: 0%;
+      top: 39.4%;
+    }
+   }
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width: 700px) and (max-width: 1024px) { 
+  /* Styles */
+  
+
+  .hero-text {
+    width: auto;
+    
+
+    top: 17%;
+    font-family: "Averta" !important;
+    /* padding-right: 50px; */
+    }
+
+    .nav-item {
+    font-size: 9px;
+    padding-right: 11px;
+    }
+
+}
+
+/* iPhone 6, 7, 8 ----------- */
+@media (max-width: 768px) {
+  /* Styles */
+  .hero-text {
+ 
+    top: 20%;
+    font-family: "Averta" !important;
+    /* padding-right: 50px; */
+
+    }
+
+    .hero-text h1 {
+      font-size: 47px;
+      line-height: 50px;
+    }
+
+    .hero-text p {
+      font-size: 11px;
+    line-height: 19px;
+    }
+
+    .deal-btn {
+      padding-top: 20px;
+    }
+
+    .transparent-cards img {
+      width: 572px;
+      right: 0%;
+      top: 41.4%;
+    }
+
+    .flex-imgs {
+      padding-bottom: 30px;
+    }
+
+    .cardless_secure-main-heading {
+      color: #fff;
+      padding-top: 70px;
+    }
+
+
+    
+}
+
+@media (max-width: 480px) {
+  .hero-text {
+ 
+    top: 20%;
+    font-family: "Averta" !important;
+    /* padding-right: 50px; */
+
+    }
+
+    .hero-text h1 {
+      font-size: 24px;
+    line-height: 36px;
+    text-align: left;
+    }
+
+   .item img {
+    width: 320px;
+   }
+
+   .get_in_touch {
+    margin: 20px;
+  }
+
+  .get-in-main-heading {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 33px;
+    padding-top: 0px;
+}
+
+.get-in-heading {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 24px;
+    color: white;
+}
+
+.flex-imgs {
+  width: 300px;
+}
+
+.transparent-cards img {
+  width: 320px;
+  right: 0%;
+  top: 43.4%;
+}
+
+.cardless_secure-main-heading {
+  padding-top: 34px;
+  padding-bottom: 33px;
+ 
+  font-size: 30px;
+  line-height: 38px;
+}
+
+
+}
+
+
+
+@media (max-width: 375px) {
+  .hero-text {
+
+    top: 210px;
+    font-family: "Averta" !important;
+    /* padding-right: 50px; */
+    }
+
+    .hero-text h1 {
+      font-size: 28px;
+      line-height: 35px;
+      text-align: left;
+    }
+
+    .hero-text p {
+      font-size: 11px;
+    line-height: 19px;
+    text-align: left;
+    max-width: 240px;
+    }
+
+    .item img {
+      width: 300px;
+     }
+
+     .get_in_touch {
+      height: 50vh;
+  }
+
+  .cardless_secure {
+      height: 40vh;
+  }
+
+  .transparent-cards img {
+    right: 1%;
+ 
+   
+  }
+
+  .pay-story-main-heading {
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 31px;
+  line-height: 51px;
+  }
+
+}
