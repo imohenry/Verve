@@ -468,6 +468,11 @@ padding: 20px;
 RESPONSIVE STYLING
 =================================== */
 /* Small laptops */
+@media (max-width: 1300px) {
+  .hero-section {
+    height: 120vh;
+    }
+}
 @media (max-width: 1280px){
   .hero-section {
   height: 120vh;
