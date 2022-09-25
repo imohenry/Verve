@@ -386,6 +386,8 @@ Rewarding SECTION
 .reward {
     padding-top: 75px;
     padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
    
   
   background: #F9FAFB;
@@ -421,6 +423,7 @@ Rewarding SECTION
     /* or 156% */
     
     text-align: center;
+    padding: 30px 0;
     }
 
     .deals-card {
@@ -444,7 +447,9 @@ Rewarding SECTION
     }
 
     .img_width img {
-        max-width: 100%;
+        /* max-width: 90%; */
+        padding: 0 0px;
+
     }
   
     .deal-offers {
@@ -639,9 +644,8 @@ Grow Africa SECTION
 
 
 .grow_africa {
-    padding-top: 75px;
-padding-bottom: 80px;
-height: 70vh;
+padding: 50px 0;
+height: auto;
    
   
   background-image: 
@@ -711,7 +715,7 @@ color: #00425F;
 Get in touch SECTION
 ================================== */
 .get_in_touch {
-    height: 34vh;
+    height: auto;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(../image/dark_blue_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -745,13 +749,14 @@ padding: 20px;
     background-color: #DC4437;
     color: #fff;
    
+   
 }
 .get-in-btn:hover {
     color: #fff;
 }
 
 .button-fix {
-    padding-top: 20px;
+    padding: 40px 0;
 }
 
 
@@ -766,6 +771,12 @@ padding: 20px;
 Responsive styling SECTION
 ================================== */
 
+
+@media (max-width: 1300px){ 
+
+}
+
+
 @media (max-width: 1280px){
     .hero-section {
     height: 120vh;
@@ -775,13 +786,15 @@ Responsive styling SECTION
       right: 20%;
     }
 
-    .get_in_touch {
-        height: 55vh;
+    .deal-fix {
+      width: 320px;
     }
 
-    .grow_africa {
+ 
+
+    /* .grow_africa {
         height: 95vh;
-    }
+    } */
 
     .nav-item {
         font-size: 15px;
@@ -842,7 +855,7 @@ Responsive styling SECTION
       }
 
       .get_in_touch {
-        padding-top: 0px;
+      padding-top: 0px;
     margin: 20px;
     height: 42vh;
       }
@@ -930,8 +943,7 @@ Responsive styling SECTION
     }
 
     .grow_africa {
-        padding-top: 0px;
-        height: 72vh;
+        height: auto;
     }
 }
 
@@ -971,7 +983,7 @@ Responsive styling SECTION
       }
 
       .grow_africa {
-        padding-bottom: 140px;
+        padding: 50px 0;
       }
 
       .services_head {
@@ -987,7 +999,5 @@ Responsive styling SECTION
         font-size: 34px;
     }
 
-    .get_in_touch {
-        height: 50vh;
-    }
+  
 }
