@@ -548,8 +548,11 @@ color: #fff;
 Services SECTION
 ================================== */
 
+.services-text {
+  max-width: 484px;
+}
 .services_head {
- width: 380px;
+
 font-style: normal;
 font-weight: 700;
 font-size: 40px;
@@ -560,27 +563,35 @@ color: #00425F;
 }
 
 .services_paragraph {
-max-width: 484px;
-max-width: 484px;
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 24px;
-
 
 color: #00425F;
 }
 
 .services {
     background: #F9FAFB;
-    margin-top: 50px;
+    padding-top: 50px;
+    
 }
 
 .services img {
     max-width: 100%;
 }
+
+.services-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardless-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 #cardless {
-    max-width: 484px;
     font-style: normal;
 font-weight: 700;
 font-size: 40px;
@@ -589,8 +600,7 @@ color: #00425F;
 }
 
 .paycode {
-    padding-top: 70px;
-    padding-bottom: 30px;
+   padding: 60px 30px;
 }
 
 /* ===============================
@@ -790,6 +800,10 @@ Responsive styling SECTION
       width: 320px;
     }
 
+    .deal-btn-fix {
+    
+    }
+
  
 
     /* .grow_africa {
@@ -799,6 +813,22 @@ Responsive styling SECTION
     .nav-item {
         font-size: 15px;
     }
+     }
+
+     @media (max-width: 1028px) {
+      .services-text {
+        padding: 35px 0;
+      }
+      .services-flex {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .cardless-flex {
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+
      }
 
 @media(max-width: 991px){
@@ -891,11 +921,15 @@ Responsive styling SECTION
       .main_content img{
         width: 290px;
       }
+
+      .deal-fix {
+        width: 165px;
+      }
       .background--text {
         font-size: 130px;
       }
       .wallet img {
-        max-width: 320px;
+        max-width: 300px;
       }
 
       .for_you-heading {
@@ -963,6 +997,18 @@ Responsive styling SECTION
         font-size: 36px;
       line-height: 19px;
       text-align: right;
+      }
+
+      .background--text {
+        font-size: 120px;
+      }
+
+      .main_content img {
+        width: 245px;
+      }
+
+      .deal-fix {
+        width: 170px;
       }
 
       .wallet_head {
