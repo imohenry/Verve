@@ -343,7 +343,7 @@ line-height: 24px;
 Cardless, Connected and secure Section
 ================================== */
 .cardless_secure {
-  height: 50vh;
+  height: auto;
   background:  #590C07;
   background-repeat: no-repeat;
   background-size: cover;
@@ -361,8 +361,8 @@ font-weight: 700;
 font-size: 56px;
 line-height: 60px;
 color: #fff;
-padding-top: 167px;
-padding-bottom: 64px;
+padding-top: 67px;
+padding-bottom: 14px;
 }
 
 .cardless_secure-heading {
@@ -371,6 +371,7 @@ font-weight: 400;
 font-size: 16px;
 line-height: 24px;
 color: white;
+padding: 70px 0;
 }
 
 .cardless_secure-btn {
@@ -416,7 +417,7 @@ Get in touch SECTION
 ================================== */
 
 .get_in_touch {
-  height: 34vh;
+  height: auto;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(../image/dark_blue_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -460,7 +461,7 @@ padding: 20px;
 }
 
 .button-fix {
-  padding-top: 20px;
+  padding: 35px 0;
 }
 
 
@@ -473,9 +474,6 @@ RESPONSIVE STYLING
     height: 100vh;
     }
 
-    .get_in_touch {
-      height: 40vh;
-  }
 
   .cardless_secure-main-heading{
     padding-top: 70px;
@@ -489,9 +487,6 @@ RESPONSIVE STYLING
     top: 17%;
   }
 
-  .get_in_touch {
-    height: 55vh;
-}
 
 .transparent-cards img {
   width: 817px;
@@ -607,9 +602,6 @@ RESPONSIVE STYLING
     width: 320px;
    }
 
-   .get_in_touch {
-    margin: 20px;
-  }
 
   .get-in-main-heading {
     font-weight: 700;
@@ -674,12 +666,10 @@ RESPONSIVE STYLING
      }
 
      .get_in_touch {
-      height: 50vh;
+      margin: 22px;
   }
 
-  .cardless_secure {
-      height: 40vh;
-  }
+ 
 
   .transparent-cards img {
     right: 1%;
