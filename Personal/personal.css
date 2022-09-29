@@ -534,6 +534,7 @@ color: #fff;
 .for_you-btn {
     background-color: #DC4437;
     color: #fff;
+    text-transform: none;
 }
 
 .for_you-btn:hover{
@@ -642,6 +643,8 @@ line-height: 60px;
 .wallet-btn {
     background-color: #00425F;
     color: #fff;
+    text-transform: none;
+    
 }
 
 .wallet-btn:hover{
@@ -758,6 +761,7 @@ padding: 20px;
 .get-in-btn {
     background-color: #DC4437;
     color: #fff;
+    text-transform: none;
    
    
 }
