@@ -438,6 +438,7 @@ color: white;
 .v_access-btn {
   background-color: #DC4437;
   color: #fff;
+  text-transform: none;
  
 }
 .v_access-btn:hover {
@@ -489,6 +490,7 @@ color: #fff;
 .for_you-btn {
     background-color: #DC4437;
     color: #fff;
+    text-transform: none;
 }
 
 .for_you-btn:hover{
@@ -546,6 +548,7 @@ color: #00425F;
 
 .partner-btn {
   background-color: #00425F;
+  text-transform: none;
 
 }
 
@@ -594,6 +597,7 @@ color: white;
 .cardless_secure-btn {
   background-color: #DC4437;
   color: #fff;
+  text-transform: none;
  
 }
 .cardless_secure-btn:hover {
@@ -659,6 +663,7 @@ color: white;
 .get-in-btn {
     background-color: #DC4437;
     color: #fff;
+    text-transform: none;
    
 }
 .get-in-btn:hover {
