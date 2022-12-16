@@ -45,3 +45,16 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+
+
+// TEXT SWAPPING JS
+
+{/* <script>
+   var typing=new Typed(".text", {
+       strings: ["", "Youtuber", "Freelancer", "Graphics Designer", "Web Designer", "Web Developer"],
+       typeSpeed: 100,
+       backSpeed: 40,
+       loop: true,
+   });
+</script> */}

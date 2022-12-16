@@ -14,6 +14,8 @@ integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVS
 <!-- Slider css -->
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
 <link rel="stylesheet" href="https://upgrade.oyostate.gov.ng/srpt/focus/./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" 
+integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg==" crossorigin="anonymous"></script>
 
 <!-- FOOTER ISW STYLE-->
 <link href="https://interswitchgroup.com/assets/css/bootstrap4.css" rel="stylesheet">
@@ -31,6 +33,8 @@ integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVS
     <link href="css/utilities.css" rel="stylesheet"  type='text/css'/>
     <script src="https://kit.fontawesome.com/01d9c16713.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/nav.css" type="text/css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" 
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
 
@@ -45,9 +49,9 @@ integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVS
   
     <!-- Background image -->
     <div class="hero-section">
-        <section class="top-nav">
+        <section class="top-nav grid_container">
             <div>
-                <a href="#"> <img src="image/Verve-logo.svg"> </a> 
+                <a href="#" class="verve-logo"> <img src="image/Verve-logo.svg"> </a> 
             </div>
             <input id="menu-toggle" type="checkbox" />
             <label class='menu-button-container' for="menu-toggle">
@@ -64,35 +68,35 @@ integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVS
           </section>
 
           <div class="hero-text">
-            <h1 class="header-text">Africa's Preferred<br>
-                Payment Scheme.</h1>
+            <h1 class="header-text" id="title">Africa's <span class="switch-text"></span> <br>
+                Payment Scheme</h1>
             <p>Accepted in 180+ countries, 30 million+ cards in circulation, 50 million+ tokens activated </p>
           </div>
       </div>
 
           <!--CONNECTING AFRICA SECTION-->
     <section class="stats">
-        <div class="card_container">
+        <div class="grid_container">
             <div class="stats-text">
                 <h1 class="stats-main-heading">
                     Connecting Africa with Rewarding Value Exchange 
                 </h1>
-                <h3 class="stats-heading text-center">
-                    Verve is Africa's most successful card brand with payment tokens and card options that power commerce <br>
+                <h3 class="stats-heading text-left">
+                    Verve is Africa's most successful card brand with payment tokens and card options that power commerce
                     across Africa, empowering Africans to live the good life, both at home and beyond.
                 </h3>
             </div>
 
             <!-- Cards here -->
            
-              <div class="grid Cards grid-4 text-center grid_container">
+              <div class="card-flex Cards text-center grid_container">
                         <div class="card grid-row">
                             <div class="img-c-h3" >
                               <img style="padding-right: 50px; " src="image/svg/contact.svg"> </i>   
                             </div>
                                 <h3 class="card-h3">Individuals</h3>
                                 <p class="card_paragraph">Shop, pay bills and travel with ease. You've got Verve.</p>
-                                <a href="#"> <p class="learn-more">learn more <i class="bi bi-arrow-right-short"></i></p> </a>
+                                <a href="Personal/personal.html"> <p class="learn-more">learn more <i class="bi bi-arrow-right-short"></i></p> </a>
                         </div>
 
                         <div class="card grid-row">
@@ -101,7 +105,7 @@ integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVS
                             </div>
                                 <h3 class="card-h3">Businesses</h3>
                                 <p class="card_paragraph">Delight your customers with rewarding payments.</p>
-                                <a href="#"> <p class="learn-more">learn more <i class="bi bi-arrow-right-short"></i> </p> </a>
+                                <a href="business/business.html"> <p class="learn-more">learn more <i class="bi bi-arrow-right-short"></i> </p> </a>
                         </div>
 
                         <div class="card grid-row">
@@ -131,55 +135,61 @@ integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVS
 
        <!--PAN AFRICA STORY SECTION SECTION-->
     <section class="pan" style="background: #F3F4F6;">
-        <div class="container">
-            <div class="stats-text">
-                <h1 class="pan-story-main-heading text-center">
-                    Our Pan African Story
-                </h1>
-                <h3 class="pan-heading text-center my-1">
-                    Leveraging a firm understanding of the African terrain, Verve emerged to take up the challlenge of <br>
-                    ensuring all segments of the African market are included and sufficiently connected to the possibilities <br>
-                    offered by card payments. 
-                <br> <br>
-                    We introduced a more affordable card scheme option, secured with chip+PIN technology and compatible <br>
-                    with the customer's reality. Over a decade later, with a wide issuance and acceptance footprint within <br> 
-                    and beyond the continent, Verve is still leading the way with payment solutions built for Africa, by Africans. 
-                
-                </h3>
-        </div>
-<!-- Map area -->
-            <div class="footprint">
-                <div class="flex">
+        <div class="pan-cont">
+            <div class="grid_container">
+                <div class="pan-flex">
+                    <h1 class="pan-story-main-heading">
+                        Our Pan African Story
+                    </h1>
+                    <h3 class="pan-heading my-1">
+                        Leveraging a firm understanding of the African terrain, Verve emerged to take up the challlenge of
+                        ensuring all segments of the African market are included and sufficiently connected to the possibilities 
+                        offered by card payments. 
+                    </h3>
+                </div>
 
-                        <!-- Heading text start -->
-                        <div class="footprint_text">
-
-                            <h2>180+ </h2>
-                            <p>Countries Accepted</p>
-                           
-                         
+                <div class="pan-flex-2">
+                    <div class="pan-wrap">
+                        <h3 class="pan-heading-2 my-1">
+                            We introduced a more affordable card scheme option, secured with chip+PIN technology and compatible
+                            with the customer's reality. Over a decade later, with a wide issuance and acceptance footprint within
+                            and beyond the continent, Verve is still leading the way with payment solutions built for Africa, by Africans. 
+                        </h3>
+                   
+                        <div class="footprint">
+                            <!-- Heading text start -->
+                            <div class="footprint_text">
+                                <div class="single-foot-text">
+                                    <h2>180+ </h2>
+                                    <p>Countries Accepted</p>
+                                </div>
                             
-                            <h2>30 million +</h2> 
-                            <p>Cards in Circulation</p>  
-                            <br>
-                            
-                            <h2>50 million +</h2>
-                            <p>Tokens Activated</p>
-                           <br> 
+                                <div class="single-foot-text">
+                                    <h2>30 million +</h2> 
+                                    <p>Cards in Circulation</p>  
+                                </div>
+                                
+                                <div class="single-foot-text">
+                                    <h2>50 million +</h2>
+                                    <p>Tokens Activated</p>
+                                </div>
                             </div>
                             <!-- Heading text end -->
+                        </div>
+               
 
-                             <!-- Map-->
-                             <div class="map_section">
-                                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1IBWJHUmzVoI7Dc_X513_0BZEy7CF914&ehbc=2E312F" width="440" height="480"></iframe>
-                             </div>
-                             <!-- Map -->
-             </div>
+                    </div>
+                               <!-- Map-->
+                                <div class="map_section">
+                                    <lottie-player src="https://lottie.host/021b34b1-9380-4780-a935-47459246d65b/U46Pt00jN3.json" background="transparent" class="lottie-earth" speed="1"  style="width: 990px;" loop autoplay></lottie-player>
+
+                                </div>
+                            <!-- Map-->
+                </div>
+
+                          
+
         </div>
-   
-
-
-
         </div>
     </section>
       <!--PAN AFRICA STORY SECTION END-->
@@ -188,26 +198,28 @@ integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVS
       <!-- HERE FOR AFRICA SECTION START-->
 
       <section class="hfa">
-        <div class="container">
-            <div class="stats-text">
+        <div class="grid_container">
+            <div class="here-text">
             <h1 class="hfa-story-main-heading">
                 Here for Africa
             </h1>
             <h3 class="hfa-heading text-center my-1">
-                By ensuring that Africans can access and exchange value within and beyond the continent, we lay the <br>
-                rails for Africa to emerge, prosper and thrive. From Kano to Kigali, Abidjan to Abuja, Lagos to Lome; <br>
+                By ensuring that Africans can access and exchange value within and beyond the continent, we lay the
+                rails for Africa to emerge, prosper and thrive. From Kano to Kigali, Abidjan to Abuja, Lagos to Lome;
                 Verve connects Africans to the good life via payment cards and tokens built by Africans, for Africans.
                
             </h3>
             </div>
         </div>
 <!-- Here for stuff -->
-            <div class="here-for-things stats-text">
-                <div class="container">
+            <div class="here-for-things">
+                <div class="grid_container">
 
                     <!-- Item 1 -->
                     <div class="features-sub-head  good-flex">
-                            <img src="image/hfa-images/man-shopping.png" alt="Man Shopping" style="border-radius: 8px; "> 
+                            <div class="here-img-container">
+                                <img src="image/hfa-images/man-shopping.png" alt="Man Shopping" style="border-radius: 18px;">
+                            </div> 
                             <div class="hfa_text">
                                 <h1 class="hfa_text-heading">Here for Commerce </h1>
                                 <p class="hfa_text-paragraph">
@@ -227,8 +239,9 @@ integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVS
                                 </p>
                                 <a> <button class="btn"> Learn More </button> </a>
                             </div>
-                            <img src="image/hfa-images/woamn-smiling.png" alt="Lady smiling" style="border-radius: 8px; flex: 0;"> 
-                            
+                            <div class="here-img-container">
+                                <img src="image/hfa-images/woman-smiling.png" alt="Lady smiling" style="border-radius: 18px; flex: 0;"> 
+                            </div>
                         </div>
                   
 
@@ -236,13 +249,15 @@ integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVS
 
                     <!-- Item 1 -->
                     <div class="features-sub-head good-flex">
-                            <img src="image/hfa-images/Verve-coin.png" alt="Verve Coin" style="border-radius: 8px; "> 
+                            <div class="here-img-container">
+                                <img src="image/hfa-images/Verve-coin.png" alt="Verve Coin" style="border-radius: 8px; "> 
+                            </div>
                             <div class="hfa_text">
                                 <h1 class="hfa_text-heading"> Here for Rewards </h1>
                                 <p class="hfa_text-paragraph">
                                     We believe payments should be rewarding, so we ensure everyone on the Verve network enjoys rewards. From affordable acquiring fees to unbeatable acceptance offers and promotions for the end users, it's always rewarding to choose Verve.
                                 </p>
-                                <a> <button class="btn"> Learn More </button> </a>
+                                <a> <button class="btn"> Discover Verve Rewards </button> </a>
                             </div>
                     </div>
 
@@ -254,12 +269,12 @@ integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVS
     <!-- HERE FOR AFRICA SECTION END-->
 
 <!-- Verve Academy and Verve Access section -->
-    <div class="here-for-things stats-text">
-        <div class="container">
+    <div class="va">
+        <div class="grid_container">
 
             <!-- Item 1 -->``
             <div class="features-sub-head">
-                <div class="container mid-flex">
+                <div class="mid-flex">
                     <div class="hfa_text" style="color: black;">
                         <h1 class="hfa_text-heading" style="color: black;">Verve Access </h1>
                         <p class="hfa_text-paragraph">
@@ -267,21 +282,25 @@ integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVS
                         </p>
                         <a href="verve_access/Verve-access.html"> <button class="btn"> Learn More </button> </a>
                     </div>
-                    <img class="v-img" src="image/hfa-images/Verve-Access Section.png" alt="Man Shopping" style="border-radius: 8px;"> 
+                    <div class="here-img-container">
+                        <img class="v-img" src="image/hfa-images/Verve-Access Section.png" alt="Man Shopping" style="border-radius: 8px;"> 
+                    </div>
                 </div>
             </div>
 
 
             <!-- Item 2 -->
             <div class="features-sub-head">
-                <div class="container good-flex">
-                    <img class="v-img" src="image/hfa-images/Academy-Section.png" alt="Lady smiling" style="border-radius: 8px;"> 
+                <div class=" good-flex">
+                    <div class="here-img-container">
+                        <img class="v-img" src="image/hfa-images/Academy-Section.png" alt="Lady smiling" style="border-radius: 8px;"> 
+                    </div>
                     <div class="hfa_text" style="color: black;">
                         <h1 class="hfa_text-heading" style="color: black;">Verve Academy </h1>
                         <p class="hfa_text-paragraph">
                             Because we understand that growth never stops, we are investing in grooming and equiping the next generation of Africans to innovate for Africa. Verve academy is committed to raising a crop of worldclass payment professionals focused on Africa.
                         </p>
-                        <a> <button class="btn"> Register now</button> </a>
+                        <a> <button class="btn"> Register now </button> </a>
                     </div>
                 </div>
             </div>
@@ -307,192 +326,19 @@ integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVS
       </div>
 
     <!-- INSIGHTS AND UPDATES SECTION -->
-<section class="insights_updates gen_cont">
+<!-- <section class="insights_updates gen_cont">
     <div class="text-center my-4">
         <h1 class="insights_updates-heading">
             Insights & Updates
         </h1>
     </div>
-    
-    <div class="wrapper">
 
-  
-    <!-- <div class="item-bg"></div> -->
+   
       
-<!--     
-        <div class="news-slider">
-          <div class="news-slider__wrp swiper-wrapper">
-
-            <div class="news-slider__item swiper-slide">
-              <a href="#" class="news__item">
-               
-                <div class="news__img">
-                    <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1537132205/news-slider/item-2.jpg" alt="news">
-                </div>
-                <p class="news__txt">
-                    Vol. 1
-                </p>                    
-
-                <div class="news__title">
-                  Education
-                </div>
-      
-                <p class="news__txt">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. A veniam hic rem ipsam, illo dolorum alias omnis amet incidunt nostrum.</p>
-      
-              </a>
-            </div>
-      
-          <div class="news-slider__item swiper-slide">
-              <a href="#" class="news__item">
-               
-                <div class="news__img">
-                    <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1537132205/news-slider/item-2.jpg" alt="news">
-                </div>
-
-                <p class="news__txt">
-                    Vol. 2
-                </p> 
-
-                <div class="news__title">
-                  Education
-                </div>
-      
-                <p class="news__txt">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. A veniam hic rem ipsam, illo dolorum alias omnis amet incidunt nostrum. </p>
-      
-              
-              </a>
-            </div>
-      
-             <div class="news-slider__item swiper-slide">
-              <a href="#" class="news__item">
-               
-                <div class="news__img">
-                    <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1537132205/news-slider/item-2.jpg" alt="news">
-                </div>
-
-                <p class="news__txt">
-                    Vol. 3
-                </p> 
-
-                <div class="news__title">
-                  Education
-                </div>
-      
-                <p class="news__txt">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. A veniam hic rem ipsam, illo dolorum alias omnis amet incidunt nostrum.  </p>
-      
-               
-              </a>
-            </div>
-      
-            <div class="news-slider__item swiper-slide">
-              <a href="#" class="news__item">
-               
-                <div class="news__img">
-                    <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1537132205/news-slider/item-2.jpg" alt="news">
-                </div>
-
-                <p class="news__txt">
-                    Vol. 4
-                </p> 
-
-                <div class="news__title">
-                  Education
-                </div>
-      
-                <p class="news__txt">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. A veniam hic rem ipsam, illo dolorum alias omnis amet incidunt nostrum. </p>
-      
-                
-              </a>
-            </div>
-      
-             <div class="news-slider__item swiper-slide">
-              <a href="#" class="news__item">
-               
-                <div class="news__img">
-                    <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1537132205/news-slider/item-2.jpg" alt="news">
-                </div>
-
-                <p class="news__txt">
-                    Vol. 5
-                </p> 
-
-                <div class="news__title">
-                  Education
-                </div>
-      
-                <p class="news__txt">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. A veniam hic rem ipsam, illo dolorum alias omnis amet incidunt nostrum. </p>
-      
-              
-
-              </a>
-            </div>
-      
-             <div class="news-slider__item swiper-slide">
-              <a href="#" class="news__item">
-               
-                <div class="news__img">
-                    <img src="https://res.cloudinary.com/muhammederdem/image/upload/v1537132205/news-slider/item-2.jpg" alt="news">
-                </div>
-
-                <p class="news__txt">
-                    Vol. 6
-                </p> 
-
-                <div class="news__title">
-                  Education
-                </div>
-      
-                <p class="news__txt">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. A veniam hic rem ipsam, illo dolorum alias omnis amet incidunt nostrum. </p>
-              
-              </a>
-            </div>
-          </div>
-      
-          <div class="news-slider__ctr">
-      
-            <div class="news-slider__arrows">
-              <button class="news-slider__arrow news-slider-prev">
-                <span class="icon-font">
-                  <svg class="icon icon-arrow-left"><use xlink:href="#icon-arrow-left"></use></svg>
-                </span>
-              </button>
-              <button class="news-slider__arrow news-slider-next">
-                <span class="icon-font">
-                  <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>
-                </span>
-              </button>
-            </div>
-      
-            <div class="news-slider__pagination"></div>
-      
-          </div>
-      
-        </div>
-      
-      </div>
-      
-      <svg hidden="hidden">
-        <defs>
-          <symbol id="icon-arrow-left" viewBox="0 0 32 32">
-            <title>arrow-left</title>
-            <path d="M0.704 17.696l9.856 9.856c0.896 0.896 2.432 0.896 3.328 0s0.896-2.432 0-3.328l-5.792-5.856h21.568c1.312 0 2.368-1.056 2.368-2.368s-1.056-2.368-2.368-2.368h-21.568l5.824-5.824c0.896-0.896 0.896-2.432 0-3.328-0.48-0.48-1.088-0.704-1.696-0.704s-1.216 0.224-1.696 0.704l-9.824 9.824c-0.448 0.448-0.704 1.056-0.704 1.696s0.224 1.248 0.704 1.696z"></path>
-          </symbol>
-          <symbol id="icon-arrow-right" viewBox="0 0 32 32">
-            <title>arrow-right</title>
-            <path d="M31.296 14.336l-9.888-9.888c-0.896-0.896-2.432-0.896-3.328 0s-0.896 2.432 0 3.328l5.824 5.856h-21.536c-1.312 0-2.368 1.056-2.368 2.368s1.056 2.368 2.368 2.368h21.568l-5.856 5.824c-0.896 0.896-0.896 2.432 0 3.328 0.48 0.48 1.088 0.704 1.696 0.704s1.216-0.224 1.696-0.704l9.824-9.824c0.448-0.448 0.704-1.056 0.704-1.696s-0.224-1.248-0.704-1.664z"></path>
-          </symbol>
-        </defs>
-      </svg> -->
 
     <div class="text-center">
          <a> <button class="btn resources"> See all resources </button> </a>
-    </div>
+    </div> -->
 
 <!-- 
     <div class="container flex">
@@ -562,25 +408,25 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. A veniam hic rem ipsam,
                             <a href="https://interswitchgroup.com/quickteller"><span>Verve Life style </span></a>
                         </li>
                         <li>
-                            <a href="https://interswitchgroup.com/financial-inclusion"><span>Verve Ecash</span></a>
+                            <a href="deals/deals.html#e-cash"><span>Verve Ecash</span></a>
                         </li>
                        
                     </ul>
                     <ul class="unordered-list">
                         <li>
-                            <a href="https://interswitchgroup.com/payment-collections"><span>Cardless Offering</span></a>
+                            <a href="deals/deals.html"><span>Cardless Offering</span></a>
                         </li>
                         <li>
-                            <a href="https://interswitchgroup.com/payment-disbursement"><span>Prepaid Card</span></a>
+                            <a href="Cards/cards.html#prepaid"><span>Prepaid Card</span></a>
                         </li>
                         <li>
-                            <a href="https://interswitchgroup.com/quickteller-for-business"><span>Classic Card</span></a>
+                            <a href="Cards/cards.html#classic"><span>Classic Card</span></a>
                         </li>
                         <li>
-                            <a href="https://interswitchgroup.com/mobile-financial-services"><span>Global Card</span></a>
+                            <a href="Cards/cards.html#global"><span>Global Card</span></a>
                         </li>
                         <li>
-                            <a href="https://interswitchgroup.com/advisory-services"><span>Contactless Card</span></a>
+                            <a href="Cards/cards.html#contactless"><span>Contactless Card</span></a>
                         </li>
                     </ul>
                 </div>
@@ -589,19 +435,19 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. A veniam hic rem ipsam,
                     <h3 class="ft-title">Verve Business</h3>
                     <ul class="unordered-list">
                        <li>
-                            <a href="https://interswitchgroup.com/verve-card"><span>Banks</span></a>
+                            <a href="business/business.html#partner-banks"><span>Banks</span></a>
                         </li>
                         <li>
                             <a href="https://interswitchgroup.com/verve-digital"><span>Merchants</span></a>
                         </li>
                          <li>
-                            <a href="https://interswitchgroup.com/verve-digital"><span>Verve Access</span></a>
+                            <a href="verve_access/Verve-access.html"><span>Verve Access</span></a>
                         </li>
                         <li>
-                            <a href="https://interswitchgroup.com/privacy"><span>Cardless Offering</span></a>
+                            <a href="deals/deals.html"><span>Cardless Offering</span></a>
                         </li>
                         <li>
-                            <a href="https://interswitchgroup.com/industry-solution"><span>Partnership with Verve</span></a>
+                            <a href="partner/partner.html"><span>Partnership with Verve</span></a>
                         </li>
                         </ul>
                       
@@ -613,7 +459,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. A veniam hic rem ipsam,
                             <a href="https://interswitchgroup.com/privacy"><span>Privacy Policy</span></a>
                         </li>
                         <li>
-                            <a href="https://interswitchgroup.com/terms-condition"><span>Terms and Conditions</span></a>
+                            <a href="https://myverveworld.com/documents/TERMS_AND_CONDITIONS_FOR_VERVE_NATIONAL_CONSUMER_PROMO_3.0.pdf"><span>Terms and Conditions</span></a>
                         </li>
                         <h3 class="ft-title" style="padding-top:20px">Verve Business</h3>
                          <li>
@@ -660,9 +506,19 @@ defer src="https://maps.googleapis.com/maps/api/js?v=weeklykey=AIzaSyBiyIgm6RSmN
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
 <script src="js/card-slider.js"></script>
+<script src="js/filter.js"></script>
 <script async defer
 src="https://maps.googleapis.com/maps/api/js?v=weekly&key=AIzaSyCDhxzz1_4FYeQfMTUPFRP07LFXDDufV0s&callback=initMap">
 </script>
+
+<script>
+    var typing=new Typed(".switch-text", {
+        strings: ["", "Premiere", "", "Preferred"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
+    });
+ </script>
 
 <!-- Sliding card scripts -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
@@ -683,6 +539,7 @@ crossorigin="anonymous"></script>
 <script src="https://interswitchgroup.com/assets/scripts/jquery.magnify-popup.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script src='//tw.netcore.co.in/smartechclient.js'></script>
+
 
 
 

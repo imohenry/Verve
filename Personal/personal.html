@@ -36,9 +36,6 @@ integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQV
 integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
 
 <style>
-    .card_container {
-        max-width: 100%;
-    }
 
     .menu > li {
         margin: 0 1rem;
@@ -56,103 +53,118 @@ integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1
   
     <!-- HERO section -->
     <div class="hero-section">
-        <section class="top-nav">
-            <div>
-                 <a href="../index.html"> <img src="../image/Verve-logo.svg"> </a> 
+            <div class="top-nav">
+                <div>
+                    <a href="../index.html"> <img src="../image/Verve-logo.svg"> </a> 
+                </div>
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+
+                <ul class="menu">
+                    <li class="nav-item"> <a href="#" class="active"> Personal </a></li> 
+                    <li class="nav-item"> <a href="../business/business.html"> Business </a></li>
+                    <li class="nav-item">Careers </li>
+                    <li class="nav-item">About Us </li>
+                    <!-- <li class="nav-item"><i class="bi bi-search"></i></li> -->
+                </ul>
             </div>
-            <input id="menu-toggle" type="checkbox" />
-            <label class='menu-button-container' for="menu-toggle">
-            <div class='menu-button'></div>
-          </label>
 
-            <ul class="menu">
-                <li class="nav-item"> <a href="#"> Personal </a></li> 
-                <li class="nav-item"> <a href="../business/business.html"> Business </a></li>
-                <li class="nav-item">Careers </li>
-                <li class="nav-item">About Us </li>
-                <!-- <li class="nav-item"><i class="bi bi-search"></i></li> -->
-            </ul>
-          </section>
 
+        <section class="grid_container">
           <div class="hero-text">
             <h2 class="header-text">Welcome to</h2>
             <p>The<span class="good_text">Good</span>Life</p>
           </div>
+        </section>
+
       </div>
 
        <!--HERE FOR AFRICA SECTION-->
-    <section class="stats">
-        <div class="container">
-            <h1 class="hfa-story-main-heading">
-                Here for Africa
-            </h1>
-            
-            <h3 class="hfa-heading text-center my-1">
-                As the most successful card brand out of Africa, Verve remains the key to value exchange in Africa,<br>
-                 consistently inspiring Africans to live the good life by simplifying payments, ensuring security and providing <br>
-                  the connections Africa needs to prosper.
-            </h3>
+            <div class="stats">
+                <section class="grid_container">
+                    <div class="hfa-text">
+                        <h1 class="hfa-story-main-heading">
+                            Here for Africa
+                        </h1>
+                        
+                        <h3 class="hfa-heading my-1">
+                            As the most successful card brand out of Africa, Verve remains the key to value exchange in Africa,
+                            consistently inspiring Africans to live the good life by simplifying payments, ensuring security and providing 
+                            the connections Africa needs to prosper.
+                        </h3>
+                    </div>
+                        <div class="hfa-flex text-left my-4">
+                            <div>
+                            <img src="../image/features-icons/ok-card.png">
+                                <h3>Widely Accepted</h3>
+                                <p class="text-mid">Verve cards are issued in multiple African countries including Nigeria, Kenya,  Uganda; and accepted in 180+ countries within and beyond Africa. </p>
+                                <a> <p class="learn-more text-left"> Learn More <i class="bi bi-arrow-right-short"></i></p> </a>
+                            
+                            </div>
+                            <div>
+                                <img src="../image/features-icons/ionic.png">
+                                <h3>Extensively Connected</h3>
+                                <p class="text-mid">With seamless connections to the banks, platforms and  institutions that power Africa, Verve empowers Africans to  access value easily anywhere, anytime. </p>
 
-                <div class="grid grid-3 text-left my-4">
-                    <div>
-                       <img src="../image/features-icons/ok_card.svg">
-                        <h3>Widely Accepted</h3>
-                        <p class="text-mid">Verve cards are issued in multiple African countries including Nigeria, Kenya,  Uganda; and accepted in 180+ countries within and beyond Africa. </p>
-                        <a> <p class="learn-more text-left"> Learn More <i class="bi bi-arrow-right-short"></i></p> </a>
-                      
-                    </div>
-                    <div>
-                        <img src="../image/features-icons/ionic.png">
-                        <h3>Extensively Connected</h3>
-                        <p class="text-mid">With seamless connections to the banks, platforms and  institutions that power Africa, Verve empowers Africans to  access value easily anywhere, anytime. </p>
-
-                        <a> <p class="learn-more text-left"> Learn More <i class="bi bi-arrow-right-short"></i></p> </a>
-                    </div>
-                    <div>
-                        <img src="../image/features-icons/withdrawal.png">
-                        <h3>Consistently Rewarding </h3>
-                        <p class="text-mid">From affordable issuance and acceptance rates to deals and offers for Verve card users, it's always rewarding to choose Verve.</p>
-                        <a> <p class="learn-more text-left"> Learn More <i class="bi bi-arrow-right-short"></i></p> </a>
-                    </div>
+                                <a> <p class="learn-more text-left"> Learn More <i class="bi bi-arrow-right-short"></i></p> </a>
+                            </div>
+                            <div>
+                                <img src="../image/features-icons/withdrawal.png">
+                                <h3>Consistently Rewarding </h3>
+                                <p class="text-mid">From affordable issuance and acceptance rates to deals and offers for Verve card users, it's always rewarding to choose Verve.</p>
+                                <a> <p class="learn-more text-left"> Learn More <i class="bi bi-arrow-right-short"></i></p> </a>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-
-        </div>
-    </section>
+       
 
     <!-- Rewarding by nature section -->
-<section class="reward">
-            <div class="card_container"  style="position: relative;">
-                    <div class="bg-text text-center">
-                        <p class="background--text">deals & offers</p>
+                <section class="grid_container">
+                    <div class="reward">
+                        <div class="card_container"  style="position: relative;">
+                                <div class="bg-text text-center">
+                                    <p class="background--text">deals & offers</p>
+                                </div>
+
+                            <div class="main_content">
+                                <h1 class="reward-story-main-heading">
+                                Rewarding by Nature
+                                </h1>
+                                
+                                <h3 class="reward-heading text-center my-1">
+                                    Get accustomed to discounts, offers and great deals when you pay or shop with Verve.
+                                </h3>
+                        
+
+                                <div class="reward-flex">
+
+                                    <div class="reward-img-div">
+                                        <img src="../image/VERVE-X-KONGA-deals.svg">
+                                    </div>
+
+                                    <div class="reward-img-div">
+                                        <img src="../image/VERVE-X-PRICEPALLY.png">
+                                    </div>
+                                <!-- <a class="deal-btn-fix" href="../Deals/deals.html">  <button class="deal-offers"> + <br> View all <br> Deals & Offers</button> </a> -->
+
+                                </div>
+
+                                <div class="reward-btn-div">
+                                    <a href="../reward/reward.html" class="reward-btn"> <i class="bi bi-arrow-right-short"></i> View all Deals & Offers</a>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-
-                <div class="main_content">
-                    <h1 class="reward-story-main-heading">
-                    Rewarding by Nature
-                    </h1>
-                    
-                    <h3 class="reward-heading text-center my-1">
-                        Get accustomed to discounts, offers and great <br> deals when you pay or shop with Verve.
-                    </h3>
-            
-
-                    <div class="grid img_width grid-3 text-left my-4">
-
-                        <img class="deal-fix" src="../image/VERVE-X-KONGA-deals.svg">
-
-                        <img class="deal-fix" src="../image/VERVE-X-PRICEPALLY.png">
-
-                      <a class="deal-btn-fix" href="../Deals/deals.html">  <button class="deal-offers"> + <br> View all <br> Deals & Offers</button> </a>
-
-                    </div>
-                </div>
-            </div>
-</section>
+                </section>
 
 <!-- Verve for you section -->
-<section class="for-you ">
-    <div class="grid grid-1">
-        <div class="container features-sub-head py-3">
+<div class="for-you ">
+    <section class="grid_container">
+        <div class="for-you-sub-head">
             <div class="for_you-text">
                 <h1 class="for_you-heading">There's a Verve Card for You </h1>
                 <p class="for_you-paragraph">
@@ -161,85 +173,90 @@ integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1
                 <a href="../Cards/cards.html"> <button class="btn for_you-btn"> Learn More </button> </a>
             </div>
     </div>
-
-    </div>
 </section>
+</div>
 
 <!-- Verve services -->
-<section class="services bg-light py-3 grid_container">
+<div class="services bg-light py-3">
+    <section class="grid_container">
    
-    <div class="paycode services-flex">
-        <img src="../image/Free_transfer.png" alt="Free transfers"> 
-        <div class="services-text">
-            <h1 class="services_head">Free Transfers with Verve eCash™ </h1>
-            <p class="services_paragraph">
-                Verve eCash (phone number + virtual account) is a virtual card and wallet which provides a simple and cost-effective alternative to a bank's debit card. 
-                It's a convenient way to make and receive payments on mobile, Web, ATM and POS terminals, without compromising security or safety.
+        <div class="paycode services-flex">
+            <img src="../image/Free_transfer.png" alt="Free transfers"> 
+            <div class="services-text">
+                <h1 class="services_head">Free Transfers with Verve eCash™ </h1>
+                <p class="services_paragraph">
+                    Verve eCash (phone number + virtual account) is a virtual card and wallet which provides a simple and cost-effective alternative to a bank's debit card. 
+                    It's a convenient way to make and receive payments on mobile, Web, ATM and POS terminals, without compromising security or safety.
 
-                Users get an eCash virtual card by default when they register on Quickteller or the  Verve Life app , the card is stored securely as one of the payment cards in the eWallet.                 
-            </p>
+                    Users get an eCash virtual card by default when they register on Quickteller or the  Verve Life app , the card is stored securely as one of the payment cards in the eWallet.                 
+                </p>
+            </div>
         </div>
-    </div>
 
-    <div class="paycode cardless-flex">
-        <div class="services-text">
-            <h1 class="services_head">Cardless Withdrawals with Verve Paycode </h1>
-            <p class="services_paragraph">
-                Enjoy the freedom of accessing cash when you need it, even when your ATM card is nowhere near. 
-                Verve Paycode enables you to make cardless withdrawls and payments, without stress, or risk.
+        <div class="paycode cardless-flex">
+            <div class="services-text">
+                <h1 class="services_head">Cardless Withdrawals with Verve Paycode </h1>
+                <p class="services_paragraph">
+                    Enjoy the freedom of accessing cash when you need it, even when your ATM card is nowhere near. 
+                    Verve Paycode enables you to make cardless withdrawls and payments, without stress, or risk.
 
-                Verve Paycode is a 10 to 14 digit code generated via the *723#
-                USSD code, from the Verve World App, Verve Life App and
-                other Issuing channels that allow users to perform cardless
-                transactions.
-                Transactions include withdrawals at the ATM and purchases
-                on the POS.
-            </p>
+                    Verve Paycode is a 10 to 14 digit code generated via the *723#
+                    USSD code, from the Verve World App, Verve Life App and
+                    other Issuing channels that allow users to perform cardless
+                    transactions.
+                    Transactions include withdrawals at the ATM and purchases
+                    on the POS.
+                </p>
+            </div>
+            <img src="../image/Cardless_withdrawals.png" alt="Cardless withdrawals"> 
         </div>
-        <img src="../image/Cardless_withdrawals.png" alt="Cardless withdrawals"> 
-    </div>
-</section>
+    </section>
+</div>
 
 
-<!-- Smart Wallet -->
-<section class="wallet">
-    <div class="card_container grid grid-2">
-        <img src="../image/Wallet_card.png" alt="Free transfers"> 
-        <div>
-            <h1 class="wallet_head">One Smart Wallet for all Your Cards </h1>
-            <p class="wallet_paragraph">
-                Take all your cards with you and manage all your accounts from one smart virtual wallet one place. 
-                The Verve eCash wallet is compatible with all card types issued in Nigeria. From Verve to VISA, Mastercard and your virtual eCash card.
-            </p>
+<!-- Smart Wallet Section-->
+<div class="wallet">
+    <section class="">
+        <div class="wallet-flex">
+            <div class="wallet-img">
+                <img src="../image/Wallet_card.png" alt="Free transfers"> 
+            </div>
+            <div class="wallet-text">
+                <h1 class="wallet_head">One Smart Wallet for all Your Cards </h1>
+                <p class="wallet_paragraph">
+                    Take all your cards with you and manage all your accounts from one smart virtual wallet one place. 
+                    The Verve eCash wallet is compatible with all card types issued in Nigeria. From Verve to VISA, Mastercard and your virtual eCash card.
+                </p>
 
-            <p class="wallet_paragraph">
-              <strong> Enjoy the ease of unlimited access </strong>
-            </p>
-            <uL class="wallet_paragraph">
-                <li> • Make payments with your cards without taking them everywhere.</li>
-                <li> • Access any account of your choice without multiple bank apps.</li>
-                <li> • Enjoy guaranteed security of your card details and balances.</li>
-            </uL>
+                <p class="wallet_paragraph">
+                <strong> Enjoy the ease of unlimited access </strong>
+                </p>
+                <uL class="wallet_paragraph">
+                    <li> • Make payments with your cards without taking them everywhere.</li>
+                    <li> • Access any account of your choice without multiple bank apps.</li>
+                    <li> • Enjoy guaranteed security of your card details and balances.</li>
+                </uL>
 
-            <p class="wallet_paragraph">
-                <strong> Enjoy instant transactions with Verve 1-Touch </strong>
-              </p>
-              <uL class="wallet_paragraph">
-                  <li> • Recharge on the go with just 1-Touch.</li>
-                  <li> • Transfer money on the go with just 1-Touch</li>
-                  <li> • Pay bills on the go with just 1-Touch</li>
-              </uL>
-              <a> <button class="btn wallet-btn"> Activate Your Wallet </button> </a>
+                <p class="wallet_paragraph">
+                    <strong> Enjoy instant transactions with Verve 1-Touch </strong>
+                </p>
+                <uL class="wallet_paragraph">
+                    <li> • Recharge on the go with just 1-Touch.</li>
+                    <li> • Transfer money on the go with just 1-Touch</li>
+                    <li> • Pay bills on the go with just 1-Touch</li>
+                </uL>
+                <a> <button class="btn wallet-btn"> Activate Your Wallet </button> </a>
 
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+</div>
 
 
 <!-- Grow Together -->
 <section class="grow_africa">
-    <div class="flex  m-5">
-        <div class="container features-sub-head py-3">
+    <div class="grow-flex  m-3">
+        <div class="features-sub-head py-3">
             <div class="grow_africa-text">
                 <h1 class="grow_africa-heading">Let's Grow Africa Together</h1>
                 <p class="grow_africa-paragraph">
@@ -253,16 +270,16 @@ integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1
                 <p class="grow_africa-paragraph">
                     If you are passionate about Africa's future, come work with the key to African exchange. Join us to rewrite Africa's story.
                 </p>
-                <a> <button class="btn for_you-btn"> Join us </button> </a>
+                <a> <button class="btn grow-btn"> Join us </button> </a>
             </div>
-    </div>
+        </div>
 
     </div>
 </section>
 
 <!-- Pay with Verve Section -->
-<section class="pay">
-    <div class="container">
+<div class="pay">
+    <section class="grid_container">
         <h1 class="pay-story-main-heading text-center">
             Online or Offline? Pay with Verve
         </h1>
@@ -283,25 +300,27 @@ integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1
             <img src="../image/brand-logos/instagram.png">
             <img src="../image/brand-logos/bolt.png">
         </div>
-    </div>
-</section>
+    </section>
+</div>
 
 <!-- Get in touch Section -->
-<section class="get_in_touch">
-    <h1 class="get-in-main-heading text-center">
-        It's always a delight to talk to you.
-    </h1>
-    
-<div class="" style="text-align: center;">
-    <h3 class="get-in-heading my-1">
-        Experienced challenges with getting a Verve card or using any of our tokens? <br>
-        Got partnership opportunities we would be interested in? Got questions?
-    </h3>
-</div>
-    <div class="text-center button-fix">
-        <a> <button class="btn get-in-btn"> Get in Touch </button> </a>
-    </div>
-
+<section class="grid_container">
+        <div class="get_in_touch">
+                    <h1 class="get-in-main-heading text-center">
+                        It's always a delight to talk to you.
+                    </h1>
+                    
+                <div class="" style="text-align: center;">
+                    <h3 class="get-in-heading my-1">
+                        Experienced challenges with getting a Verve card or using any of our tokens? <br>
+                        Got partnership opportunities we would be interested in? Got questions?
+                    </h3>
+                </div>
+                    <div class="text-center button-fix">
+                        <a> <button class="btn get-in-btn"> Get in Touch </button> </a>
+                    </div>
+        
+        </div>
 </section>
 
 
@@ -331,25 +350,25 @@ integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1
                         <a href="https://interswitchgroup.com/quickteller"><span>Verve Life style </span></a>
                     </li>
                     <li>
-                        <a href="https://interswitchgroup.com/financial-inclusion"><span>Verve Ecash</span></a>
+                        <a href="../deals/deals.html#e-cash"><span>Verve Ecash</span></a>
                     </li>
                    
                 </ul>
                 <ul class="unordered-list">
                     <li>
-                        <a href="https://interswitchgroup.com/payment-collections"><span>Cardless Offering</span></a>
+                        <a href="../deals/deals.html"><span>Cardless Offering</span></a>
                     </li>
                     <li>
-                        <a href="https://interswitchgroup.com/payment-disbursement"><span>Prepaid Card</span></a>
+                        <a href="../Cards/cards.html#prepaid"><span>Prepaid Card</span></a>
                     </li>
                     <li>
-                        <a href="https://interswitchgroup.com/quickteller-for-business"><span>Classic Card</span></a>
+                        <a href="../Cards/cards.html#classic"><span>Classic Card</span></a>
                     </li>
                     <li>
-                        <a href="https://interswitchgroup.com/mobile-financial-services"><span>Global Card</span></a>
+                        <a href="../Cards/cards.html#global"><span>Global Card</span></a>
                     </li>
                     <li>
-                        <a href="https://interswitchgroup.com/advisory-services"><span>Contactless Card</span></a>
+                        <a href="../Cards/cards.html#contactless"><span>Contactless Card</span></a>
                     </li>
                 </ul>
             </div>
@@ -358,19 +377,19 @@ integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1
                 <h3 class="ft-title">Verve Business</h3>
                 <ul class="unordered-list">
                    <li>
-                        <a href="https://interswitchgroup.com/verve-card"><span>Banks</span></a>
+                        <a href="business/business.html#partner-banks"><span>Banks</span></a>
                     </li>
                     <li>
                         <a href="https://interswitchgroup.com/verve-digital"><span>Merchants</span></a>
                     </li>
                      <li>
-                        <a href="https://interswitchgroup.com/verve-digital"><span>Verve Access</span></a>
+                        <a href="../verve_access/Verve-access.html"><span>Verve Access</span></a>
                     </li>
                     <li>
-                        <a href="https://interswitchgroup.com/privacy"><span>Cardless Offering</span></a>
+                        <a href="../deals/deals.html"><span>Cardless Offering</span></a>
                     </li>
                     <li>
-                        <a href="https://interswitchgroup.com/industry-solution"><span>Partnership with Verve</span></a>
+                        <a href="../partner/partner.html"><span>Partnership with Verve</span></a>
                     </li>
                     </ul>
                   
@@ -382,7 +401,7 @@ integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1
                         <a href="https://interswitchgroup.com/privacy"><span>Privacy Policy</span></a>
                     </li>
                     <li>
-                        <a href="https://interswitchgroup.com/terms-condition"><span>Terms and Conditions</span></a>
+                        <a href="https://myverveworld.com/documents/TERMS_AND_CONDITIONS_FOR_VERVE_NATIONAL_CONSUMER_PROMO_3.0.pdf"><span>Terms and Conditions</span></a>
                     </li>
                     <h3 class="ft-title" style="padding-top:20px">Verve Business</h3>
                      <li>

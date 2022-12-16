@@ -141,26 +141,24 @@
 
 
 /* Banner image */
-.Verve_Access-home {
+.deals-home {
+  height: 80vh;
   color: white;
   background-image: 
         linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
-        url('../image/Verve-Access.png');
+        url('../image/Deals-header.png');
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: center; */
-  
-  /* grid styles for the hero section */
+  background-position: center;
   }
 
 /* Banner text */
 .hero-text {
+  position: absolute;
+  top: 30%;
+  left: 7%;
   text-align: left;
-  max-width: 785px;
-  padding-left: 112px;
-  padding-top: 30px;
-  padding-bottom: 131px;
-  margin: 0;
+  max-width: 690px;
  
 
   /* padding-right: 50px; */
@@ -170,59 +168,47 @@
 
 font-style: normal;
 font-weight: 700;
-font-size: 56px;
-line-height: 69px;
+font-size: 70px;
+line-height: px;
 text-align: left;
-color: #00425F;
-padding-bottom: 32px;
+color: #f4f4f4;
   
 }
 
-.hero-text p {
-font-family: "Averta" !important;
-text-align: left;
-
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
-color: #00425F;
-  /* padding-left: 60px; */
-}
-
-.hero-text button {
-  background-color: #00425F;
-  color: white;
- margin-top: 32px;
- padding: 15px 20px;
-
-}
-
-.hero-text button:hover {
-  color: white;
-}
 
 /* NAVBAR AREA */
+
+.active {
+  color: #EE312A !important;;
+}
+
 nav {
   padding: 2em 1em;
   transition: all .3s;
-
 }
+
+/* nav:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+} */
 
 .nav_parent {
   display: flex;
   list-style-type: none;
   justify-content: space-around;
+  color: #00425F;
+ 
 }
 
 .logo {
-  flex: 1 0 auto;
+  flex: 1 0 auto; 
   font-weight: 600;
   letter-spacing: 2px;
   margin-left: 30px;
 }
 
-
+.bi-chevron-down {
+  padding-left: 10px;
+}
 
 .logo:hover {
   text-decoration: none;
@@ -230,40 +216,148 @@ nav {
 }
 
 li {
-  margin-right: 25px;
+  margin-right: 5px;
 }
 
 li:hover {
   cursor: pointer;
 }
-
-.nav-item {
-  font-size: 20px;
-  padding-right: 40px;
-  justify-content: space-between;
+.nav-link {
+font-size: 20px;
+padding-right: 100px;
+justify-content: space-between;
 }
 
-.nav-item img {
+.nav-link img {
   vertical-align: middle;
 }
 
-.bi-chevron-down {
-  padding-left: 10px;
+.nav-item {
+font-family: "Averta" !important;
+font-size: 20px;
+padding-right: 25px;
+justify-content: space-between;
 }
 
+ 
 .nav-item a:hover {
   transform: scale(1.1);
   color: #DC4437;
-
+  
 }
 
 .nav-item:hover {
   transform: scale(1.1);
   color: #DC4437;
+  
+}
+
+.nav-link:active {
+  transform: scale(1);
+}
+
+
+
+/* BANNER SECTION END */
+
+/* ==================================
+The various deals
+===================================  */
+
+.reward-flex  {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.item {
+  padding: 50px 0;
+}
+
+.filterDiv {
+  display: none; /* Hidden by default */
+}
+
+.show {
+  display: block;
+}
+
+.btn.active {
+  background-color: rgba(102, 102, 102, 0);
+  color: rgb(0, 0, 0);
+}
+
+.switch-btn {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.fliter_container {
+ padding: 50px 30px;
+}
+
+.deal-btn {
 
 }
 
-/* BANNER SECTION END */
+.fliter_container span {
+  padding-right: 10px;
+}
+
+.fliter_container p {
+  font-size: 15px;
+  margin: 0
+}
+
+/* ===============================
+Get in touch SECTION
+================================== */
+
+.get_in_touch {
+  height: auto;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(../image/blue-generic-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 20px;
+  margin: 80px;
+  border-radius: 10px;
+}
+
+.get-in-main-heading {
+font-weight: 700;
+font-size: 36px;
+line-height: 33px;
+color: #fff;
+padding: 20px;
+
+}
+
+.get-in-heading {
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+color: white;
+padding: 20px;
+}
+
+.get-in-btn {
+  background-color: #DC4437;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+ 
+  border: none;
+  border-radius: 5px;
+ 
+}
+.get-in-btn:hover {
+  color: #fff;
+}
+
+.button-fix {
+  padding: 35px 0;
+}
 
 
 /*==================================
@@ -275,103 +369,148 @@ RESPONSIVE STYLING
   height: 120vh;
   }
   .hero-text {
-    top: 50%;
+    /* top: 50%; */
   }
+
+  .get_in_touch {
+    height: auto;
+}
   
    }
 /* iPads (portrait and landscape) ----------- */
-@media (max-width: 1024px) { 
+@media only screen and (min-width: 700px) and (max-width: 1024px) { 
   /* Styles */
   
 
   .hero-text {
     width: auto;
     
-    left: 50px;
+
     top: 300px;
     font-family: "Averta" !important;
-    padding-left: 55px;
+    /* padding-right: 50px; */
     }
 
     .nav-item {
-      font-size: 20px;
-    padding-right: 35px;
+    font-size: 9px;
+    padding-right: 11px;
     }
 
 }
 
-@media (max-width: 768px) {
-  .Verve_Access-home {
-    background-position: left;
-  }
-    /* Styles */
-    .hero-text {
-      left: 50px;
-      top: 300px;
-      font-family: "Averta" !important;
-      padding-right: 60px;
-      /* padding-right: 50px; */
-  
-      }
-  
-      .hero-text h1 {
-        font-size: 47px;
-        line-height: 47px;
-      }
-  
-      .hero-text p {
-        font-size: 17px;
-      line-height: 19px;
-      }
-  }
-
-
-
-@media (max-width: 480px) {
+/* iPhone 6, 7, 8 ----------- */
+@media (max-width: 700px) {
+  /* Styles */
   .hero-text {
-    left: 50px;
+ 
     top: 300px;
     font-family: "Averta" !important;
-    padding-top: 90px;
     /* padding-right: 50px; */
 
     }
 
     .hero-text h1 {
-      font-size: 28px;
+      font-size: 47px;
+      line-height: 50px;
+    }
+
+    .hero-text p {
+      font-size: 11px;
+    line-height: 19px;
+    }
+
+    .deal-btn {
+      padding-top: 20px;
+    }
+
+    .fliter_container {
+      display: grid;
+      grid-template-columns: 1fr;
+     
+    }
+
+    .filterDiv {
+      padding-bottom: 50px ;
+    }
+
+    .item {
+      padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .deals-home {
+    height: 75vh;
+  }
+  .hero-text {
+ 
+    top: 300px;
+    font-family: "Averta" !important;
+    /* padding-right: 50px; */
+
+    }
+
+    .hero-text h1 {
+      font-size: 36px;
     line-height: 36px;
     text-align: left;
     }
 
-    .hero-text p {
-      font-size: 14px;
-    line-height: 19px;
-    text-align: left;
-    }
+   .item img {
+    width: 320px;
+   }
+
+   .get_in_touch {
+    margin: 20px;
+  }
+
+  .get-in-main-heading {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 33px;
+    padding-top: 0px;
+}
+
+.get-in-heading {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 24px;
+    color: white;
+}
+
+
 }
 
 
 
-@media (max-width: 375px) {
+@media only screen and (min-width: 320px) and (max-width: 375px) {
   .hero-text {
-    left: 2px;
+
     top: 250px;
     font-family: "Averta" !important;
-    padding: 51px;
     /* padding-right: 50px; */
     }
 
-    /* .hero-text h1 {
-      font-size: 18px;
+    .hero-text h1 {
+      font-size: 28px;
       line-height: 35px;
       text-align: left;
-    } */
+    }
 
     .hero-text p {
-      /* font-size: 11px; */
+      font-size: 11px;
     line-height: 19px;
     text-align: left;
-    /* max-width: 240px; */
+    max-width: 240px;
     }
+
+    .item img {
+      width: 300px;
+     }
+
+     .get_in_touch {
+      margin: 22px;
+  }
 
 }

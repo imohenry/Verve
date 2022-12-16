@@ -159,14 +159,17 @@
   }
   
   /* Banner text */
+  .active {
+    color: #EE312A !important;
+  }
   .hero-text {
   position: absolute;
-  text-align: center;
+  text-align: left;
   flex-direction: column;
   max-width: 412px;
   
   right: 15%;
-  top: 60%;
+  top: 50%;
   
   justify-content: center;
   font-family: "Averta" !important;
@@ -191,7 +194,7 @@
     font-style: normal;
     font-weight: 900;
     font-size: 102px;
-    line-height: 122px;
+    line-height: 77px;
     color: white;
     /* padding-left: 60px; */
   }
@@ -283,6 +286,11 @@ HERE FOR AFRICA SECTION
     padding-top: 60px;
   
   }
+
+  .hfa-text {
+    max-width: 911px;
+    margin: 0 auto;
+  }
   
   .hfa-story-main-heading {
   top: 48px;
@@ -312,6 +320,14 @@ HERE FOR AFRICA SECTION
   
   text-align: center;
   }
+
+  .hfa-flex {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 20px 0;
+    flex-wrap: wrap;
+  }
   
   .here-for-things {
     padding: 75px 0px;
@@ -331,7 +347,7 @@ HERE FOR AFRICA SECTION
   
   background-image: 
   linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
-  url('../image/Red_bg.png');
+  url('../image/blue-grey-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -390,7 +406,7 @@ Rewarding SECTION
     padding-right: 40px;
    
   
-  background: #F9FAFB;
+  background: #FFF;
   background-size: cover;
   background-position: center;
 }
@@ -398,7 +414,7 @@ Rewarding SECTION
 
 .reward-story-main-heading {
     top: 48px;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
     
     font-family: 'Averta';
     font-style: normal;
@@ -446,10 +462,39 @@ Rewarding SECTION
         font-size: 22px;
     }
 
-    .img_width img {
-        /* max-width: 90%; */
-        padding: 0 0px;
+    .reward-flex {
+      display: flex;
+    justify-content: space-evenly;
+    }
 
+    .reward-img-div {
+      max-width: 400px;
+    }
+
+    .reward-img-div img {
+      width: 100%;
+    }
+
+    .reward-btn-div {
+      margin: 0 auto;
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .reward-btn-div i {
+      font-size: 17px;
+    }
+
+    .reward-btn {
+      background-color:#EE312A;
+      padding: 16px 70px;
+      color: #fff;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .reward-btn:hover { 
+      color: #fff;
     }
   
     .deal-offers {
@@ -484,7 +529,7 @@ Rewarding SECTION
       }
       .background--text{
         font-weight: 900;
-        font-size: 212px;
+        font-size: 204px;
         line-height: 125px;
         
         letter-spacing: -7.5px;
@@ -501,15 +546,17 @@ For You SECTION
 .for-you {
 /* padding-top: 75px; */
 padding-bottom: 50px;
-height: 100vh;
    
-  
   background-image: 
-  linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+  linear-gradient(to top, rgba(0, 0, 0, 0.548), rgba(0, 0, 0, 0.623)),
   url('../image/Card_board.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.for-you-sub-head {
+  padding-top: 50px;
 }
 
 .for_you-heading {
@@ -525,14 +572,16 @@ max-width: 750px;
 .for_you-paragraph {
  max-width: 451px;
  font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-color: #fff;
+ font-weight: 400;
+ font-size: 20px;
+ line-height: 32px;
+  padding-bottom: 25px;
+  color: #F9FAFB;
 }
 
 .for_you-btn {
-    background-color: #DC4437;
+    background-color: #EE312A;
+    padding: 16px 78px !important;
     color: #fff;
     text-transform: none;
 }
@@ -542,7 +591,7 @@ color: #fff;
 }
 
 .for_you-text {
-    padding-left: 40px;
+    padding: 150px 40px;
 }
 
 /* ===============================
@@ -612,8 +661,8 @@ Wallet SECTION
 padding-top: 75px;
 padding-bottom: 50px;
 
-padding-left: 20px;
-padding-right: 20px;
+padding-left: 55px;
+padding-right: 55px;
 
 
 background: #E5E7EB;;
@@ -631,13 +680,23 @@ font-size: 40px;
 line-height: 60px;
 }
 
-.wallet img {
+.wallet-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.wallet-img {
+  max-width: 640px;
+}
+
+.wallet-img img{
     max-width: 100%;
 }
 .wallet_paragraph {
     max-width: 532px;
     color: #00425F;
     font-size: 16px;
+    padding-bottom: 20px;
 }
 
 .wallet-btn {
@@ -656,9 +715,10 @@ Grow Africa SECTION
 ================================== */
 
 
+
 .grow_africa {
 padding: 50px 0;
-height: auto;
+
    
   
   background-image: 
@@ -669,8 +729,15 @@ height: auto;
   background-position: center;
 }
 
+.grow-flex {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
 .grow_africa-text {
     float: right;
+    padding-right: 180px;
 }
 
 .grow_africa-heading {
@@ -688,6 +755,14 @@ height: auto;
     font-size: 16px;
     line-height: 24px;
     color: #fff;
+    padding-bottom: 20px;
+}
+
+.grow-btn {
+    background-color: #EE312A;
+    padding: 16px 78px !important;
+    color: #fff;
+    text-transform: none;
 }
 
 /* ===============================
@@ -729,7 +804,7 @@ Get in touch SECTION
 ================================== */
 .get_in_touch {
     height: auto;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(../image/dark_blue_bg.png);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(../image/blue-generic-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -848,17 +923,55 @@ Responsive styling SECTION
         left: 200px;
     }
 
+    .background--text {
+      font-weight: 900;
+      font-size: 190px;
+    }
     .hero-text h2 {
-        font-size: 35px;
+        font-size: 55px;
       line-height: 36px;
-      text-align: right;
+      text-align: left;
       }
   
       .hero-text p {
-        font-size: 58px;
-      line-height: 19px;
-      text-align: right;
+        font-size: 90px;
+    line-height: 61px;
+      text-align: left;
       }
+
+      .reward-img-div {
+        max-width: 263px;
+    }
+
+       .reward {
+        padding-top: 75px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        background: #FFF;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .wallet-flex {
+      display: flex;
+      align-items: center;
+      flex-direction: column-reverse;
+  }
+
+  .hero-section {
+    height: 85vh;
+    color: white;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(../image/Personal_header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+  }
+
+
+
+
+    
 }
 
 @media only screen and (min-width: 486px) and (max-width: 705px) {
@@ -894,11 +1007,17 @@ Responsive styling SECTION
     height: 42vh;
       }
 
+  
+
 }
 
 @media (max-width: 485px) {
+
+  .hero-section {
+    height: 550px;
+  }
     .hero-text {
-      left: 0%;
+      left: 7%;
       right: 2%;
       top: 300px;
       font-family: "Averta" !important;
@@ -907,20 +1026,40 @@ Responsive styling SECTION
       }
   
       .hero-text h2 {
-        font-size: 35px;
+        font-size: 42px;
       line-height: 36px;
-      text-align: right;
+      text-align: left;
       }
   
       .hero-text p {
-        font-size: 54px;
-      line-height: 19px;
-      text-align: right;
+        font-size: 64px;
+        line-height: 42px;
+        text-align: left;
       }
 
+      .hfa-story-main-heading {
+        padding-bottom: 5px;
+        font-family: 'Averta';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 60px;
+        text-align: left;
+        color: #ffffff;
+    }
+
+    
+
       .hfa-heading {
+        color: #ffffff;
+        font-family: 'Averta';
+        font-style: normal;
+        font-weight: 400;
         font-size: 15px;
-      }
+        line-height: 28px;
+        
+        text-align: left;
+        }
 
       .main_content img{
         width: 290px;
@@ -937,10 +1076,27 @@ Responsive styling SECTION
       }
 
       .for_you-heading {
-        font-size: 35px;
-        font-weight: 600;
-        line-height: 64px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        padding-bottom: 30px;
       }
+
+      .for_you-text {
+        padding: 150px 20px;
+    }
+
+    .services_head {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    .wallet_head {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 31px;
+    }
 
       .get_in_touch {
         margin: 20px;
@@ -958,6 +1114,34 @@ Responsive styling SECTION
         font-size: 13px;
         line-height: 24px;
         color: white;
+    }
+
+    .reward-flex {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .reward-img-div {
+    padding-bottom: 20px;
+    max-width: 400px;
+  }
+
+  .reward-btn {
+    background-color: #EE312A;
+    padding: 15px 30px;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 12px;
+  } 
+
+    .wallet-text {
+      /* padding: 0 40px; */
+    }
+
+    .grow_africa-text {
+      padding-right: 0px;
     }
 
     .services img{
@@ -983,24 +1167,28 @@ Responsive styling SECTION
     .grow_africa {
         height: auto;
     }
+
+    /* .grow-btn {
+      padding: 16px 172px !important;
+    } */
 }
 
     @media (max-width: 375px) {
         .hero-text {
-            left: 93px;
-            top: 385px;
+          left: 7%;
+          top: 48%;
     } 
 
     .hero-text h2 {
         font-size: 35px;
       line-height: 36px;
-      text-align: right;
+     
       }
   
       .hero-text p {
-        font-size: 36px;
-      line-height: 19px;
-      text-align: right;
+        font-size: 48px;
+        line-height: 36px;
+      
       }
 
       .background--text {
@@ -1015,13 +1203,19 @@ Responsive styling SECTION
         width: 170px;
       }
 
+      .wallet {
+        padding-top: 75px;
+        padding-bottom: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
       .wallet_head {
         line-height: 45px;
       }
 
       .wallet_paragraph {
         font-size: 11px;
-        margin: 18px 13px;
+        margin: -5px 13px;
       }
 
       .grow_africa-heading {
@@ -1050,4 +1244,11 @@ Responsive styling SECTION
     }
 
   
+}
+
+@media (max-width: 325px) {
+  .hero-text h2 {
+    font-size: 32px;
+    line-height: 36px;
+}
 }
