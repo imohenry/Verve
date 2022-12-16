@@ -87,6 +87,10 @@
 }
 
 @media (max-width: 700px) {
+
+  .top-nav { 
+    padding: 1.5em 1.5em;
+  }
   .menu-button-container {
     display: flex;
   }

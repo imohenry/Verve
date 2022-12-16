@@ -8,7 +8,7 @@
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #FFF;
   height: 50px;
-  padding: 3.5em;
+  padding: 3.5em 0;
 }
 
 .menu {
@@ -87,6 +87,10 @@
 }
 
 @media (max-width: 700px) {
+
+  .top-nav { 
+    padding: 1.5em 1.5em;
+  }
   .menu-button-container {
     display: flex;
   }

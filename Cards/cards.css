@@ -169,11 +169,15 @@
 
 font-style: normal;
 font-weight: 700;
-font-size: 56px;
+font-size: 69px;
 line-height: 69px;
 text-align: left;
 color: #f4f4f4;
   
+}
+
+.hero-text p { 
+  font-size: 19px;
 }
 
 .transparent-cards img {
@@ -266,8 +270,18 @@ justify-content: space-between;
 Different cards
 ===================================  */
  .opening-text {
-  max-width: 1079px;
+  margin: 0 auto;
+  max-width: 785px;
   padding-top: 78px;
+  text-align: center;
+ }
+
+ .opening-text-heading {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #00425F;
+  padding-bottom: 26px;
  }
 
  .opening-main-text {
@@ -280,6 +294,7 @@ Different cards
  .verve-card-text {
   max-width: 484px;
  color: #00425F;
+ padding-top: 20px;
 
  }
 
@@ -333,10 +348,30 @@ line-height: 24px;
   max-width: 280px;
 }
 
-.flex-cards {
+
+
+.duo-flex-cards {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  flex-wrap: wrap;
+}
+
+.prepaid-flex {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.prepaid-flex img {
+ padding-right: 60px;
+}
+
+.card-img-container {
+  max-width: 500px;
+}
+
+.flex-imgs {
+  width: 100%;
 }
 
 /* ===============================
@@ -344,7 +379,7 @@ Cardless, Connected and secure Section
 ================================== */
 .cardless_secure {
   height: auto;
-  background:  #590C07;
+  background: url("../image/red-generic-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -406,11 +441,24 @@ color: #00425F;
 
 }
 
+.bank-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 .bank_logos {
     padding-top: 55px;
     padding-bottom: 30px;
 }
 
+.bank-img {
+  max-width: 200px;
+}
+
+.bank_logos img{ 
+  width: 100%;
+}
 
 /* ===============================
 Get in touch SECTION
@@ -418,7 +466,7 @@ Get in touch SECTION
 
 .get_in_touch {
   height: auto;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(../image/dark_blue_bg.png);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(../image/blue-generic-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -491,7 +539,7 @@ RESPONSIVE STYLING
 .transparent-cards img {
   width: 817px;
   right: 0%;
-  top: 30.4%;
+  top: 48.4%;
 }
 
 .cardless_secure-main-heading{
@@ -508,9 +556,7 @@ RESPONSIVE STYLING
     .flex-cards {
       flex-direction: column;
     }
-    .flex-imgs {
-      width: 400px;
-    }
+  
 
     .transparent-cards img {
       width: 675px;
@@ -533,7 +579,7 @@ RESPONSIVE STYLING
     }
 
     .nav-item {
-    font-size: 9px;
+    font-size: 15px;
     padding-right: 11px;
     }
 
@@ -541,6 +587,10 @@ RESPONSIVE STYLING
 
 /* iPhone 6, 7, 8 ----------- */
 @media (max-width: 768px) {
+
+  .cards-home {
+    height: 91vh;
+}
   /* Styles */
   .hero-text {
  
@@ -551,12 +601,12 @@ RESPONSIVE STYLING
     }
 
     .hero-text h1 {
-      font-size: 47px;
+      font-size: 56px;
       line-height: 50px;
     }
 
     .hero-text p {
-      font-size: 11px;
+      font-size: 14px;
     line-height: 19px;
     }
 
@@ -584,11 +634,18 @@ RESPONSIVE STYLING
 }
 
 @media (max-width: 480px) {
+
+  .cards-home {
+    height: 650px;
+  }
+
   .hero-text {
- 
+    left: 4%;
     top: 20%;
     font-family: "Averta" !important;
     /* padding-right: 50px; */
+    padding: 0 15px;
+
 
     }
 
@@ -617,14 +674,12 @@ RESPONSIVE STYLING
     color: white;
 }
 
-.flex-imgs {
-  width: 300px;
-}
+
 
 .transparent-cards img {
-  width: 320px;
-  right: 0%;
-  top: 43.4%;
+  width: 355px;
+  right: 9%;
+  top: 39.4%;
 }
 
 .cardless_secure-main-heading {
@@ -643,13 +698,14 @@ RESPONSIVE STYLING
 @media (max-width: 375px) {
   .hero-text {
 
-    top: 210px;
+    top: 18%;
     font-family: "Averta" !important;
     /* padding-right: 50px; */
+    padding: 0 15px;
     }
 
     .hero-text h1 {
-      font-size: 28px;
+      font-size: 35px;
       line-height: 35px;
       text-align: left;
     }
@@ -658,7 +714,7 @@ RESPONSIVE STYLING
       font-size: 11px;
     line-height: 19px;
     text-align: left;
-    max-width: 240px;
+    /* max-width: 240px; */
     }
 
     .item img {

@@ -2,9 +2,7 @@
 
 .grid_container{
     max-width: 1280px !important;
-  
     margin: 0 auto !important;
-    overflow: auto;
 
 }
 
@@ -263,7 +261,7 @@ border-radius: 20px;
       
 @media (max-width: 768px) {
     .grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .flex {
@@ -274,7 +272,7 @@ border-radius: 20px;
 
   @media(max-width: 485px){
     .grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
     .lg {
         font-size: 2rem;

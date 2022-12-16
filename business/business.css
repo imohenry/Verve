@@ -146,7 +146,7 @@
   
   /* Banner image */
   .hero-section {
-  height: 100vh;
+  height: 111vh;
   color: white;
   
   background-image: 
@@ -163,9 +163,8 @@
   position: absolute;
   text-align: center;
   flex-direction: column;
-  max-width: 518px;
-  
-  right: 15%;
+  max-width: 758px;
+  right: 5%;
   top: 60%;
   
   justify-content: center;
@@ -177,11 +176,10 @@
   .hero-text h2 {
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 70px;
     margin: 0 0 1rem 0;
-    line-height: 65px;
-  
-    text-align: left;
+    line-height: 78px;
+    text-align: right;
   }
   
   .hero-text p {
@@ -230,6 +228,10 @@
   
   li:hover {
     cursor: pointer;
+  }
+
+  .active {
+    color: #DC4437 !important;
   }
 
  /* Style for dropdown button */
@@ -348,19 +350,25 @@ HERE FOR AFRICA SECTION
 
   /* Stats */
 .stats {
-    padding-top: 75px;
-    padding-bottom: 50px;
+   padding: 50px 25px;
    
   
   background-image: 
   linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
-  url('../image/Red_bg.png');
+  url('../image/business-offerings.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-.stats .grid h3 {
+.biz-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.stats .biz-flex h3 {
     font-size: 20px;
     color: #fff;
     padding-top: 20px;
@@ -387,6 +395,7 @@ HERE FOR AFRICA SECTION
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    color: #fff;
 }
 
 .learn-more {
@@ -427,6 +436,11 @@ color: #fff;
 padding: 32px 0px;
 }
 
+.v_access-paragraph {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .verve_access-heading {
 font-style: normal;
 font-weight: 400;
@@ -436,9 +450,10 @@ color: white;
 }
 
 .v_access-btn {
-  background-color: #DC4437;
+  background-color: #EE312A;
   color: #fff;
   text-transform: none;
+  padding: 16px 78px !important;
  
 }
 .v_access-btn:hover {
@@ -461,21 +476,23 @@ height: 100vh;
    
   
   background-image: 
-  linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+  linear-gradient(to top, rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0.3)),
   url('../image/Card_board.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
+
+
 .for_you-heading {
 font-style: normal;
 font-weight: 700;
 font-size: 56px;
-line-height: 84px;
+line-height: 64px;
 color: #fff;
 
-max-width: 750px;
+
 }
 
 .for_you-paragraph {
@@ -485,12 +502,14 @@ font-weight: 400;
 font-size: 16px;
 line-height: 24px;
 color: #fff;
+padding: 15px 0;
 }
 
 .for_you-btn {
-    background-color: #DC4437;
+    background-color: #EE312A;
     color: #fff;
     text-transform: none;
+    padding: 16px 78px !important;
 }
 
 .for_you-btn:hover{
@@ -498,7 +517,8 @@ color: #fff;
 }
 
 .for_you-text {
-    padding-left: 40px;
+    padding-left: 10px;
+    max-width: 612px;
 }
 
 /* ===============================
@@ -565,7 +585,7 @@ Cardless, Connected and secure Section
 ================================== */
 .cardless_secure {
   height: auto;
-  background:  #590C07;
+  background: url("../image/business-offerings.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -576,6 +596,11 @@ Cardless, Connected and secure Section
   justify-content: center;
   padding: 0px 20px;
   
+}
+
+.cardless_secure-paragraph {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .cardless_secure-main-heading {
 font-weight: 700;
@@ -595,13 +620,19 @@ color: white;
 }
 
 .cardless_secure-btn {
-  background-color: #DC4437;
+  background-color: #EE312A;
   color: #fff;
   text-transform: none;
+  padding: 16px 78px !important;
  
 }
 .cardless_secure-btn:hover {
   color: #fff;
+}
+
+.cs-fix {
+  padding-top: 40px;
+  padding-bottom: 170px;
 }
 
 /* ===============================
@@ -631,7 +662,7 @@ Get in touch SECTION
 ================================== */
 .get_in_touch {
     height: auto;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(../image/dark_blue_bg.png);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(../image/blue-generic-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -691,7 +722,7 @@ Responsive styling SECTION
     height: 120vh;
     }
     .hero-text {
-      top: 50%;
+      top: 58%;
       right: 20%;
     }
 
@@ -736,7 +767,7 @@ Responsive styling SECTION
     .hero-text h2 {
         font-size: 35px;
       line-height: 36px;
-      text-align: right;
+      text-align: left;
       }
   
       .hero-text p {
@@ -799,25 +830,29 @@ Responsive styling SECTION
 }
 
 @media (max-width: 485px) {
+
+.hero-section {
+    height: 600px;
+    background-position: left;
+}
     .hero-text {
-      left: 0%;
+      left: 3%;
       right: 2%;
-      top: 300px;
-      font-family: "Averta" !important;
       padding-right: 20px;
+      width: 100%;
   
       }
   
       .hero-text h2 {
         font-size: 35px;
       line-height: 36px;
-      text-align: right;
+      text-align: left;
       }
   
       .hero-text p {
         font-size: 54px;
       line-height: 19px;
-      text-align: right;
+      text-align: left;
       }
 
       .hfa-heading {
@@ -835,10 +870,16 @@ Responsive styling SECTION
       }
 
       .for_you-heading {
-        font-size: 35px;
-        font-weight: 600;
-        line-height: 64px;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 36px;
       }
+
+      .for_you-text {
+        padding-left: 10px;
+        max-width: 612px;
+        padding: 50px 20px
+    }
 
       .get_in_touch {
         margin: 20px;
@@ -883,6 +924,10 @@ Responsive styling SECTION
         height: 72vh;
     }
 
+    .cardless_secure-text {
+      padding: 50px 20px;
+    }
+
     .cardless_secure-main-heading {
       padding-top: 34px;
       padding-bottom: 33px;
@@ -900,15 +945,11 @@ Responsive styling SECTION
 }
 
     @media (max-width: 375px) {
-        .hero-text {
-            left: 93px;
-            top: 385px;
-    } 
-
+  
     .hero-text h2 {
-      font-size: 20px;
-      line-height: 28px;
-      text-align: right;
+      font-size: 32px;
+      line-height: 33px;
+      text-align: le
       }
   
       .hero-text p {
@@ -958,4 +999,12 @@ Responsive styling SECTION
     line-height: 51px;
     }
 
+  }
+
+  @media (max-width: 320px) {
+.hero-text h2 {
+    font-size: 27px;
+    line-height: 33px;
+
+}
   }
