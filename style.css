@@ -946,7 +946,14 @@ HERE FOR AFRICA SECTION
 RESPONSIVE STYLING
 =================================== */
 
-@media (max-width: 1510px) {
+@media (max-width: 1662px) {
+  .lottie-earth {
+    width: 920px !important;
+  }
+}
+
+
+@media (max-width: 1580px) {
   .lottie-earth {
     width: 899px !important;
   }
