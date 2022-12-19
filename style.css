@@ -295,23 +295,23 @@ CONNECTING AFRICA SECTION
 }
 
 .stats-text {
-  padding: 150px 25px;
+  padding: 150px 0px;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .stats-main-heading {
 
   font-family: 'Averta';
   font-style: normal;
-  font-weight: 800;
-  font-size: 34px;
-  line-height: 50px;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 57px;
 
   text-align: left;
-  color: #00425F;
-  max-width: 510px;
+  color: #6B7280;
+  max-width: 790px;
 
 }
 
