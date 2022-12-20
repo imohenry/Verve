@@ -638,24 +638,38 @@ HERE FOR AFRICA SECTION
   grid-column: 1 / span 2;
 }
 
+.va_text {
+  color: #00425F;
+  max-width: 458px;
+  text-align: left;
+  }
+  
+  .hfa_text {
+    max-width: 458px;
+    text-align: left;
+    color: #fff;
+  
+  }
+
+  .va_text-heading {
+    font-weight: 800;
+    font-size: 40px;
+    padding-bottom: 15px;
+  }
+
 .hfa_text-heading {
   color: white;
   font-weight: 800;
   font-size: 40px;
-
   padding-bottom: 15px;
 }
 
-.hfa_text {
-  max-width: 458px;
-  text-align: left;
-  color: #fff;
 
-}
-
-.hfa_text .btn {
-  background-color: #DC4437;
-  color: white;
+.va_text-paragraph {
+  margin-bottom: 30px;
+  max-width: 440px;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .hfa_text-paragraph {
@@ -663,6 +677,16 @@ HERE FOR AFRICA SECTION
   max-width: 440px;
   font-size: 18px;
   line-height: 28px;
+}
+
+.va_text .btn {
+  background-color: #DC4437;
+  color: white;
+}
+
+.hfa_text .btn {
+  background-color: #DC4437;
+  color: white;
 }
 
 .va {
