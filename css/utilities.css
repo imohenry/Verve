@@ -1,3 +1,4 @@
+
 /* Utility styles: This area has all the styles I resuse in my code. Including the card styling down below */
 
 .grid_container{
@@ -267,6 +268,10 @@ border-radius: 20px;
 
     .flex {
         flex-direction: column;
+    }
+
+    .card {
+        flex: unset;
     }
   
 }

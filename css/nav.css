@@ -17,6 +17,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  text-decoration: none !important;
 }
 
 .menu > li {
@@ -27,6 +28,7 @@
 
 .menu a {
   color: white;
+  text-decoration: none;
 }
 
 .menu-button-container {
