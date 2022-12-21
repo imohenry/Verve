@@ -76,12 +76,12 @@
 
 #menu-toggle:checked + .menu-button-container .menu-button {
   background: rgb(255, 255, 255);
-  transform: rotate(55deg);
+  transform: rotate(42deg);
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button::after {
   margin-top: 0px;
-  transform: rotate(-109deg);
+  transform: rotate(-263deg);
 }
 
 @media (max-width: 1280px) {
