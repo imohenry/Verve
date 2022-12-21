@@ -690,6 +690,10 @@ RESPONSIVE STYLING
   line-height: 38px;
 }
 
+.prepaid-flex img {
+  padding-right: 0px;
+}
+
 
 }
 

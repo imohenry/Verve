@@ -86,9 +86,13 @@
   .menu > li {
     margin: 0 0rem;
 }
+.top-nav { 
+  padding: 1.5em 1.5em;
 }
 
-@media (max-width: 700px) {
+}
+
+@media (max-width: 770px) {
 
   .top-nav { 
     padding: 1.5em 1.5em;
