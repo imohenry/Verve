@@ -291,6 +291,10 @@ padding-bottom: 6px;
   border-radius: 8px;
 }
 
+.partner-btn:hover {
+  color: #fff;
+}
+
   
   /* ===============================
   Cardless, Connected and secure Section

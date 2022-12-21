@@ -1375,6 +1375,16 @@ RESPONSIVE STYLING
     height: 347px;
 
   }
+
+
+  .stats-text {
+    padding: 117px 29px;
+  }
+  .stats-main-heading {
+    font-size: 30px;
+    line-height: 38px;
+    text-align: left;
+  }
 }
 
 @media (max-width: 375px) {
