@@ -55,7 +55,7 @@
   height: 4px;
   width: 30px;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  border-radius: 2px;
+  border-radius: 1px;
 }
 
 .menu-button::before {
@@ -71,15 +71,17 @@
 #menu-toggle:checked + .menu-button-container .menu-button::before {
   margin-top: 0px;
   transform: rotate(405deg);
+  display: none;
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button {
-  background: rgba(255, 255, 255, 0);
+  background: rgb(255, 255, 255);
+  transform: rotate(55deg);
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button::after {
   margin-top: 0px;
-  transform: rotate(-405deg);
+  transform: rotate(-109deg);
 }
 
 @media (max-width: 1280px) {
