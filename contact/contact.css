@@ -413,6 +413,11 @@ justify-content: space-between;
     line-height: 25px;
     color: #6B7280;
 }
+
+.contact-info_small-text a:hover {
+  color: #fff;
+  transform: scale(1.98 );
+}
   
 
   
