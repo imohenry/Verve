@@ -542,7 +542,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 24px;
-padding-bottom: 50px;
+padding-bottom: 25px;
 
 
 color: #00425F;
@@ -657,6 +657,18 @@ color: #00425F;
     padding-bottom: 30px;
 }
 
+/* Partner style */
+
+.partner-img-container {
+  max-width: 350px;
+}
+
+.partner-img-container img {
+  width: 100%;
+}
+
+
+
 /* ===============================
 Get in touch SECTION
 ================================== */
@@ -747,6 +759,12 @@ Responsive styling SECTION
     }
     }
 
+    @media (max-width: 1028px) {
+      .partner-text {
+        padding-right: 13px;
+      }
+    }
+
 @media(max-width: 991px){
     .hero-text {
         right: 25%;
@@ -755,6 +773,11 @@ Responsive styling SECTION
     .nav-item {
       font-size: 15px;
   }
+
+  .partner-text {
+    padding-right: 0px;
+  }
+
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -780,6 +803,7 @@ Responsive styling SECTION
         color: #fff;
         padding-top: 70px;
       }
+
 }
 
 @media only screen and (min-width: 486px) and (max-width: 705px) {
@@ -838,8 +862,8 @@ Responsive styling SECTION
     .hero-text {
       left: 3%;
       right: 2%;
-      padding-right: 20px;
-      width: 100%;
+      padding-right: 15px;
+      /* width: 100%;  */
   
       }
   
@@ -989,7 +1013,7 @@ Responsive styling SECTION
     }
 
     .get_in_touch {
-        height: 52vh;
+        /* height: 52vh; */
     }
 
     .pay-story-main-heading {
@@ -1006,5 +1030,8 @@ Responsive styling SECTION
     font-size: 27px;
     line-height: 33px;
 
+}
+.partner-img-container {
+  max-width: 300px;
 }
   }
