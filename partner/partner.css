@@ -271,6 +271,15 @@ PARTNER TEXT
   background-color: #fff;
 }
 
+.partner-heading-text {
+  font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 36px;
+color: #00425F;
+
+}
+
 .partner-regular-text {
   color: #00425F;
   font-weight: 400;
