@@ -265,6 +265,11 @@ justify-content: space-between;
 /* ==================================
 PARTNER TEXT
 ===================================  */
+.partner-flex {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 96px;
+}
 
 .partner-text {
   padding: 96px 10px;
@@ -280,13 +285,27 @@ color: #00425F;
 
 }
 
+.partner-left-text {
+  max-width: 420px;
+}
+
+.partner-right-text {
+ max-width: 594px;
+}
+
+.partner-right-text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #00425F;
+}
+
 .partner-regular-text {
   color: #00425F;
   font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-padding-bottom: 6px;
-/* or 150% */
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 6px;
 }
 
 .partner-btn-container {
@@ -302,6 +321,24 @@ padding-bottom: 6px;
 
 .partner-btn:hover {
   color: #fff;
+}
+
+.partner-benefit {
+  display: flex;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #18425D;
+}
+
+.partner-benefit i{
+ padding-right: 12px;
+ color: #479FC8;
+}
+.partner_benefits {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 }
 
   
@@ -377,58 +414,7 @@ padding-bottom: 6px;
       padding-bottom: 30px;
   }
   
-  
-  /* ===============================
-  Get in touch SECTION
-  ================================== */
-  
-  .get_in_touch {
-    height: auto;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(../image/blue-generic-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 20px;
-    margin: 80px;
-    border-radius: 10px;
-  }
-  
-  .get-in-main-heading {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 33px;
-  color: #fff;
-  padding: 20px;
-  
-  }
-  
-  .get-in-heading {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  color: white;
-  padding: 20px;
-  }
-  
-  .get-in-btn {
-    background-color: #DC4437;
-    color: #fff;
-    display: inline-block;
-    padding: 10px 30px;
-    cursor: pointer;
-   
-    border: none;
-    border-radius: 5px;
-   
-  }
-  .get-in-btn:hover {
-    color: #fff;
-  }
-  
-  .button-fix {
-    padding: 35px 0;
-  }
+
   
   
   /*==================================
@@ -468,6 +454,12 @@ padding-bottom: 6px;
     padding-left: 20px;
   }
     
+     }
+
+     @media (max-width: 1028px) {
+      .partner-left-text {
+       padding: 0 15px;
+      }
      }
   
      @media (max-width: 991px) {
@@ -510,12 +502,6 @@ padding-bottom: 6px;
   
   /* iPhone 6, 7, 8 ----------- */
   @media (max-width: 768px) {
-    /* Styles */
-    /* .hero-text {
-   
-      top: 20%;
-      font-family: "Averta" !important;
-      /* padding-right: 50px; */
 
       .hero-text {
         left: 7%;
@@ -547,17 +533,25 @@ padding-bottom: 6px;
       .flex-imgs {
         padding-bottom: 30px;
       }
-  
-      .cardless_secure-main-heading {
-        color: #fff;
-        padding-top: 70px;
+
+      .partner-btn {
+        padding: 16px 33px;
       }
   
-  
+      .partner-heading-text {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .partner-right-text {
+      padding-right: 10px;
+  }
       
   }
   
   @media (max-width: 480px) {
+
+
 
     .partner-home {
       height: 530px;
@@ -581,41 +575,32 @@ padding-bottom: 6px;
       width: 320px;
      }
   
-  
-    .get-in-main-heading {
-      font-weight: 700;
-      font-size: 21px;
-      line-height: 33px;
-      padding-top: 0px;
-  }
-  
-  .get-in-heading {
-      font-weight: 300;
-      font-size: 13px;
-      line-height: 24px;
-      color: white;
-  }
-  
-  .flex-imgs {
-    width: 300px;
-  }
-  
-  .transparent-cards img {
-    width: 320px;
-    right: 0%;
-    top: 43.4%;
-  }
-  
-  .cardless_secure-main-heading {
-    padding-top: 34px;
-    padding-bottom: 33px;
-   
-    font-size: 30px;
-    line-height: 38px;
-  }
+
   .partner-text {
     padding: 70px 24px;
     background-color: #fff;
+}
+
+.partner-flex {
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.partner-left-text {
+  padding: 45px 15px;
+}
+
+.partner-btn-container {
+  padding-top: 25px;
+}
+
+.partner-right-text {
+  padding: 0 15px;
+}
+
+.partner-heading-text {
+  font-size: 22px;
+  line-height: 28px;
 }
   
   }
