@@ -370,9 +370,13 @@ align-items: center;
   max-width: 500px;
 }
 
-.flex-imgs {
-  width: 100%;
+.card-img-container img {
+  /* width: 100%; */
 }
+
+/* .flex-imgs {
+  width: 100%;
+} */
 
 /* ===============================
 Cardless, Connected and secure Section
@@ -692,6 +696,10 @@ RESPONSIVE STYLING
 
 .prepaid-flex img {
   padding-right: 0px;
+}
+
+.card-img-container img {
+  width: 100%;
 }
 
 
