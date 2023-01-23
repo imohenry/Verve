@@ -445,15 +445,29 @@ color: #00425F;
 
 }
 
-.bank-flex {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.slide img {
+  width: 90px;
+  /* height: 100px; */
+  animation: scroll 60s linear infinite;
 }
 
-.bank_logos {
-    padding-top: 55px;
-    padding-bottom: 30px;
+.slide-track {
+  width: 100%;
+  display: flex;
+  gap: 3em;
+  overflow: hidden;
+  align-items: center;
+}
+
+.bank-slider {
+  margin-top: 70px;
+  /* background-color: whitesmoke; */
+  padding: 15px 2em;
+}
+
+@keyframes scroll {
+  0% {transform: translatex(0);}
+  100% {transform: translatex(-1000%)}
 }
 
 .bank-img {
