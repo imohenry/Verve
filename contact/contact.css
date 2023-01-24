@@ -135,6 +135,10 @@
     
   } 
 
+  a {
+    text-transform: none;
+  }
+
 
  /* ===============================
  BANNER SECTION START 
@@ -417,6 +421,11 @@ justify-content: space-between;
 .contact-info_small-text a:hover {
   color: #fff;
   transform: scale(1.98 );
+}
+
+.mail-style {
+  text-decoration: none;
+  color: #6B7280 !important;
 }
   
 
