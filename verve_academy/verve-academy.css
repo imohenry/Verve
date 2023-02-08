@@ -673,7 +673,7 @@ RESPONSIVE STYLING
   .verve_academy-home {
     height: 680px;
     background-size: contain;
-    background-position: center;
+    background-position: 50% 57%;
     background-color: #fff !important;
     background-image:
         url('../image/Verve-academy-bg.png');
@@ -682,7 +682,7 @@ RESPONSIVE STYLING
     left: 50px;
     top: 300px;
     font-family: "Averta" !important;
-    padding-top: 44px;
+    padding-top: 0px;
     padding-left: 29px;
     /* padding-right: 50px; */
 
@@ -692,19 +692,20 @@ RESPONSIVE STYLING
       font-size: 32px;
     line-height: 36px;
     text-align: left;
+    padding-bottom: 0px;
     }
 
     .hero-text p {
       font-size: 16px;
       line-height: 23px;
     text-align: left;
-    padding-top: 170px;
+    padding-top: 195px;
 
     }
 
     .hero-text button {
       border-radius: 6px;
-      padding: 16px 78px;
+      padding: 16px 35px;
     }
 
     .get_in_touch {
