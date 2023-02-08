@@ -192,15 +192,18 @@ color: #00425F;
 }
 
 .hero-text button {
-  background-color: #00425F;
-  color: white;
+  background-color: #AEDDF1;
+  color: #00425F;
  margin-top: 32px;
- padding: 16px 78px;
+ padding: 16px 16px;
+ border-radius: 15px !important;
+ margin-bottom: 15px;
+ font-size: 14px;
 
 }
 
 .hero-text button:hover {
-  color: white;
+  color: #00425F;
 }
 
 /* NAVBAR AREA */
