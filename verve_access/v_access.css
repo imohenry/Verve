@@ -290,7 +290,7 @@ Testing and certification section
 }
 .testing_and_cert-flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .testing-img-container {
