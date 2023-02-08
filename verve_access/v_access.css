@@ -156,7 +156,7 @@
 /* Banner text */
 .hero-text {
   text-align: left;
-  max-width: 785px;
+  max-width: 680px;
   padding-left: 112px;
   padding-top: 30px;
   padding-bottom: 131px;
@@ -194,10 +194,26 @@ color: #00425F;
   background-color: #00425F;
   color: white;
  margin-top: 32px;
- padding: 15px 20px;
+ padding: 16px 48px;
+ border-radius: 8px;
 
 }
+.join_verve-access_btn {
+  background: none !important;
+  color: #353F50 !important;
+  border: 1px solid #00425F !important;
+  border-radius: 8px !important;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
 
+.btn_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
 .hero-text button:hover {
   color: white;
 }
@@ -265,6 +281,61 @@ li:hover {
 
 /* BANNER SECTION END */
 
+/* ==================
+Testing and certification section
+=====================*/
+.testing_and_cert {
+  padding-top: 90px;
+}
+.testing_and_cert-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testing-img-container {
+  max-width: 400px;
+
+}
+
+.testing-img-container img {
+  width: 100%;
+}
+
+.testing-text {
+  max-width:  545px;
+}
+
+.testing-heading {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #00425F;
+}
+
+.testing-mid-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.testing-btn {
+  background: #00425F;
+  border-radius: 8px; 
+  padding: 16px 78px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.testing-btn-container {
+  padding-top: 24px;
+}
+
+
+
+
 
 /*==================================
 RESPONSIVE STYLING
@@ -277,10 +348,18 @@ RESPONSIVE STYLING
   .hero-text {
     top: 50%;
   }
+
+  .testing_and_cert {
+    padding: 80px;
+  }
+
+  .testing-text {
+    max-width: 450px;
+}
   
    }
 /* iPads (portrait and landscape) ----------- */
-@media (max-width: 1024px) { 
+@media (max-width: 1028px) { 
   /* Styles */
   
 
@@ -296,6 +375,19 @@ RESPONSIVE STYLING
     .nav-item {
       font-size: 20px;
     padding-right: 35px;
+    }
+
+    .testing_and_cert-flex {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .testing-img-container {
+      padding-bottom: 30px;
+    }
+
+    .testing-text {
+      text-align: center;
     }
 
 }
@@ -323,6 +415,25 @@ RESPONSIVE STYLING
         font-size: 17px;
       line-height: 19px;
       }
+
+      .hero-text button {
+        padding: 16px 22px;
+      }
+  }
+
+  @media (max-width: 520px) {
+
+    .testing_and_cert {
+      padding: 80px 20px;
+    }
+
+    .btn_flex {
+      flex-direction: column;
+    }
+
+    .hero-text button {
+      margin-top: 12px;
+    }
   }
 
 
@@ -332,8 +443,9 @@ RESPONSIVE STYLING
     left: 50px;
     top: 300px;
     font-family: "Averta" !important;
-    padding-top: 90px;
-    /* padding-right: 50px; */
+    padding-top: 70px;
+    padding-right: 20px;
+    padding-left: 20px;
 
     }
 
@@ -348,6 +460,11 @@ RESPONSIVE STYLING
     line-height: 19px;
     text-align: left;
     }
+
+    .testing-btn {
+      padding: 16px 40px;
+    }
+
 }
 
 
@@ -374,4 +491,13 @@ RESPONSIVE STYLING
     /* max-width: 240px; */
     }
 
+    .testing-heading {
+      font-size: 21px;   
+       line-height: 28px;
+    }
+
+    .testing-mid-text {
+      font-size: 13px;
+      line-height: 24px;
+    }
 }

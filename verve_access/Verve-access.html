@@ -35,9 +35,9 @@ integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQV
 
     <!-- VERVE ACCESS HERO -->
     <div class="Verve_Access-home">
-      <section class="top-nav grid_container">
+      <section class="top-nav">
         <div>
-          <a href="../index.html"> <img src="../image/Verve-logo.svg"> </a> 
+          <a href="../index.html"> <img src="../image/Verve-logo.svg" alt="Verve Logo"> </a> 
         </div>
         <input id="menu-toggle" type="checkbox" />
         <label class='menu-button-container' for="menu-toggle">
@@ -52,32 +52,47 @@ integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQV
         </ul>
       </section>
       <div class="hero-text">
-        <h1 class="header-text">Keep up with the scheme, join Verve Access</h1>
+        <h1 class="header-text">Everything you would need as a Verve Member </h1>
         <p>Verve Access is our exclusive portal for Verve issuers and partners. Verve Access members are always first to know about new developments with the scheme, they enjoy easy monitoring of their transactions and unhindered access to scheme benefits.
         </p>
-        <a class="text-left" href="https://new-access.myverveworld.com/"> <button class="btn" style="border: none;">Join Verve Access</button> </a>
+        <div class="btn_flex">
+            <a class="text-left" href="https://new-access.myverveworld.com/"> <button class="btn" style="border: none;">Login to Verve Access</button> </a>
+            <a href=""> <button class="btn join_verve-access_btn">Join Verve Access</button></a>
+        </div>
       </div>
     </div>
+
+    <section class="grid_container">
+        <div class="testing_and_cert">
+            <div class="testing_and_cert-flex">
+                <div class="testing-img-container">
+                    <img src="../image/testing-and-cert-img.png" alt="teesting and certification image">
+                </div>
+
+                <div class="testing-text">
+                    <p class="testing-heading">
+                        Automated Testing & Certification
+                    </p>
+                    <p class="testing-mid-text">
+                        Verve Testing and Certification Platform is designed to provide extensive automated testing tools and services to Verve Scheme members like issuers, acquirers, or acquiring processors. The Platform offers a thorough explanation of the certification process and is adaptable with unique test and certification procedures. 
+                        It allows for self-certification status, is user-friendly, web-based, scalable, and regularly updated with the most recent compliance framework.
+                    </p>
+                    <div class="testing-btn-container">
+                        <a href="https://portal.certification.myverveworld.com/web/login?redirect=https%3A%2F%2Fportal.certification.myverveworld.com%2Fmy" class="testing-btn">Access certification Portal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
 
  <!-- FOOTER SECTION START -->
  <footer class="footer_area">
     <div class="container">
         <section class="ft-main">
-            <!-- <div class="ft-main-item">
-                <h3 class="ft-title">About Us</h3>
-                <ul class="unordered-list">
-                    <li>
-                        <a href="/about-us"><span>Overview</span></a>
-                    </li>
-                    <li>
-                        <a href="/brands"><span>History</span></a>
-                    </li>
-                    <li>
-                        <a href="/leadership"><span>Leadership</span></a>
-                    </li>
-                 
-                </ul>
-            </div> -->
+           
             <div class="ft-main-item">
                 <h3 class="ft-title">Verve Consumer</h3>
                 <ul class="unordered-list">
@@ -152,9 +167,9 @@ integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQV
         <section class="footer_bottom">
             <div class="row">
                 <div class="col-md-3 copyRight"><img class="imgFooter" src="../image/Verve-logo-dark.svg"
-                        width="80"></div>
+                        width="80" alt="Verve Logo"></div>
                 <div class="col-md-5 news_widget text-center copyRight">
-                    <p>© 2002 - 2022 Interswitch Group.</p>
+                    <p>© <script>document.write(new Date().getFullYear());</script> Verve </p>
                 </div>
                 <div class="col-md-4 copyRight">
                     <div class="brand-style">

@@ -146,7 +146,7 @@
   
   /* Banner image */
   .hero-section {
-  height: 100vh;
+  height: 89vh;
   color: white;
   
   background-image: 
@@ -327,6 +327,7 @@ HERE FOR AFRICA SECTION
     color: #fff;
     padding: 20px 0;
     flex-wrap: wrap;
+    align-items: center;
   }
   
   .here-for-things {
