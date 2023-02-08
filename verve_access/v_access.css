@@ -330,6 +330,13 @@ Testing and certification section
   line-height: 24px;
 }
 
+.testing-btn:hover {
+  background: #fff;
+  border: 1px solid #00425F !important;
+  color: #00425F;
+
+}
+
 .testing-btn-container {
   padding-top: 24px;
 }
