@@ -212,6 +212,7 @@ color: #00425F;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 60px;
  
 }
 .hero-text button:hover {
@@ -419,6 +420,10 @@ RESPONSIVE STYLING
       .hero-text button {
         padding: 16px 22px;
       }
+
+      .btn_flex {
+        padding-right: 130px;
+      }
   }
 
   @media (max-width: 520px) {
@@ -429,6 +434,7 @@ RESPONSIVE STYLING
 
     .btn_flex {
       flex-direction: column;
+      padding-right: 0px;
     }
 
     .hero-text button {
