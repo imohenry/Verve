@@ -543,9 +543,7 @@ padding: 20px;
   color: #fff !important;
   text-transform: none;
   border: none !important;
-
- 
- 
+  padding: 16px 78px !important;
 }
 .get-in-btn:hover {
   color: #fff;
