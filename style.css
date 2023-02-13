@@ -134,7 +134,7 @@ li,
 a,
 form,
 label {
-  font-family: "Averta" !important;
+  font-family: "Averta" ;
 
 
 }
@@ -142,7 +142,7 @@ label {
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: "Averta" !important;
+  font-family: "Averta";
   padding: 0;
 
 }
@@ -150,6 +150,294 @@ label {
 a {
   text-decoration: none;
 }
+
+/* ================
+UTILITIES CSS
+=================*/
+
+/* Utility styles: This area has all the styles I resuse in my code. Including the card styling down below */
+
+.grid_container{
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 30px;
+}
+
+.grid_pad {
+  padding: 0 0 !important;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  gap: 40px;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid-row {
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.grid-1 {
+  grid-template-columns: 1fr;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3{
+  grid-template-columns: repeat(3, 1fr) ;
+}
+
+.grid-4{
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-5{
+  grid-template-columns: repeat(5, 1fr) ;
+}
+
+.grid-6{
+  grid-template-columns: repeat(6, 1fr) ;
+}
+
+.grid-7{
+  grid-template-columns: repeat(7, 1fr) ;
+}
+
+.grid-8{
+  grid-template-columns: repeat(8, 1fr) ;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  cursor: pointer;
+ 
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid;
+}
+.btn-outline:hover {
+  background-color: var(--primary-color-dark );
+}
+.btn:hover {
+  transform: scale(0.98 );
+}
+
+
+
+/* I placed some backgrounds and colored buttons here for usage*/
+.bg-primary, .btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.bg-secondary, .btn-secondary {
+  background-color: var(--primary-color-dark);
+  color: #fff;
+}
+
+.bg-dark, .btn-dark {
+  background-color: var(--darker-color);
+  color: #fff;
+}
+
+.bg-light, .btn-light {
+  background-color: var(--light-color);
+  color: rgb(0, 0, 0);
+}
+
+.bg-primary a, .btn-primary a, .bg-secondary a, 
+.btn-secondary a,.bg-dark a, .btn-dark a {
+  color: #fff  ;
+}
+
+
+/* Text sizes here */
+.lead {
+  font-size: 20px;
+}
+
+.sm {
+  font-size: 1rem;
+}
+
+.md {
+  font-size: 2rem;
+}
+
+.lg {
+  font-size: 3rem;
+}
+
+.xl {
+  font-size: 4rem;
+}
+.text-center{
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+/* cards for any card area */
+.card {
+
+  width: 249px;
+  height: 295px;
+  flex: 1;
+  color: #333;
+  padding: 20px;
+  margin: 10px;
+
+  background: #F9FAFB;
+/* box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.05); */
+border-radius: 20px;
+}
+
+/* Margin styles */
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 1.5rem 0;
+}
+
+.my-3 {
+  margin: 2rem 0;
+}
+
+
+.my-4 {
+  margin: 3rem 0;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+  .m-1 {
+      margin: 1rem;
+  }
+
+  .m-2 {
+      margin: 1.5rem;
+  }
+
+  .m-3 {
+      margin: 2rem;
+  }
+
+  .m-4 {
+      margin: 3rem;
+  }
+
+  .m-5 {
+      margin: 5rem;
+  }
+
+
+  /* Padding */
+  .py-1 {
+      padding: 1rem 0;
+  }
+  
+  .py-2 {
+      padding: 1.5rem 0;
+  }
+  
+  .py-3 {
+      padding: 2rem 0;
+  }
+  
+  
+  .py-4 {
+      padding: 3rem 0;
+  }
+  
+  .py-5 {
+      padding: 5rem 0;
+  }
+
+
+  .p-1 {
+      padding : 1rem;
+  }
+
+  .p-2 {
+      padding : 1.5rem;
+  }
+
+  .p-3 {
+      padding : 2rem;
+  }
+
+  .p-4 {
+      padding : 3rem;
+  }
+
+  .p-5 {
+      padding : 5rem;
+  }
+  @media (min-width: 767px) and (max-width: 991px){
+
+    .card_container .grid-4 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .flex {
+        flex-direction: column;
+       
+    }
+  }
+
+
+  
+@media (max-width: 768px) {
+.grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+.flex {
+    flex-direction: column;
+}
+
+.card {
+    flex: unset;
+}
+
+}
+
+@media(max-width: 485px){
+.grid {
+    grid-template-columns: 1fr 1fr;
+}
+.lg {
+    font-size: 2rem;
+}
+}
+
+
 
 /* ===============================
  BANNER SECTION START 
@@ -204,7 +492,9 @@ a {
   /* padding-left: 60px; */
 }
 
-/* NAVBAR AREA */
+/* =========================
+  NAVBAR AREA 
+==========================*/
 nav {
   padding: 2em 1em;
   transition: all .3s;
@@ -229,10 +519,6 @@ nav {
 .logo:hover {
   text-decoration: none;
   cursor: default;
-}
-
-li {
-  /* margin-right: 25px; */
 }
 
 li:hover {
@@ -265,12 +551,89 @@ li:hover {
 
 }
 
-/* .nav-link:active {
-  transform: scale(1);
-} */
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  padding: 3.5em;
+}
 
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+}
 
-  .blink{
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+  font-family: "Averta" !important;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+    /* justify-content: center; */
+    align-items: center;
+    padding-top: 10px;
+
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 1px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+  display: none;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgb(255, 255, 255);
+  transform: rotate(42deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-263deg);
+}
+
+.blink {
     visibility:hidden;
 }
 
@@ -282,7 +645,6 @@ CONNECTING AFRICA SECTION
 ================================== */
 
 .stats {
-
   text-align: center;
   align-self: center;
   padding-bottom: 50px;
@@ -958,6 +1320,2044 @@ HERE FOR AFRICA SECTION
   }
 }
 
+/******** ===================== *******
+          BUSINESS PAGE CSS 
+******** ===================== *******/
+
+
+/* ===============================
+  Business Banner Section Start
+================================== */
+  
+  
+  /* Banner image */
+  .business-hero-section {
+    height: 100vh;
+    color: white;
+    
+    background-image: 
+    linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+    url('../image/Verve-business.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+    }
+    
+    /* Banner text */
+    .business-hero-text {
+    position: absolute;
+    text-align: center;
+    flex-direction: column;
+    max-width: 758px;
+    right: 5%;
+    top: 60%;
+    
+    justify-content: center;
+    font-family: "Averta" !important;
+    /* padding-right: 50px; */
+     
+    }
+    
+    .business-hero-text h2 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 70px;
+      margin: 0 0 1rem 0;
+      line-height: 78px;
+      text-align: right;
+    }
+    
+    .business-hero-text p {
+    
+      text-align: left;
+    
+      font-style: normal;
+      font-weight: 900;
+      font-size: 102px;
+      line-height: 122px;
+      color: white;
+      /* padding-left: 60px; */
+    }
+    
+  
+    /* ===============================
+  HERE FOR AFRICA SECTION
+  ================================== */
+  
+  .business-hfa {
+      width: 100%;
+      text-align: center;
+      background: url(image/hfa-bg.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-top: 60px;
+    
+    }
+  
+    
+    .business-here-for-things {
+      padding: 75px 0px;
+      background-repeat: no-repeat;
+    }
+  
+    .business-here-heading {
+      max-width: 911px;
+     text-align: center;
+    }
+  
+    /* Stats */
+  .business-stats {
+     padding: 50px 25px;
+    background-image: 
+    linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+    url('../image/business-offerings.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .biz-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .business-stats .biz-flex h3 {
+      font-size: 20px;
+      color: #fff;
+      padding-top: 20px;
+      font-weight: 700;
+      
+  }
+  
+  .business-stats .grid p {
+      font-size: 16px;
+      color: #fff;
+  }
+  
+  .business-stats .grid img {
+      padding-top: 10px;
+  }
+  
+  #text-style {
+      font-size: larger;
+  }
+  
+  .business-text-mid {
+      max-width: 224px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #fff;
+  }
+  
+  .business-learn-more {
+      color: #fff;
+      padding-top: 20px;
+    }
+  
+    .business-learn-more:hover {
+      cursor: pointer;
+    }
+  /* Here for Africa section end */
+  
+  /* ===============================
+  Verve Access Section
+  ================================== */
+  .business-verve_access {
+    height: auto;
+    background:  #00425F;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+  }
+  
+  .business-verve_access-text {
+    justify-content: center;
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+  }
+  .business-verve_access-main-heading {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
+  color: #fff;
+  padding: 32px 0px;
+  }
+  
+  .business-v_access-paragraph {
+   
+    margin: 0 auto;
+  }
+  
+  .business-verve_access-heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  }
+  
+  .business-v_access-btn {
+    background-color: #EE312A;
+    color: #fff;
+    text-transform: none;
+    padding: 16px 78px !important;
+   
+  }
+  .business-v_access-btn:hover {
+    color: #fff;
+  }
+  
+  .va-fix {
+    padding: 50px 0;
+  }
+  
+  
+  
+  /* ===============================
+  For You SECTION
+  ================================== */
+  .general-for-you {
+    padding-bottom: 50px;
+    height: 100vh;
+    background-image: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.455), rgba(0, 0, 0, 0.3)),
+    url('../image/Card_board.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  .general-for-you-flex {
+    padding-left: 220px;
+  }
+  
+  .general-for_you-heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  color: #fff;
+  
+  
+  }
+  
+  .general-for_you-paragraph {
+   max-width: 451px;
+   font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  padding: 15px 0;
+  }
+  
+  .general-for_you-btn {
+      background-color: #EE312A;
+      color: #fff;
+      text-transform: none;
+      padding: 16px 78px !important;
+  }
+  
+  .general-for_you-btn:hover{
+      color: #fff;
+  }
+  
+  .general-for_you-text {
+      padding-left: 10px;
+      max-width: 612px;
+  }
+  
+  /* ===============================
+  PARTNER SECTION
+  ================================== */
+  
+  .business-partner-text {
+    max-width: 484px;
+  }
+  
+  .business-partner {
+      background: #F9FAFB;
+      margin: 50px 0;
+  }
+  
+  .business-partner-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  #cardless {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      color: #00425F;
+  }
+  
+  .business-partner-btn {
+    background-color: #00425F;
+    text-transform: none;
+  
+  }
+  
+  .business-partner-btn:hover{
+    color: #fff;
+  }
+  
+  .paycode a {
+    padding-top: 60px;
+  }
+  
+  /* ===============================
+  Cardless, Connected and secure Section
+  ================================== */
+  .cardless_secure {
+    height: auto;
+    background: url("../image/business-offerings.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+  }
+  
+  .cardless_secure-text {
+    justify-content: center;
+    padding: 0px 20px;
+    
+  }
+  
+  .cardless_secure-paragraph {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .cardless_secure-main-heading {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 60px;
+  color: #fff;
+  padding-top: 67px;
+  padding-bottom: 64px;
+  }
+  
+  .cardless_secure-heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  }
+  
+  .cardless_secure-btn {
+    background-color: #EE312A;
+    color: #fff;
+    text-transform: none;
+    padding: 16px 78px !important;
+   
+  }
+  .cardless_secure-btn:hover {
+    color: #fff;
+  }
+  
+  .cs-fix {
+    padding-top: 40px;
+    padding-bottom: 170px;
+  }
+  
+  /* ===============================
+  Partner Banks SECTION
+  ================================== */
+  
+  .pay {
+      padding: 50px 0px;
+  }
+  
+  .pay-story-main-heading {
+   font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 72px;
+  color: #00425F;
+  
+  }
+  
+  .bank_logos {
+      padding-top: 55px;
+      padding-bottom: 30px;
+  }
+  
+  
+  .slide img {
+    width: 90px;
+    /* height: 100px; */
+    animation: scroll 60s linear infinite;
+  }
+  
+  .slide-track {
+    width: 100%;
+    display: flex;
+    gap: 3em;
+    overflow: hidden;
+    align-items: center;
+  }
+  
+  .bank-slider {
+    margin-top: 70px;
+    /* background-color: whitesmoke; */
+    padding: 15px 2em;
+  }
+  
+  @keyframes scroll {
+    0% {transform: translatex(0);}
+    100% {transform: translatex(-1000%)}
+  }
+  
+  /* Partner style */
+  
+  .partner-img-container {
+    max-width: 350px;
+  }
+  
+  .partner-img-container img {
+    width: 100%;
+  }
+  
+
+  /**** =================== ****
+    PERSONAL PAGE CSS
+  **** ===================== ****/
+
+
+  /* ===============================
+   BANNER SECTION START 
+  ================================== */
+  
+  
+  /* Banner image */
+  .personal-hero-section {
+  height: 89vh;
+  color: white;
+  
+  background-image: 
+  linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+  url('../image/Personal_header.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  }
+  
+  /* Banner text */
+  .active {
+    color: #EE312A !important;
+  }
+  .personal-hero-text {
+  position: absolute;
+  text-align: left;
+  flex-direction: column;
+  max-width: 412px;
+  
+  right: 15%;
+  top: 50%;
+  
+  justify-content: center;
+  font-family: "Averta" !important;
+  /* padding-right: 50px; */
+   
+  }
+  
+  .personal-hero-text h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0 0 1rem 0;
+    line-height: 65px;
+  
+    text-align: left;
+  }
+  
+  .personal-hero-text p {
+    text-align: left;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 102px;
+    line-height: 77px;
+    color: white;
+    /* padding-left: 60px; */
+  }
+
+  .good_text {
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+}
+  
+  /* BANNER SECTION END */
+  
+
+  /* ===============================
+HERE FOR AFRICA SECTION
+================================== */
+
+  .personal-hfa-text {
+    max-width: 911px;
+    margin: 0 auto;
+  }
+  
+  .personal-hfa-story-main-heading {
+  top: 48px;
+  padding-bottom: 30px;
+  
+  font-family: 'Averta';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  /* or 180% */
+  
+  text-align: center;
+  
+  color: #ffffff;
+  }
+  
+  .personal-hfa-heading {
+  color: #ffffff;
+  
+  font-family: 'Averta';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  /* or 156% */
+  
+  text-align: center;
+  }
+
+  .personal-hfa-flex {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding: 20px 16px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .personal-here-for-things {
+    padding: 75px 0px;
+    background-repeat: no-repeat;
+  }
+
+  .here-heading {
+    max-width: 911px;
+   text-align: center;
+  }
+
+  /* Stats */
+.personal-stats {
+    padding-top: 75px;
+    padding-bottom: 50px;
+   
+  background-image: 
+  linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+  url('../image/blue-grey-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.personal-text-mid {
+    max-width: 224px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.learn-more {
+    color: #fff;
+   
+    padding-top: 20px;
+  }
+
+  .learn-more:hover {
+    cursor: pointer;
+  }
+
+
+/* Here for Africa section end */
+
+ /* ===============================
+Rewarding SECTION
+==================================
+.reward {
+    padding-top: 75px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background: #FFF;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.reward-story-main-heading {
+    font-family: 'Averta';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    color: #18425D;
+    }
+    
+    .reward-heading {
+    color: #5F738C;;
+    font-family: 'Averta';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    padding: 30px 0;
+    }
+
+    .deals-card {
+        width: 491px;
+        height: 468px;
+        padding: 20px;
+        margin: 10px;
+        background: #F1FEF1;
+        box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+    }
+
+    .big-deal {
+        color: #DC4437;
+        float: right;
+        padding-top: 20px;
+        font-weight: 400;
+        font-size: 22px;
+    }
+
+    .reward-flex {
+      display: flex;
+    justify-content: space-evenly;
+    }
+
+    .reward-img-div {
+      max-width: 400px;
+    }
+
+    .reward-img-div img {
+      width: 100%;
+    }
+
+    .reward-btn-div {
+      margin: 0 auto;
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .reward-btn-div i {
+      font-size: 17px;
+    }
+
+    .reward-btn {
+      background-color:#EE312A;
+      padding: 16px 70px;
+      color: #fff;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .reward-btn:hover { 
+      color: #fff;
+    }
+  
+    .deal-offers {
+        width: 150px;
+        height: 135px;
+
+        padding: 20px;
+        margin: 10px;
+        border: none;
+        background: #EE312A;
+        border-radius: 11px;
+        box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.05);
+        color: #fff;
+    }
+
+    .deal-offers:hover {
+        transform: translateY(-20px);
+        box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.137);
+    }
+
+    .main_content {
+        position: relative;
+        z-index: 10;
+        padding-top: 100px;
+      }
+   
+    .bg-text{
+        top: 10px;
+        position: absolute;
+        z-index: 1;
+       
+      }
+      .background--text{
+        font-weight: 900;
+        font-size: 204px;
+        line-height: 125px;
+        letter-spacing: -7.5px;
+        text-align: center;
+        color: #EBF8FE;
+      }
+
+*/
+
+/* ===============================
+Services SECTION
+================================== */
+
+.services-text {
+  max-width: 484px;
+}
+.services_head {
+
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+
+color: #00425F;
+
+}
+
+.services_paragraph {
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #00425F;
+}
+
+.services {
+    background: #F9FAFB;
+    padding-top: 50px;
+    
+}
+
+.services img {
+    max-width: 100%;
+}
+
+.services-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardless-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+#cardless {
+    font-style: normal;
+font-weight: 700;
+font-size: 40px;
+color: #00425F;
+    
+}
+
+.paycode {
+   padding: 60px 30px;
+}
+
+/* ===============================
+Wallet SECTION
+================================== */
+
+.wallet {
+padding-top: 75px;
+padding-bottom: 50px;
+
+padding-left: 55px;
+padding-right: 55px;
+
+
+background: #E5E7EB;;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+
+.wallet_head {
+max-width: 550px;
+color: #00425F;
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 60px;
+}
+
+.wallet-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.wallet-img {
+  max-width: 640px;
+}
+
+.wallet-img img{
+    max-width: 100%;
+}
+.wallet_paragraph {
+    max-width: 532px;
+    color: #00425F;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.wallet-btn {
+    background-color: #00425F;
+    color: #fff;
+    text-transform: none;
+    
+}
+
+.wallet-btn:hover{
+    color: #fff;
+}
+
+/* ===============================
+Grow Africa SECTION
+================================== */
+.grow_africa {
+  padding: 50px 0;
+  background-image: 
+  linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+  url('../image/Grow_together.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.grow-flex {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.grow_africa-text {
+    float: right;
+    padding-right: 180px;
+}
+
+.grow_africa-heading {
+    color: #fff;
+    max-width: 515px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.grow_africa-paragraph {
+    max-width: 500px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.grow-btn {
+    background-color: #EE312A;
+    padding: 16px 78px !important;
+    color: #fff;
+    text-transform: none;
+}
+
+/* ===============================
+Pay with Verve SECTION
+================================== */
+
+.pay {
+  padding: 80px 0px;
+}
+
+.pay-story-main-heading {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 72px;
+  color: #00425F;
+
+}
+
+.pay-heading {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #353F50;
+}
+
+.logo-item {
+  max-width: 95px;
+  padding: 12px;
+}
+
+.logo-item img {
+  width: 100%;
+}
+
+.brand_logos {
+    padding-top: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.brand_logos img:hover{
+    transform: translateY(-20px);
+    transition: ease-out;
+  }
+/* Personal page end */
+
+/******** ===================== *******
+          CARDS PAGE CSS 
+******** ===================== *******/
+
+ /* ===============================
+ BANNER SECTION START 
+================================== */
+
+
+.p-main {
+  padding: 0 20px;
+}
+
+/* Banner image */
+.cards-home {
+  height: 90vh;
+  color: white;
+  background-image: 
+        linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+        url('../image/cards-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  }
+
+/* Banner text */
+.cards-hero-text {
+  position: absolute;
+  top: 30%;
+  left: 7%;
+  text-align: left;
+  max-width: 550px;
+ 
+  }
+
+.cards-hero-text h1 {
+
+font-style: normal;
+font-weight: 700;
+font-size: 69px;
+line-height: 69px;
+text-align: left;
+color: #f4f4f4;
+  
+}
+
+.cards-hero-text p { 
+  font-size: 19px;
+}
+
+.transparent-cards img {
+  position: absolute;
+  width: 896px;
+  right: 0%;
+  top: 31%;
+}
+
+/* BANNER SECTION END */
+
+/* ==================================
+Different cards
+===================================  */
+ .cards-opening-text {
+  margin: 0 auto;
+  max-width: 785px;
+  padding-top: 78px;
+  text-align: center;
+ }
+
+ .cards-opening-text-heading {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #00425F;
+  padding-bottom: 26px;
+ }
+
+ .cards-opening-main-text {
+  color: #00425F;
+ }
+
+ .verve-card {
+  padding-top: 84px;
+ }
+ .verve-card-text {
+  max-width: 484px;
+ color: #00425F;
+ padding-top: 20px;
+
+ }
+
+ .verve-card-heading {
+font-size: 40px;
+font-weight: 700;
+line-height: 60px;
+
+color: #00425F;
+ }
+
+ .verve-card-paragraph {
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #00425F;
+padding-bottom: 10px;
+
+ }
+
+ .verve-card-heading-2 {
+  font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+}
+
+.verve-card-text hr {
+  color: #DC4437;
+  border: 0;
+    border-top: 1px solid #DC4437;
+}
+
+.verve-card-heading-2 i {
+  float: right;
+  width: 10px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.verve-card-text ul {
+  list-style-type: disc;
+  padding-left: 20px;
+
+}
+
+.global-partners {
+  padding-bottom: 55px;
+  max-width: 280px;
+}
+
+.duo-flex-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.prepaid-flex {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.prepaid-flex img {
+ padding-right: 60px;
+}
+
+.card-img-container {
+  max-width: 500px;
+}
+
+.card-img-container img {
+  /* width: 100%; */
+}
+/* Cards Page end */
+
+
+/******** ===================== *******
+          CONTACT PAGE CSS 
+******** ===================== *******/
+
+/* ===============================
+ BANNER SECTION START 
+================================== */
+
+
+
+
+/* Banner image */
+.contact-home {
+  height: 780px;
+  color: white;
+  background-image: 
+        linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+        url('../image/contact-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  }
+
+/* Banner text */
+.contact-hero-text {
+  position: absolute;
+  top: 30%;
+  left: 4%;
+  text-align: left;
+  max-width: 635px;
+ 
+  }
+
+.contact-hero-text h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 65px;
+  text-align: left;
+  color: #f4f4f4;
+}
+
+/* BANNER SECTION END */
+
+/* ==================================
+  VERVE CONTACT INFORMATION AREA
+===================================  */
+
+.contact-info {
+  height: auto;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0),
+  rgba(0, 0, 0, 0.3)), url("../image/blue-generic-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 20px;
+  margin: 80px;
+  border-radius: 10px;
+}
+
+.contact-info-flex {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  color: #fff;
+  padding: 70px 90px;
+}
+
+.contact-info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-info-item i {
+  font-size: 25px;
+  padding: 15px;
+  border-radius: 50%;
+ color: #307399;
+ background-color: #EBF8FE;
+}
+
+.contact-info_big-text {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.contact-info_small-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contact-info_small-text a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+  
+  /* ===============================
+    ACCORDIION SECTION
+  ================================== */
+  
+  .accordion-heading {
+    font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  padding: 0 15px;
+  
+  text-align: center;
+  color: #00425F;
+  }
+
+  
+  .faq_main {
+    width: 960px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 30px 60px 30px;
+    text-align: left;
+}
+
+
+.faqs-item {
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 0;
+    display: block;
+    background-color: #fff;
+    border-bottom: 1px solid #E5E7EB !important;
+}
+
+.faqs-title {
+    display: flex;
+    position: relative;
+    color: #072F40;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    text-decoration: none;
+    padding: 10px;
+    width: 90%;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active,
+.faqs-title:hover {
+   
+    color: #072F40;
+}
+
+.faqs-title:after {
+    content: '\002B';
+    color: #072F40;
+    font-weight: normal;
+    float: right;
+    margin-left: auto;
+    font-size: 24px;
+    line-height: 1;
+    padding-left: 20px;
+}
+
+.active:after {
+    content: "\2212";
+    color: #DC4437;
+}
+
+.faqs-content {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.faqs-content-inside {
+    padding: 20px;
+    max-width: 637px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #6B7280;
+}
+
+.contact-info_small-text a:hover {
+  color: #fff;
+  transform: scale(1.98 );
+}
+
+.mail-style {
+  text-decoration: none;
+  color: #6B7280 !important;
+}
+
+
+/******** ===================== *******
+          CARDLESS OFFERINGS PAGE CSS 
+******** ===================== *******/
+
+
+/* ===============================
+ BANNER SECTION START 
+================================== */
+
+.p-main {
+  padding: 0 20px;
+}
+
+/* Banner image */
+.cardless-home {
+  height: 90vh;
+  color: white;
+  background-image: 
+        linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+        url('../image/deals-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  }
+
+/* Banner text */
+.cardless-hero-text {
+  position: absolute;
+  top: 30%;
+  left: 12%;
+  text-align: left;
+  max-width: 550px;
+ 
+  }
+
+.cardless-hero-text h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 80px;
+  text-align: left;
+  color: #f4f4f4;
+  
+}
+
+
+/* ==================================
+Different Cardless offerings
+===================================  */
+   .cardless-offerings-flex {
+      padding-top: 84px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      flex-direction: row;
+   }
+
+    .cardless-offerings-text {
+      max-width: 484px;
+      color: #00425F;
+    }
+  
+   .cardless-offerings-heading {
+      font-size: 40px;
+      font-weight: 700;
+      color: #00425F;
+   }
+  
+   .cardless-offerings-paragraph {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #00425F;
+      padding-bottom: 10px;
+    }
+
+   .cardless-offerings-list-parent1 {
+      list-style: none;
+    }
+    .cardless-offerings-list {
+      list-style: none;
+    }
+    .cardless-offerings-heading-2 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    
+  .cardless-offerings-text hr {
+    color: #DC4437;
+    border: 0;
+    border-top: 1px solid #DC4437;
+  }
+  
+  .cardless-offerings-heading-2 i {
+    float: right;
+    width: 10px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+
+  .benefits-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .cardless-offerings-list-parent1 li {
+    font-weight: 400;
+    font-size: 17px;
+    color: #00425F;
+    padding-bottom: 8px;
+  }
+  
+  .cardless-offerings-list-parent1 i { 
+    font-weight: 800;
+    padding-right: 8px;
+  }
+  /* .verve-card img {
+    width: auto;
+  } */
+  
+  .offerings-img-container {
+    max-width: 400px;
+  }
+
+  .offerings-img-container img {
+    width: 100%;
+  }
+
+  .co-btn-div {
+    padding: 20px 0;
+  }
+
+  .co-btn {
+    padding: 16px 78px;
+    color: #fff;
+    background-color: #00425F;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+
+  .co-btn:hover {
+    color: #fff;
+  }
+  
+/******** ===================== *******
+          PARTNER WITH VERVE PAGE CSS 
+******** ===================== *******/
+
+  /* ===============================
+ BANNER SECTION START 
+================================== */
+
+/* Banner image */
+.partner-home {
+  height: 78vh;
+  color: white;
+  background-image: 
+        linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+        url('../image/partner-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  }
+
+/* Banner text */
+.partner-hero-text {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  text-align: left;
+  max-width: 351px;
+ 
+  }
+
+.partner-hero-text h1 {
+
+font-style: normal;
+font-weight: 700;
+font-size: 62px;
+line-height: 65px;
+text-align: left;
+color: #f4f4f4;
+  
+}
+
+/* BANNER SECTION END */
+
+
+/* ==================================
+PARTNER TEXT
+===================================  */
+.partner-flex {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 96px;
+}
+
+.partner-text {
+  padding: 96px 10px;
+  background-color: #fff;
+}
+
+.partner-heading-text {
+  font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 36px;
+color: #00425F;
+
+}
+
+.partner-left-text {
+  max-width: 420px;
+}
+
+.partner-right-text {
+ max-width: 594px;
+}
+
+.partner-right-text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #00425F;
+}
+
+.partner-regular-text {
+  color: #00425F;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 6px;
+}
+
+.partner-btn-container {
+  padding-top: 60px;
+}
+
+.partner-btn {
+  padding: 16px 60px;
+  background-color: #EE312A;;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.partner-btn:hover {
+  color: #fff;
+}
+
+.partner-benefit {
+  display: flex;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #18425D;
+}
+
+.partner-benefit i{
+ padding-right: 12px;
+ color: #479FC8;
+}
+.partner_benefits {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/******** ===================== *******
+          VERVE ACADEMY PAGE CSS 
+******** ===================== *******/
+
+/* ===============================
+BANNER SECTION START 
+================================== */
+
+
+/* Banner image */
+.verve_academy-home {
+  height: auto;
+background-color: white;
+background-image: 
+      linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+      url('../image/Verve-academy-bg.png');
+background-repeat: no-repeat;
+background-size: cover;
+/* background-position: center; */
+}
+
+/* Banner text */
+.verve_academy-hero-text {
+text-align: left;
+max-width: 612px;
+padding-left: 172px;
+padding-top: 30px;
+padding-bottom: 131px;
+margin: 0;
+
+
+/* padding-right: 50px; */
+}
+
+.verve_academy-hero-text h1 {
+
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 61px;
+text-align: left;
+color: #00425F;
+padding-bottom: 32px;
+
+}
+
+.verve_academy-hero-text p {
+font-family: "Averta" !important;
+text-align: left;
+
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+color: #00425F;
+/* padding-left: 60px; */
+}
+
+.verve_academy-hero-text button {
+background-color: #AEDDF1;
+color: #00425F;
+margin-top: 32px;
+padding: 16px 16px;
+border-radius: 15px !important;
+margin-bottom: 15px;
+font-size: 14px;
+
+}
+
+.verve_academy-hero-text button:hover {
+color: #00425F;
+}
+
+.academy-nav {
+  color: #00425F !important;
+}
+.academy-nav:hover {
+  color: #DC4437 !important;
+}
+
+/* BANNER SECTION END */
+
+
+/* ===============================
+HERE FOR AFRICA SECTION
+================================== */
+
+.hfa {
+  width: 100%;
+  text-align: center;
+  background: url(image/hfa-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 60px;
+}
+
+.learn-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.learn-main-heading {
+  padding-bottom: 30px;
+  max-width: 551px;
+  font-family: 'Averta';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 64px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.learning-heading {
+  color: #ffffff;
+  font-family: 'Averta';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  max-width: 512px;
+  text-align: left;
+}
+
+.learn-flex {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+
+
+/* Stats */
+.verve_academy-stats {
+  padding-top: 75px;
+  padding-bottom: 50px;
+  background-image: 
+  linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+  url('../image/blue-grey-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  }
+
+
+
+.payments-heading {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+#text-style {
+font-size: larger;
+}
+
+.learn_text-mid {
+  max-width: 333px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.learn-more {
+  color: #fff;
+  padding-top: 20px;
+}
+
+.learn-more:hover {
+  cursor: pointer;
+}
+
+
+/* ================
+WEBINAR SECTION
+==================*/
+
+.webinar-section {
+  padding-top: 62px;
+}
+
+.webinar-heading {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #00425F;
+  padding-bottom: 20px;
+}
+
+.webinar {
+  background-color: #F9FAFB;
+  border-radius: 24px;
+}
+
+
+.webinar-flex {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px 0;
+}
+
+
+.webinar-image-container {
+  max-width: 350px;
+}
+
+.webinar-image-container img {
+width: 100%;
+}
+
+.webinar-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.webinar-text-heading {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #18425D;
+}
+
+.webinar-paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.webinar-date {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 0;
+  color: #EE312A;
+}
+
+.webinar-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.webinar-btns i {
+  font-size: 20px;
+}
+
+.webinar-watch {
+  background: #00425F;
+  text-decoration: none;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 13px 25px;
+  text-align: center;
+}
+
+.more-webinar {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #EE312A;
+}
+
+
+/******** ===================== *******
+          VERVE ACCESS PAGE CSS 
+******** ===================== *******/
+
+/* ===============================
+BANNER SECTION START 
+================================== */
+
+
+/* Banner image */
+.Verve_Access-home {
+  color: white;
+  background-image: 
+        linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+        url('../image/Verve-Access.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
+  /* Banner text */
+  .verve_access-hero-text {
+    text-align: left;
+    max-width: 680px;
+    padding-left: 112px;
+    padding-top: 30px;
+    padding-bottom: 131px;
+    margin: 0;
+  }
+  
+  .verve_access-hero-text h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 69px;
+    text-align: left;
+    color: #00425F;
+    padding-bottom: 32px;
+  
+  }
+  
+  .verve_access-hero-text p {
+    font-family: "Averta" !important;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #00425F;
+    /* padding-left: 60px; */
+  }
+  
+  .verve_access-hero-text button {
+    background-color: #00425F;
+    color: white;
+    margin-top: 32px;
+    padding: 16px 48px;
+    border-radius: 8px;
+  }
+  .join_verve-access_btn {
+    background: none !important;
+    color: #353F50 !important;
+    border: 1px solid #00425F !important;
+    border-radius: 8px !important;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .verve_access-btn_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 60px;
+  
+  }
+  .verve_access-hero-text button:hover {
+    color: white;
+  }
+  
+  /* BANNER SECTION END */
+  
+  /* ==================
+  Testing and certification section
+  =====================*/
+  .testing_and_cert {
+    padding-top: 90px;
+  }
+  .testing_and_cert-flex {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .testing-img-container {
+    max-width: 400px;
+  }
+  
+  .testing-img-container img {
+    width: 100%;
+  }
+  
+  .testing-text {
+    max-width:  545px;
+  }
+  
+  .testing-heading {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #00425F;
+  }
+  
+  .testing-mid-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+  
+  .testing-btn {
+    background: #00425F;
+    border-radius: 8px; 
+    padding: 16px 78px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .testing-btn:hover {
+    background: #fff;
+    border: 1px solid #00425F !important;
+    color: #00425F;
+  }
+  
+  .testing-btn-container {
+    padding-top: 24px;
+  }
+  
+  
+
+/* ===============================
+Cardless, Connected and secure Section
+================================== */
+
+.cardless_secure-heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  padding: 70px 0;
+}
+
+.cards-get-in-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  cursor: pointer;
+ 
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.secure_bg {
+  background: url("../image/red-generic-bg.png") !important;
+}
+
+
+  
+/* ===============================
+Get in touch SECTION
+================================== */
+.get_in_touch {
+  height: auto;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), 
+  rgba(0, 0, 0, 0.3)), url(../image/blue-generic-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 20px;
+  margin: 80px;
+  border-radius: 10px;
+}
+
+.get-in-main-heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  color: #fff;
+  padding-top: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.get-in-heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: white;
+  padding: 20px;
+}
+
+.get-in-btn {
+  background-color: #DC4437;
+  color: #fff;
+  text-transform: none;
+}
+.get-in-btn:hover {
+    color: #fff;
+}
+
+.button-fix {
+    padding: 40px 0;
+}
+
+
 /* ====================================
   FOOTER STYLING
 =====================================*/
@@ -980,6 +3380,12 @@ RESPONSIVE STYLING
 @media (max-width: 1580px) {
   .lottie-earth {
     width: 899px !important;
+  }
+}
+
+@media (max-width: 1450px) {
+  .business-for-you-flex {
+    padding-left: 170px;
   }
 }
 
@@ -1017,6 +3423,19 @@ RESPONSIVE STYLING
    
     /* padding-right: 50px; */
   }
+}
+
+@media (max-width: 1350px) {
+  .cards-home {
+    height: 100vh;
+    }
+  .cardless-home {
+    height: 100vh;
+  }
+  .partner-home {
+    height: 100vh;
+  }
+
 }
 
 @media (max-width: 1340px) {
@@ -1070,6 +3489,111 @@ RESPONSIVE STYLING
   .lottie-earth {
     width: 710px !important;
   }
+
+  .menu > li {
+    margin: 0 0rem;
+}
+.top-nav { 
+  padding: 1.5em 1.5em;
+}
+
+/* From the Business page */
+.business-hero-section {
+  height: 120vh;
+  }
+  .business-hero-text {
+    top: 58%;
+    right: 20%;
+  }
+
+  .pay-story-main-heading {
+    padding-left: 20px;
+  }
+  
+  .business-verve_access {
+    height: auto;
+   }
+
+  .cardless_secure-main-heading{
+    padding-top: 50px;
+  
+  }
+  /* .grow_africa {
+    height: 54vh;
+  } */
+
+  /* From the Personal page */
+  .personal-hero-section {
+    height: 120vh;
+    }
+    .personal-hero-text {
+      top: 50%;
+      right: 20%;
+    }
+
+    .deal-fix {
+      width: 320px;
+    }
+
+
+  .get_in_touch {
+    height: auto;
+  }
+
+  /* From the Cards page */
+  .cards-home {
+    height: 125vh;
+    }
+    .cards-hero-text {
+      top: 17%;
+    }
+  
+  
+  .transparent-cards img {
+    width: 817px;
+    right: 0%;
+    top: 48.4%;
+  }
+
+  /* From contact page */
+  .contact-hero-text {
+    top: 30%;
+  }
+
+  /* From the Cardless offerings page */
+  .cardless-home {
+    height: 125vh;
+   }
+    .cardless-hero-text {
+      top: 17%;
+  }
+
+  /* From Partner page */
+  .partner-home {
+    height: 125vh;
+    }
+  .partner-hero-text {
+    top: 30%;
+  }
+
+  /* From the Verve Academy Page */
+  .verve_academy-hero-text {
+    top: 50%;
+  }
+
+  /* From the Verve Access Page */
+  .verve_access-hero-text {
+    top: 50%;
+  }
+  
+  .testing_and_cert {
+    padding: 80px;
+  }
+  
+  .testing-text {
+    max-width: 450px;
+  }
+
 }
 
 @media (max-width: 1215px) {
@@ -1088,6 +3612,114 @@ RESPONSIVE STYLING
   .lottie-earth {
     width: 525px !important;
   }
+}
+
+@media (max-width: 1028px) {
+  .business-partner-text {
+    /* padding-right: 13px; */
+  }
+
+  .general-for-you-flex {
+    padding-left: 20px;
+}
+/* From the Personal page */
+.services-text {
+  padding: 35px 0;
+}
+.services-flex {
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardless-flex {
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+/* From Contact Page */
+.contact-hero-text {
+  width: auto;
+  top: 30%;
+}
+
+
+.contact-info-flex {
+  padding: 70px 7px;
+}
+
+/* From Partner page */
+.partner-hero-text {
+  width: auto;
+  top: 30%;
+  font-family: "Averta" !important;
+}
+
+.partner-text {
+  padding: 96px 65px;
+  background-color: #fff;
+}
+
+/* From the Verve Academy page */
+.verve_academy-hero-text {
+  width: auto;
+  left: 50px;
+  top: 300px;
+  font-family: "Averta" !important;
+  padding-left: 55px;
+  }
+
+  .learn-text {
+    padding: 0 10px;
+  }
+
+  .learn-flex {
+    padding: 0 10px;
+  }
+
+  .webinar-heading {
+    padding-left: 30px;
+  }
+
+  /* From the Verve Access page */
+  .verve_access-hero-text {
+    width: auto;
+    left: 50px;
+    top: 300px;
+    font-family: "Averta" !important;
+    padding-left: 55px;
+}
+
+  .testing_and_cert-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testing-img-container {
+    padding-bottom: 30px;
+  }
+
+  .testing-text {
+    text-align: center;
+  }
+
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1024px) { 
+
+  .cards-hero-text {
+    width: auto;
+    top: 17%;
+    font-family: "Averta" !important;
+    /* padding-right: 50px; */
+    }
+
+    .cardless-hero-text {
+      width: auto;
+      top: 17%;
+      font-family: "Averta" !important;
+      /* padding-right: 50px; */
+    }
+
 }
 
 
@@ -1114,8 +3746,6 @@ RESPONSIVE STYLING
     font-size: 45px;
   }
   .footprint_text p {
-    /* width: 262px; */
-    /* height: 55px; */
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
@@ -1125,16 +3755,64 @@ RESPONSIVE STYLING
   .lottie-earth {
     width: 525px !important;
   }
+
+  .business-hero-text {
+    right: 25%;
+}
+
+.nav-item {
+  font-size: 15px;
+}
+
+.business-partner-text {
+padding-right: 0px;
+}
+
+/* From the personal page */
+.personal-hero-text {
+  right: 25%;
+}
+
+/* From the Cards page */
+.flex-cards {
+  flex-direction: column;
+}
+
+
+.transparent-cards img {
+  width: 675px;
+  right: 0%;
+  top: 39.4%;
+}
+
+/* From the Cardless offerings */
+.cardless-offerings-flex {
+  flex-direction: column;
+  align-items: center;
+}
+
+/* From the Verve Academy page */
+.learn-main-heading {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 45px;
+}
+.learning-heading {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.learn-text {
+  padding-bottom: 30px;
+}
+
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media (max-width: 768px) {
-  /* Styles */
-
+@media (max-width: 770px) {
 
   .hero-text {
     width: auto;
-
     left: 250px;
     top: 300px;
     font-family: "Averta" !important;
@@ -1180,13 +3858,9 @@ RESPONSIVE STYLING
   }
 
   .footprint_text {
-
-    /* position: absolute; */
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* padding-left: 70px; */
-    /* width: auto; */
     padding-left: 0px;
     flex: 1
   }
@@ -1207,11 +3881,7 @@ RESPONSIVE STYLING
     font-weight: 400;
     font-size: 27px;
     line-height: 40px;
-
     margin-bottom: 0;
-
-    /* text-align: center; */
-
     color: #00425F;
   }
 
@@ -1242,6 +3912,306 @@ RESPONSIVE STYLING
     flex-direction: column-reverse;
     align-items: center;
   }
+
+  .top-nav { 
+    padding: 1.5em 1.5em;
+  }
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 89px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    z-index: 10;
+    
+  }
+
+  .menu a {
+    color: black;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: none;
+    padding-top: 15px !important;
+    height: 3em;
+    /* padding: 0.5em; */
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: left;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 74%;
+    color: white;
+    background-color: rgba(34, 34, 34, 0);
+    color: black;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+
+  /* From the business page */
+  .business-hero-text {
+    right: 3%;
+    max-width: 450px;
+}
+
+.business-hero-text h2 {
+  font-size: 60px;
+  line-height: 62px;
+  text-align: right;
+  }
+
+  /* From the Personal page */
+  .personal-hero-text {
+    left: 200px;
+}
+
+.background--text {
+  font-weight: 900;
+  font-size: 190px;
+}
+.personal-hero-text h2 {
+    font-size: 55px;
+  line-height: 36px;
+  text-align: left;
+  }
+
+  .personal-hero-text p {
+    font-size: 90px;
+line-height: 61px;
+  text-align: left;
+  }
+
+  .reward-img-div {
+    max-width: 263px;
+}
+
+   .reward {
+    padding-top: 75px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: #FFF;
+    background-size: cover;
+    background-position: center;
+}
+
+.wallet-flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.personal-hero-section {
+  height: 85vh;
+  color: white;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), 
+  rgba(0, 0, 0, 0.3)), url(../image/Personal_header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+.brand_logos {
+flex-wrap: wrap;
+}
+
+/* From the Cards page */
+.cards-home {
+  height: 91vh;
+}
+.cards-hero-text {
+  top: 20%;
+  font-family: "Averta" !important;
+}
+
+  .cards-hero-text h1 {
+    font-size: 56px;
+    line-height: 50px;
+  }
+
+  .cards-hero-text p {
+    font-size: 14px;
+  line-height: 19px;
+  }
+
+  .transparent-cards img {
+    width: 572px;
+    right: 0%;
+    top: 41.4%;
+  }
+
+  .flex-imgs {
+    padding-bottom: 30px;
+  }
+
+  /* Contact page */
+  .contact-hero-text {
+    left: 5%;
+    top: 49%;
+    text-align: left;
+    max-width: 551px;
+  }
+
+
+  .contact-hero-text h1 {
+    font-size: 68px;
+    line-height: 72px;
+  }
+
+  .contact-info-flex {
+    padding: 70px 15px;
+    flex-direction: column;
+  }
+
+  /* From the cardless offerings page */
+  .cardless-hero-text {
+    top: 20%;
+    font-family: "Averta" !important;
+  }
+
+    .cardless-hero-text h1 {
+      font-size: 47px;
+      line-height: 50px;
+    }
+
+    .cardless-hero-text p {
+      font-size: 11px;
+      line-height: 19px;
+    }
+
+    /* From the Partner page */
+    .partner-hero-text {
+      left: 7%;
+      text-align: left;
+      max-width: 551px;
+    }
+
+
+    .partner-hero-text h1 {
+      font-size: 92px;
+      line-height: 83px;
+    }
+
+   
+    .partner-btn {
+      padding: 16px 33px;
+    }
+
+    .partner-heading-text {
+      font-size: 20px;
+      line-height: 28px;
+  }
+
+  .partner-right-text {
+    padding-right: 10px;
+  }
+
+  /* From the Verve Academy page */
+  .verve_academy-hero-text {
+    left: 50px;
+    top: 300px;
+    font-family: "Averta" !important;
+    padding-right: 60px;
+  }
+
+  .verve_academy-hero-text h1 {
+    font-size: 47px;
+    line-height: 47px;
+  }
+
+  .verve_academy-hero-text p {
+    font-size: 17px;
+  line-height: 19px;
+  }
+
+  .webinar-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .learn-text {
+    flex-direction: column;
+  }
+
+  .webinar-image-container {
+    max-width: 470px;
+}
+
+  .webinar-btns {
+    padding-top: 20px;
+  }
+
+  /* From the Verve Access page */
+  .Verve_Access-home {
+    background-position: left;
+  }
+  .verve_access-hero-text {
+      left: 50px;
+      top: 300px;
+      font-family: "Averta" !important;
+      padding-right: 60px;
+    }
+
+    .verve_access-hero-text h1 {
+      font-size: 47px;
+      line-height: 47px;
+    }
+
+    .verve_access-hero-text p {
+      font-size: 17px;
+    line-height: 19px;
+    }
+
+    .verve_access-hero-text button {
+      padding: 16px 22px;
+    }
+
+    .verve_access-btn_flex {
+      padding-right: 130px;
+    }
+
+
+  .cardless_secure-main-heading {
+    color: #fff;
+    padding-top: 70px;
+  }
+
+  .general-for-you-flex {
+    padding-left: 15px;
+  }
+
+}
+
+
+@media (max-width: 630px) {
+  .contact-info {
+    margin: 126px
+  }
+
+  .partner-flex {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  .partner-btn-container {
+    padding-top: 22px;
+    padding-bottom: 50px;
+}
 
 }
 
@@ -1276,12 +4246,83 @@ RESPONSIVE STYLING
 
   }
 
+  /* From the Business page */
+  .business-hero-text {
+    left: 207px;
+    top: 300px;
+    font-family: "Averta" !important;
+    padding-right: 7px;
 }
 
 
 
-@media (max-width: 485px) {
+    .business-hero-text h1 {
+      font-size: 24px;
+    line-height: 36px;
+    text-align: right;
+    }
 
+    .wallet img {
+      max-width: 320px;
+    }
+
+    .get_in_touch {
+      padding-top: 0px;
+      margin: 20px;
+      height: 42vh;
+    }
+
+
+    #cardless {
+      padding: 0 30px;
+    }
+
+    .paycode a {
+      padding: 30px 28px;
+    }
+
+    /* From Personal Page */
+    .personal-hero-text {
+        right: 15%;
+       top: 300px;
+       font-family: "Averta" !important;
+       padding-right: 7px;
+    }
+       .personal-hero-text h1 {
+          font-size: 24px;
+          line-height: 36px;
+          text-align: right;
+    }
+   
+       .personal-hero-text p {
+          font-size: 48px;
+          line-height: 19px;
+          text-align: right;
+       }
+ 
+       .wallet img {
+         max-width: 320px;
+       }
+}
+
+@media (max-width: 520px) {
+
+  .testing_and_cert {
+    padding: 80px 20px;
+  }
+
+  .verve_access-btn_flex {
+    flex-direction: column;
+    padding-right: 0px;
+  }
+
+  .verve_access-hero-text button {
+    margin-top: 12px;
+  }
+}
+
+
+@media (max-width: 485px) {
   .hero-section {
     height: 550px;
   }
@@ -1385,6 +4426,417 @@ RESPONSIVE STYLING
     line-height: 38px;
     text-align: left;
   }
+
+  /* From business page */
+  .business-hero-section {
+    height: 580px;
+    background-position: center;
+}
+  .business-hero-text {
+    /* right: 10%; */
+    left: 43%;
+    top: 31%;
+    padding-right: 0px;
+    max-width: 245px; 
+  }
+    .business-hero-text h2 {
+      font-size: 40px;
+      line-height: 47px;
+      text-align: right;
+    }
+
+    .business-hero-text p {
+      font-size: 54px;
+      line-height: 19px;
+      text-align: left;
+    }
+
+    .hfa-heading {
+      font-size: 15px;
+    }
+
+    .main_content img{
+      width: 290px;
+    }
+    .background--text {
+      font-size: 130px;
+    }
+    .general-for-you-flex {
+      padding-left: 0px;
+    }
+    .general-for_you-heading {
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 36px;
+    }
+
+    .general-for_you-text {
+      padding-left: 10px;
+      max-width: 612px;
+      padding: 50px 20px
+  }
+
+    .lg {
+        font-size: 2rem;
+    }
+
+    #cardless {
+        font-size: 24px;
+    }
+
+    .verve_access-main-heading {
+      font-size: 42px;
+      line-height: 15px;
+      padding: 16px 0px;
+  }
+
+  /* From the Personal Page */
+  .personal-hero-section {
+    height: 550px;
+  }
+  .personal-hero-text {
+    left: 7%;
+    right: 2%;
+    top: 300px;
+    font-family: "Averta" !important;
+    padding-right: 20px;
+  }
+
+    .personal-hero-text h2 {
+      font-size: 42px;
+    line-height: 36px;
+    text-align: left;
+    }
+
+    .personal-hero-text p {
+      font-size: 64px;
+      line-height: 42px;
+      text-align: left;
+    }
+
+    .personal-hfa-story-main-heading {
+      padding-bottom: 5px;
+      font-family: 'Averta';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 60px;
+      text-align: left;
+      color: #ffffff;
+  }
+
+    .personal-hfa-heading {
+      color: #ffffff;
+      font-family: 'Averta';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 28px;
+      
+      text-align: left;
+      }
+
+    .main_content img{
+      width: 290px;
+    }
+
+    .deal-fix {
+      width: 165px;
+    }
+    .background--text {
+      font-size: 130px;
+    }
+    .wallet img {
+      max-width: 300px;
+    }
+
+  .services_head {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .wallet_head {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .reward-flex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+  .reward-img-div {
+    padding-bottom: 20px;
+    max-width: 400px;
+  }
+
+  .reward-btn {
+    background-color: #EE312A;
+    padding: 15px 30px;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 12px;
+  } 
+
+    .grow_africa-text {
+      padding-right: 0px;
+    }
+
+    .services img{
+        width: 320px;
+        margin-right: auto;
+    }
+
+
+    .services_paragraph {
+        max-width: 289px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .grow_africa {
+        height: auto;
+    }
+
+  .get_in_touch {
+    margin: 20px;
+  }
+
+  .get-in-main-heading {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 43px;
+    padding-top: 0px;
+}
+
+/* From the Cards Page */
+.cards-home {
+  height: 650px;
+}
+
+.cards-hero-text {
+    left: 4%;
+    top: 20%;
+    font-family: "Averta" !important;
+    padding: 0 15px;
+  }
+
+  .cards-hero-text h1 {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: left;
+  }
+
+ .item img {
+  width: 320px;
+ }
+
+.transparent-cards img {
+  width: 355px;
+  right: 9%;
+  top: 39.4%;
+}
+
+.prepaid-flex img {
+  padding-right: 0px;
+}
+
+.card-img-container img {
+  width: 100%;
+}
+
+/* From the Contact page */
+.contact-home {
+  height: 530px;
+}
+
+.contact-hero-text {
+  left: 6%;
+  top: 33%;
+  font-family: "Averta" !important;
+}
+
+  .contact-hero-text h1 {
+    font-size: 46px;
+    line-height: 49px;
+    text-align: left;
+  }
+
+  .contact-info {
+    margin: 28px;
+  }
+
+
+  /* From the Cardless offerings page */
+  .cardless-hero-home {
+    height: 500px;
+  }
+
+  .cardless-hero-text {
+    top: 20%;
+    font-family: "Averta" !important;
+    }
+
+    .cardless-hero h1 {
+      font-size: 37px;
+    line-height: 36px;
+    text-align: left;
+    }
+
+
+.get-in-heading {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 24px;
+    color: white;
+}
+.cardless_secure-text {
+  padding: 50px 20px;
+}
+
+  .cardless_secure-main-heading {
+    padding-top: 34px;
+    padding-bottom: 33px;
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  /* From the Partner page */
+  .partner-home {
+    height: 530px;
+  }
+
+  .partner-hero-text {
+    left: 8%;
+    top: 19%;
+    font-family: "Averta" !important;
+    /* padding-right: 50px; */
+
+    }
+
+    .partner-hero-text h1 {
+      font-size: 55px;
+      line-height: 57px;
+      text-align: left;
+    }
+
+
+    .partner-text {
+      padding: 70px 24px;
+      background-color: #fff;
+    }
+
+
+
+    .partner-left-text {
+      padding: 45px 15px;
+    }
+
+    .partner-btn-container {
+      padding-top: 25px;
+    }
+
+    .partner-right-text {
+      padding: 0 15px;
+    }
+
+    .partner-heading-text {
+      font-size: 22px;
+      line-height: 28px;
+    }
+
+    /* From the Verve Academy page */
+    .verve_academy-home {
+      height: 680px;
+      background-size: contain;
+      background-position: 50% 57%;
+      background-color: #fff !important;
+      background-image:
+          url('../image/Verve-academy-bg.png');
+    }
+    .verve_academy-hero-text {
+        left: 50px;
+        top: 300px;
+        font-family: "Averta" !important;
+        padding-top: 29px;
+        padding-left: 29px;
+      }
+    
+      .verve_academy-hero-text h1 {
+        font-size: 32px;
+        line-height: 36px;
+        text-align: left;
+        padding-bottom: 0px;
+      }
+    
+      .verve_academy-hero-text p {
+        font-size: 16px;
+        line-height: 23px;
+        text-align: left;
+        padding-top: 246px;
+      }
+    
+      .verve_academy-hero-text button {
+        border-radius: 6px;
+        padding: 16px 35px;
+      }
+    
+      .webinar-btns {
+        justify-content: center;
+        align-items: stretch;
+        text-align: center;
+        flex-direction: column;
+        padding-top: 15px;
+      }
+    
+      .webinar-text {
+        padding: 0 12px;
+      }
+    
+      .webinar-image-container {
+        padding-bottom: 20px;
+        max-width: 390px;
+      }
+
+      /* From the Verve Access page */
+      .verve_access-hero-text {
+        left: 50px;
+        top: 300px;
+        font-family: "Averta" !important;
+        padding-top: 70px;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+      
+        .verve_access-hero-text h1 {
+          font-size: 28px;
+          line-height: 36px;
+          text-align: left;
+        }
+      
+        .verve_access-hero-text p {
+          font-size: 14px;
+          line-height: 19px;
+          text-align: left;
+        }
+
+        .testing-heading {
+          font-weight: 700;
+          font-size: 33px;
+          line-height: 44px;
+          color: #00425F;
+      }
+      
+        .testing-btn {
+          padding: 16px 35px;
+        }
+
 }
 
 @media (max-width: 375px) {
@@ -1409,6 +4861,237 @@ RESPONSIVE STYLING
     width: 260px !important;
   }
 
+/* From the Business page */
+.business-hero-text h2 {
+  font-size: 35px;
+  line-height: 42px;
+  }
+
+  .business-hero-text p {
+    font-size: 36px;
+  line-height: 19px;
+  text-align: right;
+  }
+
+  .wallet_head {
+    line-height: 45px;
+  }
+
+  .wallet_paragraph {
+    font-size: 11px;
+    margin: 18px 13px;
+  }
+
+.wallet_head {
+    font-size: 34px;
+}
+
+.business-verve_access-text {
+  justify-content: center;
+  padding: -1px 20px;
+}
+
+/* From Personal Page */
+.personal-hero-text {
+  left: 7%;
+  top: 48%;
+} 
+
+.personal-hero-text h2 {
+  font-size: 35px;
+  line-height: 36px;
+}
+
+.personal-hero-text p {
+  font-size: 48px;
+  line-height: 36px;
+
+}
+
+.background--text {
+  font-size: 120px;
+}
+
+.main_content img {
+  width: 245px;
+}
+
+.deal-fix {
+  width: 170px;
+}
+
+.wallet {
+  padding-top: 75px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.wallet_head {
+  line-height: 45px;
+}
+
+.wallet_paragraph {
+  font-size: 11px;
+  margin: -5px 13px;
+}
+
+.grow_africa-heading {
+font-size: 25px;
+}
+
+.grow_africa-paragraph {
+font-size: 13px;
+}
+
+.grow_africa {
+padding: 50px 0;
+}
+
+.services_head {
+
+width: 288px;
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+}
+
+.wallet_head {
+font-size: 34px;
+}
+
+/* From the Cards page */
+.cards-hero-text {
+  top: 18%;
+  font-family: "Averta" !important;
+  /* padding-right: 50px; */
+  padding: 0 15px;
+  }
+
+  .cards-hero-text h1 {
+    font-size: 35px;
+    line-height: 35px;
+    text-align: left;
+  }
+
+  .cards-hero-text p {
+    font-size: 11px;
+  line-height: 19px;
+  text-align: left;
+  /* max-width: 240px; */
+  }
+
+  .item img {
+    width: 300px;
+   }
+
+.transparent-cards img {
+  right: 1%;
+
+}
+.get_in_touch {
+    /* height: 52vh; */
+}
+
+.pay-story-main-heading {
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 31px;
+  line-height: 51px;
+}
+
+/* From the Contact page */
+.contact-hero-text {
+  top: 210px;
+  font-family: "Averta" !important;
+  }
+
+  .contact-hero-text h1 {
+    font-size: 41px;
+    line-height: 46px;
+  }
+
+  /* From the Cardless offerings page */
+  .cardless-hero-text {
+    top: 210px;
+    font-family: "Averta" !important;
+    }
+
+    .cardless-hero-text h1 {
+      font-size: 33px;
+      line-height: 35px;
+      text-align: left;
+    }
+
+  .cardless-hero-text p {
+    font-size: 11px;
+    line-height: 19px;
+    text-align: left;
+    max-width: 240px;
+  }
+
+  /* From the Partner page */
+  .partner-hero-text {
+    top: 210px;
+    font-family: "Averta" !important;
+    /* padding-right: 50px; */
+    }
+
+    .partner-hero-text p {
+      font-size: 11px;
+      line-height: 19px;
+      text-align: left;
+      max-width: 240px;
+    }
+
+  /* From the Verve Academy Page */
+  .verve_academy-hero-text {
+    left: 2px;
+    top: 250px;
+    font-family: "Averta" !important;
+    /* padding: 51px; */
+    padding-right: 25px;
+    }
+  
+    .verve_academy-hero-text p {
+      line-height: 19px;
+      text-align: left;
+    }
+  
+    .webinar-image-container {
+      max-width: 350px;
+    }
+
+        /* From the Verve Access page */
+    .verve_access-hero-text {
+      left: 2px;
+      top: 250px;
+      font-family: "Averta" !important;
+      padding: 51px;
+    }
+    
+      .verve_access-hero-text p {
+        line-height: 19px;
+        text-align: left;
+      }
+    
+      .testing-heading {
+        font-size: 21px;   
+        line-height: 28px;
+      }
+    
+      .testing-mid-text {
+        font-size: 13px;
+        line-height: 24px;
+      }
+  }
+
+
+@media (max-width: 325px) {
+  .personal-hero-text h2 {
+    font-size: 32px;
+    line-height: 36px;
+}
 }
 
 
@@ -1424,5 +5107,19 @@ RESPONSIVE STYLING
     align-content: space-between;
     align-items: center;
   }
+
+  /* From the Business page */
+  .business-hero-text h2 {
+    font-size: 27px;
+    line-height: 33px;
+
+}
+.partner-img-container {
+  max-width: 300px;
+}
+
+.webinar-image-container {
+  max-width: 300px;
+ }
 
 }
