@@ -2322,6 +2322,8 @@ Different cards
 
  .verve-card {
   padding-top: 84px;
+  max-width: 429px;
+  margin: 0 auto;
  }
  .verve-card-text {
   max-width: 484px;
@@ -2400,6 +2402,10 @@ align-items: center;
   width: 100%;
   height: 280px;
   margin: 0 0;
+}
+
+.contactless-image {
+  border-radius: 10px;
 }
 /* Cards Page end */
 
