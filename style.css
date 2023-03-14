@@ -663,10 +663,11 @@ CONNECTING AFRICA SECTION
 }
 
 .stats-text {
-  padding: 150px 0px;
+  padding: 64px 15px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: column;
 }
 
 .stats-main-heading {
@@ -674,12 +675,11 @@ CONNECTING AFRICA SECTION
   font-family: 'Averta';
   font-style: normal;
   font-weight: 700;
-  font-size: 56px;
-  line-height: 57px;
-
-  text-align: left;
-  color: #6B7280;
-  max-width: 790px;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #00425F;
+  max-width: 550px;
 
 }
 
@@ -689,11 +689,11 @@ CONNECTING AFRICA SECTION
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  /* or 156% */
 
   text-align: center;
   color: #6B7280;
-  max-width: 510px;
+  max-width: 760px;
+  padding-top: 32px;
 
 }
 
@@ -739,7 +739,7 @@ CONNECTING AFRICA SECTION
   color: #479FC8;
 }
 
-.learn-more {
+.home-learn-more {
   color: #479FC8;
   text-align: left;
   padding-top: 20px;
@@ -810,7 +810,7 @@ PAN AFRICA STORY SECTION
   font-family: 'Averta';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
   max-width: 615px;
 
@@ -953,7 +953,7 @@ HERE FOR AFRICA SECTION
 }
 
 .here-for-things {
-  padding: 75px 0px;
+  padding: 5px 0px;
   background-repeat: no-repeat;
 
 }
@@ -1387,7 +1387,7 @@ HERE FOR AFRICA SECTION
     }
     
   
-    /* ===============================
+  /* ===============================
   HERE FOR AFRICA SECTION
   ================================== */
   
@@ -1414,13 +1414,13 @@ HERE FOR AFRICA SECTION
   
     /* Stats */
   .business-stats {
-     padding: 50px 25px;
-    background-image: 
-    linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
-    url('image/business-offerings.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+      padding: 50px 25px;
+      background-image: 
+      linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+      url('image/business-offerings.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
   }
   
   .biz-flex {
@@ -1490,24 +1490,23 @@ HERE FOR AFRICA SECTION
     
   }
   .business-verve_access-main-heading {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 60px;
-  color: #fff;
-  padding: 32px 0px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 60px;
+    color: #fff;
+    padding: 32px 0px;
   }
   
   .business-v_access-paragraph {
-   
     margin: 0 auto;
   }
   
   .business-verve_access-heading {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
   }
   
   .business-v_access-btn {
@@ -1548,23 +1547,21 @@ HERE FOR AFRICA SECTION
   }
   
   .general-for_you-heading {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 64px;
-  color: #fff;
-  
-  
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 64px;
+    color: #fff;
   }
   
   .general-for_you-paragraph {
-   max-width: 451px;
-   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #fff;
-  padding: 15px 0;
+    max-width: 451px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    padding: 15px 0;
   }
   
   .general-for_you-btn {
@@ -1581,6 +1578,10 @@ HERE FOR AFRICA SECTION
   .general-for_you-text {
       padding-left: 10px;
       max-width: 612px;
+  }
+
+  .personal-for-you-text {
+    max-width: 750px !important;
   }
   
   /* ===============================
@@ -1602,10 +1603,10 @@ HERE FOR AFRICA SECTION
     flex-wrap: wrap;
   }
   #cardless {
-      font-style: normal;
-      font-weight: 700;
-      font-size: 40px;
-      color: #00425F;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #00425F;
   }
   
   .business-partner-btn {
@@ -1645,20 +1646,20 @@ HERE FOR AFRICA SECTION
     margin: 0 auto;
   }
   .cardless_secure-main-heading {
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 60px;
-  color: #fff;
-  padding-top: 67px;
-  padding-bottom: 64px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 60px;
+    color: #fff;
+    padding-top: 67px;
+    padding-bottom: 64px;
   }
   
   .cardless_secure-heading {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: white;
   }
   
   .cardless_secure-btn {
@@ -2423,10 +2424,10 @@ align-items: center;
 
 /* Banner image */
 .contact-home {
-  height: 780px;
+  height: 670px;
   color: white;
   background-image: 
-        linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+  linear-gradient(90deg, #581011 0%, rgba(53, 6, 7, 0.736848) 54.66%),
         url('image/contact-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -2439,7 +2440,7 @@ align-items: center;
   top: 30%;
   left: 4%;
   text-align: left;
-  max-width: 635px;
+  max-width: 495px;
  
   }
 
@@ -2452,36 +2453,61 @@ align-items: center;
   color: #f4f4f4;
 }
 
+.contact-header-sub-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  padding-top: 40px;
+}
+
 /* BANNER SECTION END */
 
 /* ==================================
   VERVE CONTACT INFORMATION AREA
 ===================================  */
 
+.form_and_info_flex {
+
+}
 .contact-info {
   height: auto;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0),
-  rgba(0, 0, 0, 0.3)), url("image/blue-generic-bg.png");
+  /* background-image: linear-gradient(to top, rgba(0, 0, 0, 0),
+  rgba(0, 0, 0, 0.3)), url("image/blue-generic-bg.png"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding-top: 20px;
-  margin: 80px;
+  margin: 40px;
   border-radius: 10px;
 }
 
 .contact-info-flex {
   display: flex;
   /* flex-wrap: wrap; */
-  justify-content: space-around;
-  color: #fff;
-  padding: 70px 90px;
+  justify-content: flex-start;
+  color: #00425F;
+  padding: 40px 14px;
+  gap: 40px;
 }
+
+.contact-info-heading-container {
+  max-width: 420px;
+}
+
+.contact-info-main-heading {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  color: #00425F;
+}
+
+
 
 .contact-info-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  gap: 12px;
 }
 .contact-info-item i {
   font-size: 25px;
@@ -2499,19 +2525,24 @@ align-items: center;
   font-size: 20px;
   line-height: 32px;
 }
-
+ 
 .contact-info_small-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #00425F;
+}
+
+.contact-info_small-text a {
+  color: #00425F;
+  text-decoration: none;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
 }
 
-.contact-info_small-text a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+.contact-info_small-text a:hover {
+  color: #00425F !important;
 }
 
   
@@ -2610,6 +2641,99 @@ align-items: center;
   color: #6B7280 !important;
 }
 
+/* CONTACT FORM */
+.form-area {
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgba(90, 116, 148, 0.3);
+  padding: 40px 32px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.form-area .form-inner {
+  width: 381px;
+  height: 622px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 15px 19px;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #475F7B;
+  background-color: #F3F5F6 !important;
+  border-radius: .267rem;
+  -webkit-transition: .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: .15s ease-in-out,box-shadow .15s ease-in-out;
+  border: 0px !important;
+}
+
+.form-message-control {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 15px 19px;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #475F7B;
+  background-color: #F3F5F6 !important;
+
+  border-radius: .267rem;
+  -webkit-transition:  .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: .15s ease-in-out,box-shadow .15s ease-in-out;
+  border: 0px !important;
+}
+.form-control:focus {
+  color: #475F7B;
+  background-color: #FFF !important;
+  border-color: #EE312A !important;
+  outline: 0;
+  box-shadow: 0 3px 8px 0 rgb(0 0 0 / 10%);
+}
+.intl-tel-input,
+.iti{
+/* width: 100%; */
+}
+
+.form-control::after {
+  border: 1px solid #EE312A !important;;
+}
+.form-position {
+  position: absolute;
+  top: 20%;
+  right: 7.5%;
+}
+
+.contact-form-btn {
+  padding: 14px 78px;
+  background: #EE312A;
+  border-radius: 8px;
+  color: #fff;
+  width: 100%;
+  border: 0px;
+  margin-top: 24px;
+}
+
+.input_placeholder {
+  color: #353F50;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.required_symbol {
+  color: #EE312A;
+}
+
+.optional {
+  color: #D1D5DB;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
 
 /******** ===================== *******
           CARDLESS OFFERINGS PAGE CSS 
@@ -3661,6 +3785,12 @@ RESPONSIVE STYLING
   padding: 70px 7px;
 }
 
+.form-position {
+  position: absolute;
+  top: 20%;
+  right: 4.5%;
+}
+
 /* From Partner page */
 .partner-hero-text {
   width: auto;
@@ -3782,6 +3912,16 @@ RESPONSIVE STYLING
 padding-right: 0px;
 }
 
+.pan-story-main-heading {
+  font-size: 44px;
+  max-width: 344px;
+  line-height: 47px;
+}
+
+.pan-heading {
+  max-width: 500px;
+}
+
 /* From the personal page */
 .personal-hero-text {
   right: 25%;
@@ -3817,7 +3957,28 @@ padding-right: 0px;
 }
 
 .learn-text {
-  padding-bottom: 30px;
+  padding-bottom: 50px;
+}
+
+/* From the Contact page */
+.contact-info-flex {
+  justify-content: center;
+}
+.form-position {
+  position:unset;
+  display: flex !important;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.contact-info-flex {
+  padding: 40px 7px;
+}
+
+.form_and_info_flex  {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 80px;
 }
 
 }
@@ -3900,7 +4061,7 @@ padding-right: 0px;
   }
 
   .lottie-earth {
-    width: 507px !important;
+    width: 460px !important;
 }
 
   iframe {
@@ -4075,6 +4236,10 @@ flex-wrap: wrap;
   }
 
   /* Contact page */
+
+  .contact-home {
+    height: 750px;
+  }
   .contact-hero-text {
     left: 5%;
     top: 49%;
@@ -4089,7 +4254,7 @@ flex-wrap: wrap;
   }
 
   .contact-info-flex {
-    padding: 70px 15px;
+    padding: 16px 15px;
     flex-direction: column;
   }
 
@@ -4216,7 +4381,7 @@ flex-wrap: wrap;
 
 @media (max-width: 630px) {
   .contact-info {
-    margin: 126px
+    margin: 30px
   }
 
   .partner-flex {
@@ -4226,6 +4391,11 @@ flex-wrap: wrap;
   .partner-btn-container {
     padding-top: 22px;
     padding-bottom: 50px;
+}
+
+.form-area .form-inner {
+  width: 100%;
+  height: 622px;
 }
 
 }
@@ -4334,6 +4504,17 @@ flex-wrap: wrap;
   .verve_access-hero-text button {
     margin-top: 12px;
   }
+
+  .faq_main {
+    padding: 30px 2px;
+  }
+
+  .general-for-you {
+    height: 630px;
+  }
+
+
+  
 }
 
 
@@ -4434,7 +4615,7 @@ flex-wrap: wrap;
 
 
   .stats-text {
-    padding: 117px 29px;
+    padding: 54px 29px;
   }
   .stats-main-heading {
     font-size: 30px;
@@ -4480,9 +4661,15 @@ flex-wrap: wrap;
       padding-left: 0px;
     }
     .general-for_you-heading {
-      font-weight: 700;
-      font-size: 28px;
-      line-height: 36px;
+     font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+    }
+
+    .general-for_you-paragraph {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
     }
 
     .general-for_you-text {
@@ -4673,8 +4860,9 @@ flex-wrap: wrap;
 
 .contact-hero-text {
   left: 6%;
-  top: 33%;
+  top: 28%;
   font-family: "Averta" !important;
+  max-width: 355px;
 }
 
   .contact-hero-text h1 {
