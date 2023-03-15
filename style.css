@@ -4613,6 +4613,14 @@ flex-wrap: wrap;
 
   }
 
+  .here-container {
+    padding: 0 0px !important;
+  }
+
+  .here-text {
+    padding: 35px 0px;
+  }
+
 
   .stats-text {
     padding: 54px 29px;
@@ -4652,7 +4660,8 @@ flex-wrap: wrap;
     }
 
     .hfa-heading {
-      font-size: 15px;
+      font-size: 14px;
+      line-height: 20px;
       text-align: left !important;
     }
 
