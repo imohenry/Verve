@@ -1094,7 +1094,7 @@ HERE FOR AFRICA SECTION
   text-align: center;
   color: #fff;
   position: absolute;
-  top: 0;
+  top: -225px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -3881,7 +3881,7 @@ RESPONSIVE STYLING
 
   .hfa_text {
     padding-top: 20px;
-    text-align: center;
+    text-align: left;
   }
 
   .footprint_text h2 {
@@ -4075,7 +4075,7 @@ padding-right: 0px;
   }
 
   .hfa_text {
-    text-align: center;
+    /* text-align: center; */
   }
 
   .good-flex {
@@ -4647,8 +4647,13 @@ flex-wrap: wrap;
       text-align: left;
     }
 
+    .hfa-story-main-heading {
+      text-align: left;
+    }
+
     .hfa-heading {
       font-size: 15px;
+      text-align: left !important;
     }
 
     .main_content img{
