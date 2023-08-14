@@ -119,6 +119,9 @@
   --primary-red: #DC4437;
 
 }
+html{
+  font-size: 16px;
+}
 
 body h1,
 html,
@@ -135,7 +138,6 @@ a,
 form,
 label {
   font-family: "Averta" ;
-
 
 }
 
@@ -304,7 +306,7 @@ UTILITIES CSS
 .card {
 
   width: 249px;
-  height: 295px;
+  height: 100%;
   flex: 1;
   color: #333;
   padding: 20px;
@@ -603,7 +605,9 @@ cursor: pointer !important;
   align-items: center;
   justify-content: space-between;
   height: 50px;
-  padding: 3.5em 0em;
+  padding: 3.5em 1.5em;
+  max-width: 1480px;
+  margin: 0 auto;
 }
 
 .menu {
@@ -624,6 +628,10 @@ cursor: pointer !important;
 .menu a {
   color: white;
   text-decoration: none;
+}
+
+.article_nav_item {
+  color: #00425F !important;
 }
 
 .menu-button-container {
@@ -687,6 +695,14 @@ cursor: pointer !important;
 
 .blink {
     visibility:hidden;
+}
+
+.icon {
+  color: #fff !important;
+}
+
+.dark-icon {
+  color: #00425F !important;
 }
 
 
@@ -835,7 +851,7 @@ PAN AFRICA STORY SECTION
 
 .pan-flex-2 {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding-top: 70px;
 }
 
@@ -898,8 +914,8 @@ PAN AFRICA STORY SECTION
 
 
 .map_section {
-  flex: 0;
-  max-width: 500px;
+  /* flex: 0; */
+  max-width: 700px;
 }
 
 .footprint_text h2 {
@@ -3473,8 +3489,7 @@ BANNER SECTION START
 ================================== */
 /* Banner image */
 .fintech-hero-section {
-height: 89vh;
-color: white;
+height: 40vh;
 background-image: 
 linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
 url('image/Fintech-banner.png');
@@ -3488,17 +3503,12 @@ background-position: center;
 .active {
   color: #EE312A !important;
 }
+
 .fintech-hero-text {
-position: absolute;
-text-align: left;
-max-width: 572px;
-left: 15%;
-top: 52%;
-color: #00425F;
-justify-content: center;
-font-family: "Averta" !important;
-/* padding-right: 50px; */
- 
+  text-align: left;
+  max-width: 574px;
+  padding-top: 10%;
+  color: #00425F;
 }
 
 .fintech-hero-text h2 {
@@ -3507,8 +3517,8 @@ font-family: "Averta" !important;
   font-weight: 700;
   font-size: 56px;
   line-height: 69px;
-
   text-align: left;
+  text-transform: capitalize;
 }
 
 .fintech-hero-text p {
@@ -3527,7 +3537,7 @@ font-family: "Averta" !important;
   display: flex;
   justify-content: space-between;
   padding: 70px 0;
-  gap: 40px;
+
   /* border-bottom: 1px solid #000; */
 }
 
@@ -3547,6 +3557,7 @@ font-family: "Averta" !important;
 .fintech-solutions-text {
   max-width: 512px;
   display: flex;
+  padding-bottom: 40px;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
@@ -3608,6 +3619,238 @@ font-family: "Averta" !important;
 
 .partner-item-slide {
   padding: 0 45px
+}
+
+/******** ===================== *******
+          Verve Blog CSS 
+******** ===================== *******/
+
+.blog-hero-section {
+  height: 100%;
+  background-image: 
+  linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
+  url('image/blog_banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.blog_logo_text{
+  font-size: 19px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+ vertical-align: bottom;
+}
+
+.blog-hero-text {
+  position: absolute;
+  top: 30%;
+  left: 12%;
+  max-width: 544px;
+  color: #fff;
+}
+
+.blog-header-text{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  text-transform: uppercase;
+}
+
+.feature_headline {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+  padding: 16px 0;
+}
+
+.blog_btn {
+  background-color: #EE312A;
+  color: #fff;
+  font-size: 14px;
+  text-transform: none;
+  padding: 16px 55px !important;
+}
+.blog_btn:hover { 
+  background-color: rgba(51, 48, 48, 0);
+  color: #EE312A;
+  border: 1px solid #EE312A;
+}
+
+/* News Section */
+.news_feed {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.article_piece {
+  max-width: 330px;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  background-color: #fff
+}
+
+.no_border {
+  border: none !important;
+}
+
+.article_text {
+  max-width: 350px;
+  padding: 16px 16px;
+  margin: 0 !important;
+  /* background-color: #fff; */
+}
+
+.article_img {
+  max-width: 350px;
+  /* padding-bottom: 10px; */
+  height: 215px;
+  
+}
+
+.article_img img{
+  width: 100%;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  height: 100%;
+}
+
+.piece_heading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #004250;
+  padding: 15px 0;
+  margin: 0 !important;
+}
+
+.piece_sub {
+  font-size: 16px;
+  font-weight: 400;
+  color: #667085;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0 !important;
+}
+
+.author_field {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.author_field img{
+  border-radius: 50%;
+ border: 2px solid #DC4437;
+ padding: 3px;
+ width: 50px;
+}
+
+.author_field-2 img{
+  border-radius: 50%;
+ border: 2px solid #00B8DE;
+ padding: 3px;
+ width: 50px;
+}
+.author_field-2 {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.article_date {
+  color: #848F9F;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 10px;
+  margin: 0;
+}
+
+/* BLOG PIECE CSS */
+.article_headline_text {
+  max-width: 544px;
+  margin: 0 auto;
+  padding: 55px 0;
+}
+
+.article_category {
+  color: #DC4437;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 0 !important;
+}
+
+.article_main_headline {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; 
+  color: #00425F;
+  padding: 17px 0;
+}
+
+.article_date {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.article_image_container {
+  max-width: 1080px;
+  margin: 0 auto;
+  /* padding: 0 15px; */
+}
+
+.article_image_container img {
+  width: 100%;
+}
+
+.article_body {
+  max-width: 690px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+
+.article_body p{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 35px;
+}
+
+.article_sub-heading{
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #00425F;
+}
+
+.other_articles_bg {
+  background-color: #F4B7B5;
+}
+
+.other_articles_text {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  color: #00425F;
+  padding-top: 60px;
 }
 
 
@@ -3696,6 +3939,10 @@ Get in touch SECTION
   padding: 0 50px;
 }
 
+.lottie-earth {
+  width: 100%;
+}
+
 
 /*==================================
 RESPONSIVE STYLING
@@ -3703,15 +3950,15 @@ RESPONSIVE STYLING
 
 @media (max-width: 1662px) {
   .lottie-earth {
-    width: 920px !important;
+    width: 100% !important;
   }
 }
 
 
 @media (max-width: 1580px) {
-  .lottie-earth {
+  /* .lottie-earth {
     width: 899px !important;
-  }
+  } */
 }
 
 @media (max-width: 1450px) {
@@ -3722,9 +3969,9 @@ RESPONSIVE STYLING
 
 
 @media (max-width: 1475px) {
-  .lottie-earth {
+  /* .lottie-earth {
     width: 880px !important;
-  }
+  } */
   .hero-text {
     right: 8%;
     top: 50%;
@@ -3733,9 +3980,9 @@ RESPONSIVE STYLING
   }
 }
 @media (max-width: 1438px) {
-  .lottie-earth {
+  /* .lottie-earth {
     width: 875px !important;
-  }
+  } */
   .hero-text {
     right: 10%;
     top: 50%;
@@ -3745,9 +3992,9 @@ RESPONSIVE STYLING
 }
 
 @media (max-width: 1400px) {
-  .lottie-earth {
+  /* .lottie-earth {
     width: 830px !important;
-  }
+  } */
   .hero-text {
     right: 10%;
     top: 50%;
@@ -3770,9 +4017,9 @@ RESPONSIVE STYLING
 }
 
 @media (max-width: 1340px) {
-  .lottie-earth {
+  /* .lottie-earth {
     width: 779px !important;
-  }
+  } */
   .hero-text {
     right: 10%;
     top: 50%;
@@ -3817,9 +4064,9 @@ RESPONSIVE STYLING
   .hfa-heading {
     font-size: 16px;
   }
-  .lottie-earth {
+  /* .lottie-earth {
     width: 710px !important;
-  }
+  } */
 
   .menu > li {
     margin: 0 0rem;
@@ -3928,20 +4175,21 @@ RESPONSIVE STYLING
 }
 
 @media (max-width: 1215px) {
-  .lottie-earth {
+  /* .lottie-earth {
     width: 650px !important;
-  }
+  } */
 }
 
 @media (max-width: 1136px) {
-  .lottie-earth {
+  /* .lottie-earth {
     width: 575px !important;
-}
+} */
 }
 
 @media (max-width: 1080px) {
-  .lottie-earth {
-    width: 525px !important;
+  .map_section {
+    overflow: hidden;
+    max-width: 530px;
   }
 }
 
@@ -4048,13 +4296,13 @@ RESPONSIVE STYLING
 }
 
 .fintech-solutions-flex {
-  justify-content: space-between;
-  padding: 70px 0;
+  justify-content: space-around;
+  /* padding: 70px 0; */
   /* border-bottom: 1px solid #000; */
   flex-direction: column-reverse;
   align-items: center;
 }
-
+}
 @media only screen and (min-width: 700px) and (max-width: 1024px) { 
 
   .cards-hero-text {
@@ -4069,6 +4317,9 @@ RESPONSIVE STYLING
       top: 17%;
       font-family: "Averta" !important;
       /* padding-right: 50px; */
+    }
+    .fintech-solutions-text {
+      padding-bottom: 40px !important;
     }
 
 }
@@ -4103,9 +4354,9 @@ RESPONSIVE STYLING
     line-height: 8px;
   }
 
-  .lottie-earth {
+  /* .lottie-earth {
     width: 525px !important;
-  }
+  } */
 
   .business-hero-text {
     right: 25%;
@@ -4188,6 +4439,12 @@ padding-right: 0px;
   padding-bottom: 80px;
 }
 
+.map_section {
+  /* flex: 0; */
+  max-width: 400px;
+}
+
+
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -4213,18 +4470,21 @@ padding-right: 0px;
   .pan-heading {
     font-size: 14px;
     line-height: 22px;
+    text-align: center !important;
   }
 
   .pan-heading-2 {
     font-size: 15px;
     line-height: 23px;
+    text-align: center !important;
   }
 
   .pan-flex {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
+    text-align: center !important;
   }
 
   .pan-flex-2 {
@@ -4232,7 +4492,8 @@ padding-right: 0px;
     padding-top: 35px;
     flex-direction: column;
     align-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center !important;
   }
 
   .pan-story-main-heading {
@@ -4244,7 +4505,8 @@ padding-right: 0px;
     justify-content: center;
     text-align: center;
     padding-left: 0px;
-    flex: 1
+    flex: 1;
+    text-align: center !important;
   }
 
   .footprint_text h2 {
@@ -4255,6 +4517,7 @@ padding-right: 0px;
     text-transform: capitalize;
     text-align: left;
     line-height: 45px;
+    text-align: center !important;
   }
 
   .footprint_text p {
@@ -4265,11 +4528,17 @@ padding-right: 0px;
     line-height: 40px;
     margin-bottom: 0;
     color: #00425F;
+    text-align: center !important;
   }
 
-  .lottie-earth {
+  .map_section {
+    /* flex: 0; */
+    max-width: 700px;
+  }
+
+  /* .lottie-earth {
     width: 460px !important;
-}
+} */
 
   iframe {
     width: 434px;
@@ -4305,6 +4574,7 @@ padding-right: 0px;
     position: absolute;
     top: 0;
     margin-top: 89px;
+    overflow: hidden;
     left: 0;
     flex-direction: column;
     width: 100%;
@@ -4786,12 +5056,12 @@ flex-wrap: wrap;
 
 
   .map_section {
-    margin: 0 20px;
+    margin: 0 0px;
   }
 
-  .lottie-earth {
+  /* .lottie-earth {
     width: auto !important;
-  }
+  } */
 
   .pan-heading {
     font-size: 15px;
@@ -5268,6 +5538,7 @@ flex-wrap: wrap;
         .testing-btn {
           padding: 16px 35px;
         }
+      
 
 }
 
@@ -5515,6 +5786,10 @@ font-size: 34px;
       .testing-mid-text {
         font-size: 13px;
         line-height: 24px;
+      }
+      .header-text{
+        font-size: 48px !important;
+        line-height: 58px !important;
       }
   }
 
