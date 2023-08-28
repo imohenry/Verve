@@ -3489,7 +3489,7 @@ BANNER SECTION START
 ================================== */
 /* Banner image */
 .fintech-hero-section {
-height: 40vh;
+height: 70vh;
 background-image: 
 linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)),
 url('image/Fintech-banner.png');
