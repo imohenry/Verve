@@ -166,7 +166,7 @@ UTILITIES CSS
 }
 
 .grid_pad {
-  padding: 0 0 !important;
+  padding: 0 30px !important;
 }
 
 .flex {
@@ -1004,14 +1004,13 @@ HERE FOR AFRICA SECTION
 
 .good-flex {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
 }
 
 .mid-flex {
   display: flex;
-  justify-content: space-around;
-
+  justify-content: space-between;
 }
 
 .here-for-things {
@@ -3480,6 +3479,123 @@ BANNER SECTION START
     padding-top: 24px;
   }
 
+
+   /* ==================
+  FOOTER section
+  =====================*/
+
+  .ft-main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+.brand-style a{
+  color: #004250 !important;
+}
+  .footer_area {
+    background-size: cover;
+    padding-top: 290px;
+}
+
+.footer_area {
+    padding-top: 80px !important;
+    /* background: #f5f8fb; */
+}
+footer {
+    line-height: 1.5;
+    /* background: #f5f8fb; */
+}
+.footer_bottom{
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+}
+@media screen and (max-width: 565px){
+    .ft-main {
+        /* padding: 1.25rem 1.875rem; */
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 77.5rem){
+    .ft-main {
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 29.8125rem){
+    .ft-main {
+        justify-content: space-between;
+    }
+}
+
+.ft-main-item {
+    padding: 1.25rem;
+    /* min-width: 12.5rem; */
+}
+.ft-title {
+    padding-bottom: 0.625rem;
+    color: #00425f;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+}
+.unordered-list {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.unordered-list li {
+    position: relative;
+    /* padding-left: 30px; */
+    line-height: 1.7em !important;
+}
+.unordered-list li:before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    color: #818693;
+    top: 4px;
+    left: 0;
+}
+.unordered-list li a {
+    color: #353F50;
+    font-weight: 400 !important;
+    /* line-height: 24px; */
+    font-size: 14px;
+}
+.unordered-list li a span {
+    color: #353F50;
+    font-weight: 400 !important;
+    line-height: 24px;
+    font-size: 12px;
+}
+
+.unordered-list li a div {
+    color: #353F50;
+    font-weight: 300 !important;
+    /* line-height: 24px; */
+    font-size: 13px;
+    padding-top: 18px;
+}
+
+.unordered-list div {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.iconDetails {
+    margin-left: 1%;
+    float: left;
+    height: 23px;
+    width: 30px;
+    border-radius: 4px;
+}
+
 /******** ===================== *******
           FINTECH ACCESS PAGE CSS 
 ******** ===================== *******/
@@ -4453,6 +4569,10 @@ padding-right: 0px;
 /* iPads (portrait and landscape) ----------- */
 @media (max-width: 770px) {
 
+  .grid_pad {
+    padding: 0 0px !important;
+  }
+
   .hero-text {
     width: auto;
     left: 250px;
@@ -4854,6 +4974,12 @@ flex-wrap: wrap;
 
   .general-for-you-flex {
     padding-left: 15px;
+  }
+
+  .footer_bottom {
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
   }
 
 }
@@ -5555,6 +5681,14 @@ flex-wrap: wrap;
 
   .responsive-image img{ 
     width: 100%;
+  }
+
+  .ft-main {
+    /* padding: 1.25rem 1.875rem; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
   }
 }
 
